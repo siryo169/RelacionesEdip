@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  21 MAR 2021 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  23 MAR 2021 17:06
 entering extended mode
 **./documento_principal.tex
 (documento_principal.tex
@@ -279,12 +279,16 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@dimlist=\toks34
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/carlos/.miktex/texmfs/install/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box51
+)
 \c@ej=\count278
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count279
-\l__pdf_internal_box=\box51
+\l__pdf_internal_box=\box52
 )
 (documento_principal.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -292,28 +296,28 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `documento_principal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
 
 (/home/carlos/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count280
 \scratchdimen=\dimen169
-\scratchbox=\box52
+\scratchbox=\box53
 \nofMPsegments=\count281
 \nofMParguments=\count282
 \everyMPshowfont=\toks35
@@ -367,7 +371,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-32.
+33.
 (/home/carlos/.miktex/texmfs/install/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
@@ -376,13 +380,13 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 File: imagenes/Diagrama_barras_ejer1.JPG Graphic file (type jpg)
 <use imagenes/Diagrama_barras_ejer1.JPG>
 Package pdftex.def Info: imagenes/Diagrama_barras_ejer1.JPG  used on input line
- 84.
+ 85.
 (pdftex.def)             Requested size: 217.66211pt x 130.23369pt.
 <imagenes/Curva de distrubicon_ejer1.png, id=2, 570.33075pt x 278.2395pt>
 File: imagenes/Curva de distrubicon_ejer1.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer1.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer1.png  used on input
- line 88.
+ line 89.
 (pdftex.def)             Requested size: 217.66211pt x 106.18639pt.
  [1
 
@@ -390,30 +394,30 @@ Package pdftex.def Info: imagenes/Curva de distrubicon_ejer1.png  used on input
 a_barras_ejer1.JPG> <./imagenes/Curva de distrubicon_ejer1.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 98.
+(Font)              using `OT1/cmr/m/sc' instead on input line 99.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 104.
+(Font)              using `OT1/cmr/m/sc' instead on input line 105.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 110.
+(Font)              using `OT1/cmr/m/sc' instead on input line 111.
 
 [2]
 <imagenes/Histograma_Ej_2.png, id=20, 1364.09625pt x 767.86874pt>
 File: imagenes/Histograma_Ej_2.png Graphic file (type png)
 <use imagenes/Histograma_Ej_2.png>
-Package pdftex.def Info: imagenes/Histograma_Ej_2.png  used on input line 163.
+Package pdftex.def Info: imagenes/Histograma_Ej_2.png  used on input line 164.
 (pdftex.def)             Requested size: 217.66211pt x 122.52171pt.
 <imagenes/Curva de distrubicon_ejer2.png, id=22, 370.38374pt x 232.4685pt>
 File: imagenes/Curva de distrubicon_ejer2.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer2.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer2.png  used on input
- line 167.
+ line 168.
 (pdftex.def)             Requested size: 217.66211pt x 136.61604pt.
 
-Overfull \hbox (29.57849pt too wide) detected at line 201
+Overfull \hbox (29.57849pt too wide) detected at line 202
 []
  []
 
@@ -422,23 +426,23 @@ Overfull \hbox (29.57849pt too wide) detected at line 201
 <imagenes/Histograma_ejer_3.png, id=28, 413.1435pt x 203.5605pt>
 File: imagenes/Histograma_ejer_3.png Graphic file (type png)
 <use imagenes/Histograma_ejer_3.png>
-Package pdftex.def Info: imagenes/Histograma_ejer_3.png  used on input line 228
+Package pdftex.def Info: imagenes/Histograma_ejer_3.png  used on input line 229
 .
 (pdftex.def)             Requested size: 217.66211pt x 107.24359pt.
 <imagenes/Curva de distrubicon_ejer3.png, id=29, 403.5075pt x 247.52475pt>
 File: imagenes/Curva de distrubicon_ejer3.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer3.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer3.png  used on input
- line 232.
+ line 233.
 (pdftex.def)             Requested size: 217.66211pt x 133.52162pt.
 
-Overfull \hbox (5.91127pt too wide) in paragraph at lines 249--250
+Overfull \hbox (5.91127pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/bx/n/12 Ejercicio 4. []\OT1/cmr/m/n/12 En una determinada empresa se
  realiza un estudio sobre la calidad de su produccion.
  []
 
 
-Overfull \hbox (8.3006pt too wide) detected at line 295
+Overfull \hbox (8.3006pt too wide) detected at line 298
 \OML/cmm/m/it/12 n[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 n[] \OT1/cmr/m/n/12 = 1
 6 \OML/cmm/m/it/12 M[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 =
  5 \OML/cmm/m/it/12 piezas defectuosas M[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x
@@ -447,59 +451,127 @@ Overfull \hbox (8.3006pt too wide) detected at line 295
 
 [4 <./imagenes/Histograma_ejer_3.png> <./imagenes/Curva de distrubicon_ejer3.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 [5] [6] [7] [8]
-Overfull \hbox (34.50327pt too wide) in paragraph at lines 582--583
+Overfull \hbox (34.50327pt too wide) in paragraph at lines 590--591
 \OT1/cmr/m/n/12 homogenea es necesario emplear el coeficiente de variacion de
  Pearson (que es adimensional),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--603
+Underfull \hbox (badness 10000) in paragraph at lines 609--611
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 626--627
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
 
-<imagenes/triangulo_ejeR_8.png, id=53, 296.90926pt x 211.992pt>
+<imagenes/triangulo_ejeR_8.png, id=54, 296.90926pt x 211.992pt>
 File: imagenes/triangulo_ejeR_8.png Graphic file (type png)
 <use imagenes/triangulo_ejeR_8.png>
-Package pdftex.def Info: imagenes/triangulo_ejeR_8.png  used on input line 679.
+Package pdftex.def Info: imagenes/triangulo_ejeR_8.png  used on input line 687.
 
 (pdftex.def)             Requested size: 207.83505pt x 148.39337pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
 
  []
 
-[10 <./imagenes/triangulo_ejeR_8.png>] [11] [12] (documento_principal.aux
+[10 <./imagenes/triangulo_ejeR_8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 739--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--760
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 760--762
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--768
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 809--812
+
+ []
+
+
+Overfull \hbox (46.862pt too wide) detected at line 825
+\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 n[]ci[] \OMS/cmsy
+/m/n/12   [] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 n[]ci[] \OMS/cmsy/m/n/12 
+  \OT1/cmr/m/n/12 ([] [] \OML/cmm/m/it/12 n[]ci\OT1/cmr/m/n/12 )[] = [] \OMS/cm
+sy/m/n/12   \OT1/cmr/m/n/12 ([])[] = 240[]1434[]
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 832--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--840
+
+ []
+
+[14] (documento_principal.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 5902 strings out of 481261
- 90940 string characters out of 2908374
- 424136 words of memory out of 3000000
- 23051 multiletter control sequences out of 15000+200000
- 413181 words of font info for 58 fonts, out of 3000000 for 9000
+ 5966 strings out of 481261
+ 91890 string characters out of 2908374
+ 425502 words of memory out of 3000000
+ 23110 multiletter control sequences out of 15000+200000
+ 413298 words of font info for 59 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 69i,12n,77p,420b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,12n,77p,436b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm12
 00.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc
@@ -512,12 +584,14 @@ pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.p
 fb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb
 ></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 /home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-home/carlos/.miktex/texmfs/install/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on documento_principal.pdf (12 pages, 422359 bytes).
+/home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
+home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></h
+ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></h
+ome/carlos/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb></home
+/carlos/.miktex/texmfs/install/fonts/type1/public/yhmath/yhcmex.pfb>
+Output written on documento_principal.pdf (14 pages, 450380 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

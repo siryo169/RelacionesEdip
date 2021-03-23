@@ -15,6 +15,7 @@
 \graphicspath{{images/}}
 \usepackage{subcaption}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{eurosym} %Euro, de nada misniños
 
 \theoremstyle{definition}
 \newtheorem{ej}{Ejercicio}
@@ -236,9 +237,11 @@ La distribución de la renta familiar en el año 2003 por comunidades autónomas
     
     \item ¿Cuántas comunidades presentan una renta menor o igual que 12700 euros? ¿Y cuántas superior a 11300 euros?
     
-    12 comunidades presentan una renta menor o igual a 12700€. \hspace{0.2cm} \(N_4 = 12\) \newline \(x_4 \to (11300,12700] \)
-    \newline
-    8 comunidades presentan una renta superior a 11300 euros. \hspace{0.2cm} \(n_4 + n_5 + n_6 = 8\)
+    \(N_4 = 12 ; \qquad I_4 = (11300,12700] \) \newline
+    12 comunidades presentan una renta menor o igual a 12700 \textup{\euro} .
+    
+    \(n_4 + n_5 + n_6 = 8\) \newline
+    8 comunidades presentan una renta superior a 11300 \textup{\euro}.
     
 \end{enumerate}
 
@@ -296,23 +299,28 @@ En una determinada empresa se realiza un estudio sobre la calidad de su producci
     Podemos observar que nos hayamos ante una distribución bimodal.
     \item ¿Cuál es el número mediano de piezas defectuosas por caja?
     Recordemos que la mediana de una distribución es un valor que divide a los individuos de la población en dos efectivos iguales, supuestos ordenados por el valor creciente del carácter.
-    \[
-    x_i \hspace{0.2cm}/ \hspace{0.2cm} N_{i-1} < \frac{n}{2} \leq N_i \rightarrow N_i = \frac{n}{2},\hspace{0.3cm} Me = \frac{x_i+x_{i+1}}{2}=\frac{4+5}{2} = 4.5
-    \]
+    
+    
+    \(x_i\quad/\quad N_{i-1} < \frac{n}{2} \leq N_i \rightarrow N_i = \frac{n}{2}; \quad Me = \frac{x_i+x_{i+1}}{2}=\frac{4+5}{2} = 4.5 \) piezas defectuosas
     
     \item Calcular los cuartiles de la distribución.  Interpretarlos.
     
-    \(x_i\) / \(N_{i-1} < \frac{n}{4} = 25 \leq N_i\). Como en este caso, \(N_3 = 25\), hemos de hacer la media aritmética entre \(x_3\) y \(x_4\): 
+    \(x_i\quad/\quad N_{i-1} <\frac{nr}{100} \leq N_i\).
+    
     \begin{enumerate}[label=]
-    \item \(Q_1 = \frac{2+3}{2} = 2.5 \Rightarrow\) 25 \% de las cajas presentan menos de \(3.5\) piezas defectuosas. \\
-    \item \(Q_2 = Me = 4.5 \Rightarrow\) El 50 \% de las cajas presentan menos de 4.5 piezas defectuosas. \\
-     \item \(x_i\) / \(N_{i-1} < \frac{3n}{4}\leq N_i\ \Rightarrow Q_3 = x_7 = 6 \Rightarrow\) El 75 \% de las cajas presentan 6 o menos piezas defectuosas.
+    \item \(Q_1 = P_{25} \quad \Rightarrow \quad x_i\quad/\quad N_{i-1} <\frac{n}{4} = 25 \leq N_i\).
+    
+    Como en este caso, \(N_3 = 25\), hemos de hacer la media aritmética entre \(x_3\) y \(x_4\).
+    
+    \(Q_1 = \frac{2+3}{2} = 2.5 \Rightarrow\) 25 \% de las cajas presentan \(3.5\) piezas defectuosas o menos. \\
+    \item \(Q_2 = P_{50} = Me = 4.5 \Rightarrow\) El 50 \% de las cajas presentan 4.5 piezas defectuosas o menos. \\
+     \item \(Q_3 = P_{75}\quad \Rightarrow \quad x_i\quad/\quad N_{i-1} < \frac{3n}{4}\leq N_i\\Q_3 = x_7 = 6 \Rightarrow\) El 75 \% de las cajas presentan 6 o menos piezas defectuosas.
     \end{enumerate}
     \item Calcular los deciles de orden 3 y 7. Interpretarlos. 
     
     \begin{enumerate}[label=]
-        \item \(x_i\) / \(N_{i-1} < \frac{3n}{10} \leq N_i \Rightarrow D_3 = 3 \Rightarrow\) El 30\% de las cajas presentan 3 o menos piezas defectuosas.
-        \item \(x_i\) / \(N_{i-1} < \frac{7n}{10} \leq N_i \Rightarrow D_7 = 6 \Rightarrow\) El 70 \% de las cajas presentan 6 o menos piezas defectuosas.
+        \item \(D_3 = P_{30}\quad\Rightarrow\quad x_i\quad/\quad N_{i-1} < \frac{3n}{10} \leq N_i \\D_3 = 3 \Rightarrow\) El 30\% de las cajas presentan 3 o menos piezas defectuosas.
+        \item \(D_7 = P_{70}\quad\Rightarrow\quad x_i\quad/\quad N_{i-1} < \frac{7n}{10} \leq N_i \\D_7 = 6 \Rightarrow\) El 70 \% de las cajas presentan 6 o menos piezas defectuosas.
     \end{enumerate}
     \item Cuantificar la dispersión de la distribución mediante diferentes medidas, interpretando los resultados y señalando las ventajas e inconvenientes de cada una.
     \begin{enumerate}[label=\arabic*)]
@@ -321,7 +329,7 @@ En una determinada empresa se realiza un estudio sobre la calidad de su producci
         \[
         R = x_k - x_1 = 10 - 0 = 10
         \]
-        Esta medida se interpreta como el rango de valores que pueden tomar los individuos de la población en estudio, en nuestro caso sería desde 0 piezas defectuosas hasta 10. Sin embargo, es una medida poco representativa ya que no nos informa sobre cómo se hallan repartidos los individuos de la población en ese rango.
+        Esta medida se interpreta como el rango de modalidades que ha presentado un carácter cuantitativo estudiado en los individuos de una población, en nuestro caso el rango es de 10 piezas defectuosas. Solo necesitamos 2 valores para calcularlo, sin embargo, es una medida poco representativa ya que no nos informa sobre cómo se hallan repartidos los individuos de la población en ese rango.
         \item \textit{Recorrido intercuartílico}.
         \[
         R_I = Q_3 - Q_1 = 3.5
@@ -720,16 +728,44 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
     \hline
     Nº jóvenes & 18 & 31 & 24 & 20 & 17 \\
     \hline
+     $N_{i}$ & 18 & 49 & 73 & 93 & 110 \\
+    \hline
+    $a_{i}$ & 0.05 & 0.1 & 0.1 & 0.1 & 0.1 \\
+    \hline
     \end{tabular}
 \end{center}
 
 \begin{enumerate}[label=\textit{\alph*)}]
     \item Si se considera bajos al 3\% de los individuos de menor altura, ¿cuál es la altura máxima que pueden alcanzar?
-    \item Si se condiera altos al 18\% de los individuos de mayor altura, ¿cuál es su altura mínima?
-    \item ¿Qué altura es superada sólo por 1/4 de los jóvenes?
-    \item Calcular el número de jóvenes cuya altura es superior a 1.75.
-    \item Calcular la altura máxima de los 11 jóvenes más bajos.
+    \\\\
+    Para poder saberlo, es necesario calcular el cuantil $0.03$, que indica la altura por debajo de la cual se halla el $3\%$ de la población estudiada. Deduzcamos la fórmula para los cuantiles:
+  \\ 
+  $1 \ n\alpha = 3.3 \leftarrow$ Como $N_{1} = 18$ es inmediatamente mayor que $n\alpha$, $C_{0.03}$ ha de hallarse en el intervalo $(155,160]$. \\
+    $2$ Si tomamos el tramo de la curva de distribución de $I_{i}$ 
+    $$\frac{a_{i}}{c_{\alpha}-e_{i-1}} = \frac{n_{i}}{n\alpha - N_{i-1}} \longleftrightarrow C_{\alpha} = e_{i-1} + \frac{n\alpha - N_{i-1}}{n_{i}}\alpha_{i}$$
+    Empleamos la formula para $C_{0.03}$ 
+    $$C_{0.03} = 1.55 + \frac{3.3 - 0}{18}0 0.05 = 1.5591\wideparen{6} \approx 1.56 m$$
+    \item Si se condiera altos al 18\% de los individuos de mayor altura, ¿cuál es su altura mínima? \\\\
+    Debemos calcular la altura por debajo de la cual queda el $82\%$ de la población. Repitiendo el proceso anterior empleando la fórmula: 
+    \\
+    1 $n\alpha=90.2 \implies N_{y} = 93$ es inmediatamente mayor que $n\alpha$, $C_{0.82}$ ha de hallarse $I_{y}$:
+    $$C_{0.82} = 1.80 + \frac{90.2 - 73}{20}0.1 = 1.886$$
+    \item ¿Qué altura es superada sólo por 1/4 de los jóvenes? \\\\
+    Como el $\frac{3}{4}$ de los jóvenes no superan esa altura y $\frac{3}{4}=0.75$, hemos de calcular $C_{0.75}$:
+    \\
+    1 $n\alpha = 82.5 \implies C_{0.75}$ ha de hallarse en $I_{4}$:
+    $$C_{0.75} = 1.80 + \frac{82.2 - 73}{20}0.1 = 1.8475$$
+    \item Calcular el número de jóvenes cuya altura es superior a 1.75. \\\\
+    En este caso sería hacer el cuartil inverso, es decir, deducir qué cuantil cumple que $C_{\alpha} = 1.75$ y finalmente calcular $n\alpha$ . Deduciendo que está en $I_{3}$, empleemos la fórmula:
+    $$1.75 = 1.75 + \frac{110\alpha - 49}{24}0.1 \longleftrightarrow \alpha = 0.5\wideparen{54}$$
+    $n\alpha = 110 \cdot 0.5\wideparen{54} = 61$ jóvenes no superan dicha altura y, por tanto, $49$ la superan. \\
+    \item Calcular la altura máxima de los 11 jóvenes más bajos.\\\\
+    $\frac{11}{110} = 0.1 \ \implies$ Se nos pide el cuartil $0.1$, $C_{0.1}$, que se halla en $I_{1}$: \\
+    $C_{0.1} = 1.55 + \frac{11-0}{18}0.05 = 1.580\wideparen{5} \approx 1.58$ m. \\
     \item Calcular la altura mínima de los 11 jóvenes más altos.
+    \\\\
+    $1-\frac{11}{100}=0.9 \implies$ Se nos pide la altura por debajo de la cual se encuentra el $90\%$ de la población, es decir, $C_{0.9}$, que se halla en $I_{5}$: \\
+    $$C_{0.9} = 1.90 + \frac{99-93}{17}0.1 = 1.935394 \ m$$
 \end{enumerate}
 \end{ej}
 
@@ -745,14 +781,65 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
          \hline
          Nº enfermos & 15 & 22 & 48 & 40 & 25 \\ 
          \hline
+    \end{tabular} \\ 
+    \vspace{0.5cm}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
+    \hline
+         Edad & $n_{i}$ & $a_{i}$ & $h_{i}$ & $N_{i}$ & $C_{i}$ & $n_{i}c_{i}$ & $n_{i}c_{i}^2$ & $n_{i}c_{i}^3$ & $n_{i}c_{i}^4$ \\
+         \hline
+         (10,30] & 15 & 20 & 0.75 & 15 & 20 & 300 & 6000 & 120000 & 2400000\\ 
+         \hline
+         (30,40] & 22 & 10 & 2.2 & 37 & 35 & 770 & 26950 & 943250 & 33013750\\ 
+         \hline
+         (40,50] & 48 & 10 & 4.8 & 85 & 45 & 2160 & 97200 & 4374000 & 19683000\\ 
+         \hline
+         (50,60] & 40 & 10 & 4 & 125 & 55 & 2200 & 121000 & 6655000 & 366025000\\ 
+         \hline
+         (60,90] & 25 & 30 & $0.8\wideparen{3}$ & 150 & 75 & 1875 & 140625 & 10546875 & 791015625\\ 
+         \hline
+         & 150 & & & & & 7305 & 391775 & 22639125 & 1389284375 \\ 
     \end{tabular}
 \end{center}
 
 \begin{enumerate}[label=\textit{\alph*)}]
-    \item Calcular la edad más común de los individuos estudiados.
+    \item Calcular la edad más común de los individuos estudiados. \\
+    Se nos está pidiendo la moda, la cual la encontraremos en el intervalo modal, es decir, el intervalo con mayor densidad de frecuencia $h_{i} = \frac{n_{i}}{a_{i}}$. En este caso, $h_{3} > h_{j} \ \forall j \not = 3$ con $j \in \ \{1,\dots,5\}$. Ahora llevamos a cabo la semejanza de triángulos vista en clase sobre un trozo del histograma (el intervalo modal y sus contiguos): \\
+    Con los triángulos semejantes, usaremos la razón base entre altura: 
+    $$\frac{4.8-2.2}{Mo - 40} = \frac{4.8 - 4}{50 - Mo} \longleftrightarrow Mo= 47.647 \ \text{años} $$
     \item Calcular la edad mínima y máxima del 30\% central de los individuos.
-    \item Calcular el recorrido intercuartílico y la desviación típica.
-    \item Calcular e interpretar los valores de los coeficientes de asimetría y curtosis.
+    Lo que se nos pide es equivalente a calcular $C_{0.35}$ y $C_{0.65}$. Emplearemos la fórmula demostrada en el ejercicio anterior: \\
+    1 $n\alpha = 150\cdot0.35 = 52.5 \implies \ C_{0.35}$ estará en $I_{3}$ pues $N_{3}$ es inmediatamente mayor que $n_{\alpha}$ \\
+    $$C_{0.35} = 40 + \frac{52.5 - 37}{48} \cdot 10 = 43.22291\wideparen{6} \text{ años (edad mínima)}$$
+    Y para el cuantil $C_{0.65}$:\\
+    1 $n\alpha = 150\cdot0.65 = 97.5 \implies$ Estará en $I_{4}$ ya que $N_{4}$ es inmediatamente superior a $n\alpha$
+    $$C_{0.65} = 50 + \frac{97.5 - 85}{40} \cdot 10 = 53.125 \text{ años (edad máxima)}$$
+    \item Calcular el recorrido intercuartílico y la desviación típica.\\
+    $R_{I} = Q_{3} - Q_{1} \implies$ Necesitamos hallar los cuartiles 1 y 3 que equivalen a los cuantiles $0.25$ $0.75$. Repetimos el proceso del anterior apartado: \\
+    1 $n\alpha = 150 \cdot 0.25 = 37.5 \implies C_{0.25}$ estará en $I_{3} = (40,50]$ pues $N_{3}$ es inmediatamente mayor que $37.5$
+    $$C_{0.25} = 40 + \frac{37.5-37}{48} \cdot 10 = 40.1041\wideparen{6} \text{años}$$
+    1 $n\alpha = 150 \cdot 0.75 = 112.5 \implies C_{0.75}$ estará en $I_{4} = (50,60]$ pues $N_{4}$ es inmediatamente mayor que $112.5$
+    $$C_{0.75} = 50 + \frac{112.5-85}{40} \cdot 10 = 56.875 \text{años}$$
+    Por lo tanto, $R_{I} = Q_{3} - Q_{1} = 56.875 - 40.1041\wideparen{6} = 16.7708\wideparen{3} \text{años}$ \\
+    Esto significa que todos los datos encontrados en el 50\% central de la distribución se diferencian como máximo en $16.7708\wideparen{3} \text{años}$. \\ 
+    En cuanto a la desviación típica, debemos hallar antes la varianza: 
+    $$\sigma^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - \bar{x}^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - (\frac{1}{n} \sum_{i = 1}^k n_{i}c{i})^2 = \frac{391775}{150}- (\frac{7305}{150})^2 = 240.1434 \text{ años al cuadrado}$$
+    $\sigma = +\sqrt{\sigma^2} = 15.49656$ años $\implies$ Esto significa que la mayoría de los datos de nuestra distribución se hallan en el intervalo $[\bar{x}-\sigma, \bar{x} + \sigma]$.
+    \item Calcular e interpretar los valores de los coeficientes de asimetría y curtosis. \\
+    De asimetría son 3: \\
+    - De Fisher: $\rightarrow  \gamma_{1}(x) = \frac{\mu_{3}}{\sigma_{x}^3}$ \\
+    - De Pearson: 
+    $$A_{p} = \frac{\bar{x}-Mo}{\sigma_{x}}$$
+    $$A_{p^*} = \frac{3(\bar{x}-Me)}{\sigma_{x}}$$
+    \\
+    $$\mu_{3} = m_{3} - 3m_{2}m_{1} + 2m_{1}^3 = \frac{1}{n} \sum n_{i}c{i}^3 - 3\frac{1}{n}\sum n_{i}c{i}^2 \cdot \bar{x} + 2\cdot \bar{x}^3 =$$
+    $$= \frac{22639125}{150} - \frac{3}{150} \cdot 391775 \cdot \frac{7305}{150} + 2 \cdot (\frac{7305}{150})^3 = 341.256$$
+    $$\gamma_{1}(x) = \frac{\mu_{3}}{\sigma_{x}^3} = \frac{341.256}{15.49656^3}= 0.0917 > 0 \implies \text{ Es algo asimétrica por la derecha}$$
+    $$A_{p} = \frac{\bar{x}-Mo}{\sigma_{x}} = \frac{\frac{7305}{150}-47.647}{15.49656} = 0.06795$$
+    Para $A_{p^*}$ nos falta Me: \\
+    1 $n\alpha = 150 \cdot 0.5 = 75 \implies$ Me estará en $I_{3}$ \\
+    $$Me = 40 + \frac{75 - 37}{48}\cdot 10 = 47.91\wideparen{6}$$
+    $$A_{p^*} = \frac{3(\bar{x}-Me)}{\sigma_{x}} = \frac{3\cdot(\frac{7305}{150}-47.91\wideparen{6})}{15.49656} = 0.151647$$
+    
 \end{enumerate}
 \end{ej}
 
