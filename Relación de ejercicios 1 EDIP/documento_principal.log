@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  23 MAR 2021 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  24 MAR 2021 09:55
 entering extended mode
 **./documento_principal.tex
 (documento_principal.tex
@@ -560,7 +560,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 837--840
 
  []
 
-[14] (documento_principal.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--845
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--852
+
+ []
+
+[14] [15] (documento_principal.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
@@ -589,9 +599,9 @@ home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb></home
 /carlos/.miktex/texmfs/install/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on documento_principal.pdf (14 pages, 450380 bytes).
+Output written on documento_principal.pdf (15 pages, 454226 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
