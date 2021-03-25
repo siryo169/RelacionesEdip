@@ -161,7 +161,7 @@ El número de hijos de las familias de una determinada barriada de una ciudad es
         \item Media: Puesto que se pueden sumar el número de hijos y la media es única calculamos su media aritmética.
         
         \[
-        \overline{x} =\frac{0\cdot80 + 1\cdot110 + 2\cdot130 + 3\cdot90 + 4\cdot40 + 5\cdot30 + 6\cdot20}{500} = 2.14 \hspace{0.1cm} \approx 2 \hspace{0.1cm} hijos
+        \overline{x} =\frac{0\cdot80 + 1\cdot110 + 2\cdot130 + 3\cdot90 + 4\cdot40 + 5\cdot30 + 6\cdot20}{500} = 2.142 \hspace{0.1cm} \approx 2 \hspace{0.1cm} hijos
         \]
         
         \item Mediana:
@@ -443,7 +443,7 @@ En una determinada empresa se realiza un estudio sobre la calidad de su producci
         \item \textit{Varianza}
         
         \[
-        \sigma^2 = \frac{\sum_{i=1}^{k}n_ix_i^2}{n} - \overline{x}^2 = \frac{2488}{100} - 4.36^2 = 5.8704
+        \sigma^2 = \frac{\sum_{i=1}^{k}n_ix_i^2}{n} - \overline{x}^2 = \frac{2488}{100} - 4.36^2 = 5.870
         \]
         
         Representa la dispersión de los datos de la distribución respecto de la media en piezas defectuosas al cuadrado.
@@ -451,7 +451,7 @@ En una determinada empresa se realiza un estudio sobre la calidad de su producci
         \item \textit{Desviación típica}.
         
         \[
-        \sigma = 2.422890835
+        \sigma = 2.423
         \]
         
         Representa la dispersión de los datos de la distribución respecto de la media en piezas defectuosas. Esto quiere decir que la mayoría de los datos de la distribución se encuentra entre \(1.9371\) y \(6.78289\) piezas defectuosas.
@@ -461,9 +461,9 @@ En una determinada empresa se realiza un estudio sobre la calidad de su producci
         Ahora hallaremos las medidas de dispersión relativas, las cuales resultan útiles para comparar nuestra distribución con otras que presentan distinta media, desviación típica, etc:
         
         \begin{enumerate}[label=]
-            \item \(R_R = \frac{R}{\overline{x}} = 2.29358\) (Recorrido relativo)
-            \item \(R_{SI} = \frac{Q_3 - Q_1}{Q_3 + Q_1} = 0.41176\) (Recorrido semi-intercuartílico)
-            \item \(C.V(x) = \frac{\sigma}{\overline{x}} = 0.5557\) (Coeficiente de variación de Pearson)
+            \item \(R_R = \frac{R}{\overline{x}} = 2.294\) (Recorrido relativo)
+            \item \(R_{SI} = \frac{Q_3 - Q_1}{Q_3 + Q_1} = 0.412\) (Recorrido semi-intercuartílico)
+            \item \(C.V(x) = \frac{\sigma}{\overline{x}} = 0.556\) (Coeficiente de variación de Pearson)
             \item \(V_{\mu e} = \frac{D_{\mu e}}{\mu_e} = 0.44\dotsc\) (Índice de dispersión respecto a la mediana)
         \end{enumerate}
     \end{enumerate}
@@ -508,21 +508,21 @@ Calcular para cada una de ellas:
         \centering
             \item \(\overline{x}_1 = \frac{12\cdot0.5 + 13\cdot 1.5 + 11 \cdot 2.5 + 8 \cdot 3.5 + 6 \cdot 4.5}{12+13+11+8+6} = 2.16\)
             
-            \item \(\overline{x}_2 = \frac{1 \cdot 0.5 + 6 \cdot 2 + 7 \cdot 4.5 + 12 \cdot 8 + 2 \cdot 11}{1+6+7+12+2} = 5.7857\)
+            \item \(\overline{x}_2 = \frac{1 \cdot 0.5 + 6 \cdot 2 + 7 \cdot 4.5 + 12 \cdot 8 + 2 \cdot 11}{1+6+7+12+2} = 5.786\)
         \end{enumerate}
         
         \item \textit{Media armónica}
         \begin{enumerate}[label=\arabic*.]
-            \item \(H_1 = \frac{12+13+11+8+6}{\frac{12}{0.5} + \frac{12}{1.5} + \frac{11}{2.5} + \frac{8}{3.5} + \frac{6}{4.5}} = 1.2289325 \approx 1.23\)
+            \item \(H_1 = \frac{12+13+11+8+6}{\frac{12}{0.5} + \frac{12}{1.5} + \frac{11}{2.5} + \frac{8}{3.5} + \frac{6}{4.5}} = 1.229 \approx 1.23\)
             
-            \item \(H_2 = \frac{1+6+7+12+2}{\frac{1}{0.5} + \frac{6}{2} + \frac{7}{4.5} + \frac{12}{8} + \frac{2}{11}} = 3.399141631\)
+            \item \(H_2 = \frac{1+6+7+12+2}{\frac{1}{0.5} + \frac{6}{2} + \frac{7}{4.5} + \frac{12}{8} + \frac{2}{11}} = 3.399\)
         \end{enumerate}
         
         \item \textit{Media geométrica}
         \begin{enumerate}[label=\arabic*.]
-            \item \(G_1 = \sqrt[50]{0.5^{12} \cdot 1.5^{13} \cdot 2.5^{11} \cdot 3.5^8 \cdot 4.5^6} = 1.684688918\)
+            \item \(G_1 = \sqrt[50]{0.5^{12} \cdot 1.5^{13} \cdot 2.5^{11} \cdot 3.5^8 \cdot 4.5^6} = 1.685\)
             
-            \item \(G_2 = \sqrt[28]{0.5^1 \cdot 2^6 \cdot 4.5^7 \cdot 8^{12} \cdot 11^2} = 4.769603117\)
+            \item \(G_2 = \sqrt[28]{0.5^1 \cdot 2^6 \cdot 4.5^7 \cdot 8^{12} \cdot 11^2} = 4.770\)
         \end{enumerate}
     \end{enumerate}
     
@@ -621,13 +621,13 @@ Calcular para cada una de ellas:
     \end{align*}
     Por tanto:
     \begin{align*}
-        C_{0.25} = 1 + \frac{0.25 \cdot 50 - 12}{13} \cdot 1 = 1.03846 \\
-        C_{0.75} = 3 + \frac{0.75 \cdot 50 - 36}{8} \cdot 1 = 3.1875
+        C_{0.25} = 1 + \frac{0.25 \cdot 50 - 12}{13} \cdot 1 = 1.038 \\
+        C_{0.75} = 3 + \frac{0.75 \cdot 50 - 36}{8} \cdot 1 = 3.188
     \end{align*}
     
     Así:
     \[
-    R_I = Q_3 - Q_1 = 2.14904
+    R_I = Q_3 - Q_1 = 2.149
     \]
     
     \item
@@ -660,10 +660,10 @@ Calcular para cada una de ellas:
             \sigma^2 = \frac{\sum_{i=1}^{k}n_ic_i^2}{n} - \overline{x}^2  
         \]
         \[
-        \sigma^2 = \frac{12 \cdot 0.5^2 + 13 \cdot 1.5^2 + 11 \cdot 2.5^2 + 8 \cdot 3.5^2 + 6 \cdot 4.5^2}{50} - 2.16^2 = 1.7444
+        \sigma^2 = \frac{12 \cdot 0.5^2 + 13 \cdot 1.5^2 + 11 \cdot 2.5^2 + 8 \cdot 3.5^2 + 6 \cdot 4.5^2}{50} - 2.16^2 = 1.744
         \]
         \[
-        \sigma = 1.32075
+        \sigma = 1.321
         \]
         
         \item
@@ -671,10 +671,10 @@ Calcular para cada una de ellas:
             \sigma^2 = \frac{\sum_{i=1}^{k}n_ic_i^2}{n} - \overline{x}^2  
         \]
         \[
-        \sigma^2 = \frac{1 \cdot 0.5^2 + 6 \cdot 2^2 + 7.4 \cdot 4.5^2 + 12 \cdot 8^2 + 2 \cdot 11^2}{28} - 5.7857^2 = 8.52567551
+        \sigma^2 = \frac{1 \cdot 0.5^2 + 6 \cdot 2^2 + 7.4 \cdot 4.5^2 + 12 \cdot 8^2 + 2 \cdot 11^2}{28} - 5.7857^2 = 8.526
         \]
         \[
-        \sigma = 2.919875941
+        \sigma = 2.920
         \]
     \end{enumerate}
     
@@ -682,11 +682,11 @@ Calcular para cada una de ellas:
     \begin{enumerate}[label=(\arabic*)]
         \item 
         \[
-        C.V_1(x) = \frac{\sigma}{\overline{x}} = 0.611458
+        C.V_1(x) = \frac{\sigma}{\overline{x}} = 0.611
         \]
         \item
         \[
-        C.V_2(x) = \frac{\sigma}{\overline{x}} = 0.50467116
+        C.V_2(x) = \frac{\sigma}{\overline{x}} = 0.505
         \]
     \end{enumerate}
     
@@ -703,7 +703,7 @@ Un móvil efectúa un recorrido de 100 km en dos sentidos. En uno va a una veloc
 Para ello emplearemos la media armónica, pues se usa para promediar datos que son cocientes de dos magnitudes distintas; esto es, magnitudes relativas (en este caso nuestros datos son velocidades, es decir, \(\frac{e}{t}\):
 
 \[
-v_M = \frac{2}{\frac{1}{v_1} + \frac{1}{v_2}} = \frac{2}{\frac{1}{60} + \frac{1}{70}} = 64.61538 \hspace{0.2cm} km/h
+v_M = \frac{2}{\frac{1}{v_1} + \frac{1}{v_2}} = \frac{2}{\frac{1}{60} + \frac{1}{70}} = 64.615 \hspace{0.2cm} km/h
 \]
 \end{ej}
 
@@ -727,7 +727,7 @@ Obtener el rendimiento neto medio en esos cincos años. \\
 Como nuestra variable (la rentabilidad) presenta efectos multiplicativos acumulativos, lo más lógico será emplear la media geométrica:
 
 \[
-G = \sqrt[5]{5 \cdot 6 \cdot 7 \cdot 10 \cdot 12} = 7.5906 \approx 7.6 \% 
+G = \sqrt[5]{1.12 \cdot 1.10 \cdot 1.07 \cdot 1.06 \cdot 1.05} -1= 0.079 \% 
 \]
 
 Así, obtenemos que 7.6 \% es la rentabilidad neta media en esos 5 años.
@@ -781,7 +781,7 @@ Así, observamos que el cuantil buscado está en el intervalo (3,4].
   $$\frac{a_{i}}{c_{\alpha}-e_{i-1}} = \frac{n_{i}}{n\alpha - N_{i-1}} \longleftrightarrow C_{\alpha} = e_{i-1} + \frac{n\alpha - N_{i-1}}{n_{i}}\alpha_{i}$$
 Esta fórmula será usada de aquí en adelante en los ejercicios.
 \[
-C_{0.40} = 4 + \frac{0.4 \cdot 498 -245}{81}\cdot 1 = 3.434567 \hspace{0.2cm} Se \hspace{0.1cm} suspende \hspace{0.1cm} por \hspace{0.1cm} debajo \hspace{0.1cm} de \hspace{0.1cm} dicha \hspace{0.1cm} nota.
+C_{0.40} = 4 + \frac{0.4 \cdot 498 -245}{81}\cdot 1 = 3.435 \hspace{0.2cm} Se \hspace{0.1cm} suspende \hspace{0.1cm} por \hspace{0.1cm} debajo \hspace{0.1cm} de \hspace{0.1cm} dicha \hspace{0.1cm} nota.
 \]
 
 Para el cálculo de la nota máxima en aprobados, notables, sobresalientes, y matrículas hemos de emplear la fórmula obtenida: \\
@@ -795,7 +795,7 @@ C_{0.70} = 6 + \frac{348.6 - 409}{70} \cdot 1 = 5.137142857
 Notables \(\Rightarrow\) Cuantil 0.85 \(\Rightarrow n \cdot 0.85 = 423.3 \Rightarrow\) Buscar en (6,7].
 
 \[
-C_{0.85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.34878
+C_{0.85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.349
 \]
 
 Sobresalientes \(\Rightarrow\) Cuantil 0.95 \(\Rightarrow n \cdot 0.95 = 473.1 \Rightarrow\) Buscar en (7,8].
@@ -843,7 +843,7 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
     Como el $\frac{3}{4}$ de los jóvenes no superan esa altura y $\frac{3}{4}=0.75$, hemos de calcular $C_{0.75}$:
     \\
     1 $n\alpha = 82.5 \implies C_{0.75}$ ha de hallarse en $I_{4}$:
-    $$C_{0.75} = 1.80 + \frac{82.2 - 73}{20}0.1 = 1.8475$$
+    $$C_{0.75} = 1.80 + \frac{82.2 - 73}{20}0.1 = 1.848$$
     \item Calcular el número de jóvenes cuya altura es superior a 1.75. \\\\
     En este caso sería hacer el cuartil inverso, es decir, deducir qué cuantil cumple que $C_{\alpha} = 1.75$ y finalmente calcular $n\alpha$ . Deduciendo que está en $I_{3}$, empleemos la fórmula:
     $$1.75 = 1.75 + \frac{110\alpha - 49}{24}0.1 \longleftrightarrow \alpha = 0.5\wideparen{54}$$
@@ -854,7 +854,7 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
     \item Calcular la altura mínima de los 11 jóvenes más altos.
     \\\\
     $1-\frac{11}{100}=0.9 \implies$ Se nos pide la altura por debajo de la cual se encuentra el $90\%$ de la población, es decir, $C_{0.9}$, que se halla en $I_{5}$: \\
-    $$C_{0.9} = 1.90 + \frac{99-93}{17}0.1 = 1.935394 \ m$$
+    $$C_{0.9} = 1.90 + \frac{99-93}{17}0.1 = 1.935 \ m$$
 \end{enumerate}
 \end{ej}
 
