@@ -728,7 +728,7 @@ Sabemos que el orden es el siguiente:
     \end{tabular}
 \end{center}
 
-Para saber la nota máxima de los suspensos hemos de hallar el cuantil 0.40, es decir la nota por la que está debajo el 40 \% de la población: \(\frac{4n}{10} = 199.2\)
+Para saber la nota máxima de los suspensos hemos de hallar el percentil 40, es decir la nota por la que está debajo el 40 \% de la población: \(\frac{4n}{10} = 199.2\)
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -742,40 +742,42 @@ Para saber la nota máxima de los suspensos hemos de hallar el cuantil 0.40, es 
 \end{tabular}
 \end{center}
 
-Así, observamos que el cuantil buscado está en el intervalo (3,4].
+Así, observamos que el percentil buscado está en el intervalo (3,4].
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.7]{imagenes/triangulo_ejer_9.jpeg}
+    \includegraphics[scale=0.7]{imagenes/triangulo_ejeR_8.png}
 \end{figure}
 
-  $$\frac{a_{i}}{c_{\alpha}-e_{i-1}} = \frac{n_{i}}{n\alpha - N_{i-1}} \longleftrightarrow C_{\alpha} = e_{i-1} + \frac{n\alpha - N_{i-1}}{n_{i}}\alpha_{i}$$
-Esta fórmula será usada de aquí en adelante en los ejercicios.
 \[
-C_{0.40} = 4 + \frac{0.4 \cdot 498 -245}{81}\cdot 1 = 3.434567 \hspace{0.2cm} Se \hspace{0.1cm} suspende \hspace{0.1cm} por \hspace{0.1cm} debajo \hspace{0.1cm} de \hspace{0.1cm} dicha \hspace{0.1cm} nota.
+\frac{a_i}{n_\alpha} = \frac{e_{p\alpha} - p_\alpha}{N_\alpha - n_\alpha} \Longleftrightarrow P_\alpha = e_{p\alpha} + \frac{n_\alpha - N_\alpha}{n_\alpha}a_i
+\]
+
+\[
+P_{40} = 4 + \frac{0.4 \cdot 498 -245}{81}\cdot 1 = 3.434567 \hspace{0.2cm} Se \hspace{0.1cm} suspende \hspace{0.1cm} por \hspace{0.1cm} debajo \hspace{0.1cm} de \hspace{0.1cm} dicha \hspace{0.1cm} nota.
 \]
 
 Para el cálculo de la nota máxima en aprobados, notables, sobresalientes, y matrículas hemos de emplear la fórmula obtenida: \\
 
-Aprobados \(\Rightarrow\) cuantil 0.70 \(\Rightarrow n \cdot 0.7= 348.6 \Rightarrow\) La nota máxima de los aprobados está en el intervalo (5,6].
+Aprobados \(\Rightarrow\) Percentil 70 \(\Rightarrow \frac{7n}{100} = 348.6 \Rightarrow\) La nota máxima de los aprobados está en el intervalo (5,6].
 
 \[
-C_{0.70} = 6 + \frac{348.6 - 409}{70} \cdot 1 = 5.137142857
+P_{70} = 6 + \frac{348.6 - 409}{70} \cdot 1 = 5.137142857
 \]
 
-Notables \(\Rightarrow\) Cuantil 0.85 \(\Rightarrow n \cdot 0.85 = 423.3 \Rightarrow\) Buscar en (6,7].
+Notables \(\Rightarrow\) Percentil 85 \(\Rightarrow \frac{85n}{100} = 423.3 \Rightarrow\) Buscar en (6,7].
 
 \[
-C_{0.85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.34878
+P_{85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.34878
 \]
 
-Sobresalientes \(\Rightarrow\) Cuantil 0.95 \(\Rightarrow n \cdot 0.95 = 473.1 \Rightarrow\) Buscar en (7,8].
+Sobresalientes \(\Rightarrow\) Percentil 95 \(\Rightarrow \frac{95n}{100} = 473.1 \Rightarrow\) Buscar en (7,8].
 
 \[
-C_{0.95} = 8 + \frac{473.1 - 478}{28} \cdot 1 = 7.825
+P_{95} = 8 + \frac{473.1 - 478}{28} \cdot 1 = 7.825
 \]
 
-Matrículas \(\Rightarrow\) Es obvio, pues el cuantil 1 es \(C_{1} = 10\)
+Matrículas \(\Rightarrow\) Es obvio, pues el percentil 100 es \(P_{100} = 10\)
 \end{ej}
 
 \begin{ej}
@@ -802,7 +804,7 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
   \\ 
   $1 \ n\alpha = 3.3 \leftarrow$ Como $N_{1} = 18$ es inmediatamente mayor que $n\alpha$, $C_{0.03}$ ha de hallarse en el intervalo $(155,160]$. \\
     $2$ Si tomamos el tramo de la curva de distribución de $I_{i}$ 
-    \\
+    $$\frac{a_{i}}{c_{\alpha}-e_{i-1}} = \frac{n_{i}}{n\alpha - N_{i-1}} \longleftrightarrow C_{\alpha} = e_{i-1} + \frac{n\alpha - N_{i-1}}{n_{i}}\alpha_{i}$$
     Empleamos la formula para $C_{0.03}$ 
     $$C_{0.03} = 1.55 + \frac{3.3 - 0}{18}0 0.05 = 1.5591\wideparen{6} \approx 1.56 m$$
     \item Si se condiera altos al 18\% de los individuos de mayor altura, ¿cuál es su altura mínima? \\\\
@@ -864,22 +866,10 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
 \begin{enumerate}[label=\textit{\alph*)}]
     \item Calcular la edad más común de los individuos estudiados. \\
     Se nos está pidiendo la moda, la cual la encontraremos en el intervalo modal, es decir, el intervalo con mayor densidad de frecuencia $h_{i} = \frac{n_{i}}{a_{i}}$. En este caso, $h_{3} > h_{j} \ \forall j \not = 3$ con $j \in \ \{1,\dots,5\}$. Ahora llevamos a cabo la semejanza de triángulos vista en clase sobre un trozo del histograma (el intervalo modal y sus contiguos): \\
-    
-    \begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.7]{imagenes/grafica_moda.jpeg}
-	\end{figure}
-	
-    Con los triángulos semejantes, usaremos la razón base entre altura (el dibujo no está a escala): \\
+    Con los triángulos semejantes, usaremos la razón base entre altura: 
     $$\frac{4.8-2.2}{Mo - 40} = \frac{4.8 - 4}{50 - Mo} \longleftrightarrow Mo= 47.647 \ \text{años} $$
-    \item Calcular la edad mínima y máxima del 30\% central de los individuos.\\
-    
-    \begin{figure}[h!]
-    \centering
-    \includegraphics[scale=2.5]{imagenes/30_central_ej_10.jpeg}
-	´\end{figure}
-
-    Lo que se nos pide es equivalente a calcular $C_{0.35}$ y $C_{0.65}$. Emplearemos la fórmula demostrada en el ejercicio 8: \\
+    \item Calcular la edad mínima y máxima del 30\% central de los individuos.
+    Lo que se nos pide es equivalente a calcular $C_{0.35}$ y $C_{0.65}$. Emplearemos la fórmula demostrada en el ejercicio anterior: \\
     1 $n\alpha = 150\cdot0.35 = 52.5 \implies \ C_{0.35}$ estará en $I_{3}$ pues $N_{3}$ es inmediatamente mayor que $n_{\alpha}$ \\
     $$C_{0.35} = 40 + \frac{52.5 - 37}{48} \cdot 10 = 43.22291\wideparen{6} \text{ años (edad mínima)}$$
     Y para el cuantil $C_{0.65}$:\\
@@ -888,11 +878,11 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
     \item Calcular el recorrido intercuartílico y la desviación típica.\\
     $R_{I} = Q_{3} - Q_{1} \implies$ Necesitamos hallar los cuartiles 1 y 3 que equivalen a los cuantiles $0.25$ $0.75$. Repetimos el proceso del anterior apartado: \\
     1 $n\alpha = 150 \cdot 0.25 = 37.5 \implies C_{0.25}$ estará en $I_{3} = (40,50]$ pues $N_{3}$ es inmediatamente mayor que $37.5$
-    $$C_{0.25} = 40 + \frac{37.5-37}{48} \cdot 10 = 40.1041\wideparen{6} \text{ años}$$
+    $$C_{0.25} = 40 + \frac{37.5-37}{48} \cdot 10 = 40.1041\wideparen{6} \text{años}$$
     1 $n\alpha = 150 \cdot 0.75 = 112.5 \implies C_{0.75}$ estará en $I_{4} = (50,60]$ pues $N_{4}$ es inmediatamente mayor que $112.5$
-    $$C_{0.75} = 50 + \frac{112.5-85}{40} \cdot 10 = 56.875 \text{ años}$$
-    Por lo tanto, $R_{I} = Q_{3} - Q_{1} = 56.875 - 40.1041\wideparen{6} = 16.7708\wideparen{3} \text{ años}$ \\
-    Esto significa que todos los datos encontrados en el 50\% central de la distribución se diferencian como máximo en $16.7708\wideparen{3} \text{ años}$. \\ 
+    $$C_{0.75} = 50 + \frac{112.5-85}{40} \cdot 10 = 56.875 \text{años}$$
+    Por lo tanto, $R_{I} = Q_{3} - Q_{1} = 56.875 - 40.1041\wideparen{6} = 16.7708\wideparen{3} \text{años}$ \\
+    Esto significa que todos los datos encontrados en el 50\% central de la distribución se diferencian como máximo en $16.7708\wideparen{3} \text{años}$. \\ 
     En cuanto a la desviación típica, debemos hallar antes la varianza: 
     $$\sigma^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - \bar{x}^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - (\frac{1}{n} \sum_{i = 1}^k n_{i}c{i})^2 = \frac{391775}{150}- (\frac{7305}{150})^2 = 240.1434 \text{ años al cuadrado}$$
     $\sigma = +\sqrt{\sigma^2} = 15.49656$ años $\implies$ Esto significa que la mayoría de los datos de nuestra distribución se hallan en el intervalo $[\bar{x}-\sigma, \bar{x} + \sigma]$.
@@ -918,7 +908,7 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
     $$= \frac{1389284375}{150}-4 \cdot\frac{1}{150}\cdot(22639125)\cdot\frac{7305}{150} + 6\cdot(\frac{7305}{150})^2\cdot\frac{1}{150}\cdot 391775 - 3\cdot (\frac{7305}{150})^4 =153232.46$$
     $$\gamma_{2}(x) = \frac{\mu_{4}}{\sigma^4} - 3=\frac{153232.46}{15.49656^2} - 3 = -0.3429 < 0$$
     La distribución es platicúrtica, es decir, presenta una menor concentración central de frecuencias que una normal de su misma media y desviación típica (está más aplanada que la curva normal y los datos están más dispersos). \\
-    De Kelley: $\frac{1}{2} \cdot \frac{Q_{3}-Q_{1}}{D_{9}-D_{1}} - 0.263$, como ya tenemos $Q_{1}$ y $Q_{3}$, debemos calcular $D_{1} =  C_{0.1}$ y $D_{9} = C_{0.9}$: \\
+    De Kelley: $\frac{1}{2} \cdot \frac{Q_{3}-Q_{1}}{D_{9}-D_{1}} - 0.263$, como ya tenemos $Q_{1}$ y $Q_{3}$, debemos calcuñar $D_{1} =  C_{0.1}$ y $D_{9} = C_{0.9}$: \\
     1 $n\alpha = 15 \implies C_{0.1}$ coincide justamente con el extremo superior de $I_{1} = (10,30]$, es decir, 30 años. \\
     1 $n\alpha = 135 \implies C_{0.9}$ ha de hallarse en $I_{5} = (60,90]$ ya que $N_{5}$ es inmediatamente mayor que 135. Aplicamos la fórmula demostrada: \\
     $$C_{0.9} = 60 + \frac{135 -125}{25}\cdot30 = 72 \text{ años}$$
