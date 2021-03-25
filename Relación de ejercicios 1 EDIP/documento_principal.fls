@@ -378,12 +378,13 @@ INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex
 INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/yhmath/yhcmex10.tfm
+OUTPUT documento_principal.pdf
+INPUT /home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map
 INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/cm/cmti12.tfm
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
 INPUT imagenes/Diagrama_barras_ejer1.JPG
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
-OUTPUT documento_principal.pdf
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
 INPUT ./imagenes/Diagrama_barras_ejer1.JPG
@@ -395,7 +396,8 @@ INPUT ./imagenes/Curva de distrubicon_ejer1.png
 INPUT ./imagenes/Curva de distrubicon_ejer1.png
 INPUT ./imagenes/Curva de distrubicon_ejer1.png
 INPUT ./imagenes/Curva de distrubicon_ejer1.png
-INPUT /home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map
+INPUT /home/carlos/.miktex/texmfs/install/fonts/vf/public/yhmath/yhcmex10.vf
+INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/yhmath/yrcmex10.tfm
 INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./imagenes/Histograma_Ej_2.png
 INPUT ./imagenes/Histograma_Ej_2.png
@@ -411,8 +413,6 @@ INPUT ./imagenes/Curva de distrubicon_ejer2.png
 INPUT ./imagenes/Curva de distrubicon_ejer2.png
 INPUT ./imagenes/Curva de distrubicon_ejer2.png
 INPUT ./imagenes/Curva de distrubicon_ejer2.png
-INPUT /home/carlos/.miktex/texmfs/install/fonts/vf/public/yhmath/yhcmex10.vf
-INPUT /home/carlos/.miktex/texmfs/install/fonts/tfm/public/yhmath/yrcmex10.tfm
 INPUT ./imagenes/Histograma_ejer_3.png
 INPUT ./imagenes/Histograma_ejer_3.png
 INPUT imagenes/Histograma_ejer_3.png

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  25 MAR 2021 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.3.21)  25 MAR 2021 13:19
 entering extended mode
 **./documento_principal.tex
 (documento_principal.tex
@@ -376,200 +376,221 @@ LaTeX Font Info:    Trying to load font information for OMX+yhex on input line
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-<imagenes/Diagrama_barras_ejer1.JPG, id=1, 361.35pt x 216.20775pt>
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 72--73
+ [] 
+ []
+
+[1
+
+{/home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 91--92
+ [] 
+ []
+
+
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 129--130
+ [] 
+ []
+
+<imagenes/Diagrama_barras_ejer1.JPG, id=9, 361.35pt x 216.20775pt>
 File: imagenes/Diagrama_barras_ejer1.JPG Graphic file (type jpg)
 <use imagenes/Diagrama_barras_ejer1.JPG>
 Package pdftex.def Info: imagenes/Diagrama_barras_ejer1.JPG  used on input line
- 85.
+ 135.
 (pdftex.def)             Requested size: 217.66211pt x 130.23369pt.
-<imagenes/Curva de distrubicon_ejer1.png, id=2, 570.33075pt x 278.2395pt>
+<imagenes/Curva de distrubicon_ejer1.png, id=10, 570.33075pt x 278.2395pt>
 File: imagenes/Curva de distrubicon_ejer1.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer1.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer1.png  used on input
- line 89.
+ line 139.
 (pdftex.def)             Requested size: 217.66211pt x 106.18639pt.
- [1
 
-{/home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map} <./imagenes/Diagram
-a_barras_ejer1.JPG> <./imagenes/Curva de distrubicon_ejer1.png>]
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 99.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 105.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 111.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
-<imagenes/Histograma_Ej_2.png, id=20, 1364.09625pt x 767.86874pt>
+Overfull \hbox (14.63324pt too wide) in paragraph at lines 157--158
+ [] 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
+(Font)              using `OT1/cmr/m/sc' instead on input line 161.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
+(Font)              using `OT1/cmr/m/sc' instead on input line 167.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
+(Font)              using `OT1/cmr/m/sc' instead on input line 173.
+
+[3 <./imagenes/Diagrama_barras_ejer1.JPG> <./imagenes/Curva de distrubicon_ejer
+1.png>] [4]
+<imagenes/Histograma_Ej_2.png, id=27, 1364.09625pt x 767.86874pt>
 File: imagenes/Histograma_Ej_2.png Graphic file (type png)
 <use imagenes/Histograma_Ej_2.png>
-Package pdftex.def Info: imagenes/Histograma_Ej_2.png  used on input line 164.
+Package pdftex.def Info: imagenes/Histograma_Ej_2.png  used on input line 226.
 (pdftex.def)             Requested size: 217.66211pt x 122.52171pt.
-<imagenes/Curva de distrubicon_ejer2.png, id=22, 370.38374pt x 232.4685pt>
+<imagenes/Curva de distrubicon_ejer2.png, id=29, 370.38374pt x 232.4685pt>
 File: imagenes/Curva de distrubicon_ejer2.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer2.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer2.png  used on input
- line 168.
+ line 230.
 (pdftex.def)             Requested size: 217.66211pt x 136.61604pt.
 
-Overfull \hbox (29.57849pt too wide) detected at line 202
+Overfull \hbox (29.57849pt too wide) detected at line 264
 []
  []
 
-[3 <./imagenes/Histograma_Ej_2.png> <./imagenes/Curva de distrubicon_ejer2.png>
+[5 <./imagenes/Histograma_Ej_2.png> <./imagenes/Curva de distrubicon_ejer2.png>
 ]
-<imagenes/Histograma_ejer_3.png, id=28, 413.1435pt x 203.5605pt>
+<imagenes/Histograma_ejer_3.png, id=35, 413.1435pt x 203.5605pt>
 File: imagenes/Histograma_ejer_3.png Graphic file (type png)
 <use imagenes/Histograma_ejer_3.png>
-Package pdftex.def Info: imagenes/Histograma_ejer_3.png  used on input line 229
+Package pdftex.def Info: imagenes/Histograma_ejer_3.png  used on input line 291
 .
 (pdftex.def)             Requested size: 217.66211pt x 107.24359pt.
-<imagenes/Curva de distrubicon_ejer3.png, id=29, 403.5075pt x 247.52475pt>
+<imagenes/Curva de distrubicon_ejer3.png, id=36, 403.5075pt x 247.52475pt>
 File: imagenes/Curva de distrubicon_ejer3.png Graphic file (type png)
 <use imagenes/Curva de distrubicon_ejer3.png>
 Package pdftex.def Info: imagenes/Curva de distrubicon_ejer3.png  used on input
- line 233.
+ line 295.
 (pdftex.def)             Requested size: 217.66211pt x 133.52162pt.
 
-Overfull \hbox (5.91127pt too wide) in paragraph at lines 252--253
+Overfull \hbox (5.91127pt too wide) in paragraph at lines 314--315
 []\OT1/cmr/bx/n/12 Ejercicio 4. []\OT1/cmr/m/n/12 En una determinada empresa se
  realiza un estudio sobre la calidad de su produccion.
  []
 
 
-Overfull \hbox (8.3006pt too wide) detected at line 298
+Overfull \hbox (8.3006pt too wide) detected at line 360
 \OML/cmm/m/it/12 n[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 n[] \OT1/cmr/m/n/12 = 1
 6 \OML/cmm/m/it/12 M[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 =
  5 \OML/cmm/m/it/12 piezas defectuosas M[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x
 [] \OT1/cmr/m/n/12 = 6 \OML/cmm/m/it/12 piezas defectuosas
  []
 
-[4 <./imagenes/Histograma_ejer_3.png> <./imagenes/Curva de distrubicon_ejer3.pn
+[6 <./imagenes/Histograma_ejer_3.png> <./imagenes/Curva de distrubicon_ejer3.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-[5] [6] [7] [8]
-Overfull \hbox (34.50327pt too wide) in paragraph at lines 590--591
+[7] [8] [9] [10]
+Overfull \hbox (34.50327pt too wide) in paragraph at lines 652--653
 \OT1/cmr/m/n/12 homogenea es necesario emplear el coeficiente de variacion de
  Pearson (que es adimensional),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--611
+Underfull \hbox (badness 10000) in paragraph at lines 671--673
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
-
- []
-
-<imagenes/triangulo_ejer_9.jpeg, id=54, 494.84875pt x 353.32pt>
-File: imagenes/triangulo_ejer_9.jpeg Graphic file (type jpg)
-<use imagenes/triangulo_ejer_9.jpeg>
-Package pdftex.def Info: imagenes/triangulo_ejer_9.jpeg  used on input line 687
-.
-(pdftex.def)             Requested size: 346.39177pt x 247.32231pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 696--697
 
  []
 
-[10 <./imagenes/triangulo_ejer_9.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 737--745
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 746--750
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 751--755
-
- []
-
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 756--758
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--760
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--763
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--763
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 763--766
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 763--766
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 803--805
-
- []
-
-<imagenes/grafica_moda.jpeg, id=64, 494.84875pt x 353.32pt>
-File: imagenes/grafica_moda.jpeg Graphic file (type jpg)
-<use imagenes/grafica_moda.jpeg>
-Package pdftex.def Info: imagenes/grafica_moda.jpeg  used on input line 808.
+<imagenes/triangulo_ejer_9.jpeg, id=60, 494.84875pt x 353.32pt>
+File: imagenes/triangulo_ejer_9.jpeg Graphic file (type jpg)
+<use imagenes/triangulo_ejer_9.jpeg>
+Package pdftex.def Info: imagenes/triangulo_ejer_9.jpeg  used on input line 749
+.
 (pdftex.def)             Requested size: 346.39177pt x 247.32231pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--812
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+ []
+
+[12 <./imagenes/triangulo_ejer_9.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 799--807
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--814
+Underfull \hbox (badness 10000) in paragraph at lines 808--812
 
  []
 
-<imagenes/30_central_ej_10.jpeg, id=65, 81.1833pt x 17.3448pt>
-File: imagenes/30_central_ej_10.jpeg Graphic file (type jpg)
-<use imagenes/30_central_ej_10.jpeg>
-Package pdftex.def Info: imagenes/30_central_ej_10.jpeg  used on input line 817
-.
-(pdftex.def)             Requested size: 202.95776pt x 43.36185pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--817
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 818--820
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 820--822
 
  []
 
-[13 <./imagenes/grafica_moda.jpeg> <./imagenes/30_central_ej_10.jpeg>]
-Overfull \hbox (46.862pt too wide) detected at line 835
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--828
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 865--867
+
+ []
+
+<imagenes/grafica_moda.jpeg, id=71, 494.84875pt x 353.32pt>
+File: imagenes/grafica_moda.jpeg Graphic file (type jpg)
+<use imagenes/grafica_moda.jpeg>
+Package pdftex.def Info: imagenes/grafica_moda.jpeg  used on input line 870.
+(pdftex.def)             Requested size: 346.39177pt x 247.32231pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 873--874
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 875--876
+
+ []
+
+<imagenes/30_central_ej_10.jpeg, id=72, 81.1833pt x 17.3448pt>
+File: imagenes/30_central_ej_10.jpeg Graphic file (type jpg)
+<use imagenes/30_central_ej_10.jpeg>
+Package pdftex.def Info: imagenes/30_central_ej_10.jpeg  used on input line 879
+.
+(pdftex.def)             Requested size: 202.95776pt x 43.36185pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--884
+
+ []
+
+[15 <./imagenes/grafica_moda.jpeg> <./imagenes/30_central_ej_10.jpeg>]
+Overfull \hbox (46.862pt too wide) detected at line 897
 \OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 n[]ci[] \OMS/cmsy
 /m/n/12   [] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 n[]ci[] \OMS/cmsy/m/n/12 
   \OT1/cmr/m/n/12 ([] [] \OML/cmm/m/it/12 n[]ci\OT1/cmr/m/n/12 )[] = [] \OMS/cm
@@ -577,37 +598,37 @@ sy/m/n/12   \OT1/cmr/m/n/12 ([])[] = 240[]1434[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 842--844
+Underfull \hbox (badness 10000) in paragraph at lines 904--906
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 847--850
+Underfull \hbox (badness 10000) in paragraph at lines 909--912
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 851--855
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 913--917
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--862
+Underfull \hbox (badness 10000) in paragraph at lines 919--924
 
  []
 
-[15] (documento_principal.aux
+[17] (documento_principal.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 5980 strings out of 481261
- 92272 string characters out of 2908374
- 424502 words of memory out of 3000000
- 23121 multiletter control sequences out of 15000+200000
+ 5983 strings out of 481261
+ 92311 string characters out of 2908374
+ 424511 words of memory out of 3000000
+ 23124 multiletter control sequences out of 15000+200000
  413298 words of font info for 59 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 69i,12n,77p,436b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,12n,77p,436b,670s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm12
 00.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc
@@ -625,9 +646,9 @@ home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb></home
 /carlos/.miktex/texmfs/install/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on documento_principal.pdf (15 pages, 464482 bytes).
+Output written on documento_principal.pdf (17 pages, 469685 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

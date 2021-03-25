@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1616673126 "documento_principal.tex" "documento_principal.pdf" "documento_principal" 1616673126
+["pdflatex"] 1616674751 "documento_principal.tex" "documento_principal.pdf" "documento_principal" 1616674752
   "/home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1616316867 14064 a3eb088579ac1d73f4b2888429102b85 ""
   "/home/carlos/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1616316865 6307227 0d257d871b7606c2f093101d09f49ecf ""
   "/home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map" 1616497929 81135 2acc387b11fc5b66d34400c44f0cac1d ""
@@ -80,8 +80,8 @@
   "/home/carlos/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1616238893 57049 74963e80d77be39a0b7442967b27c75b ""
   "/home/carlos/.miktex/texmfs/install/tex/latex/yhmath/OMXyhex.fd" 1616239435 433 10a0b79c081c089c992d0b479dfa3166 ""
   "/home/carlos/.miktex/texmfs/install/tex/latex/yhmath/yhmath.sty" 1616239435 4974 781520532e2758ee5c0cb9fe28b8aa9d ""
-  "documento_principal.aux" 1616673126 265 4c9e86c7249487c1118894a0a457a9bc "pdflatex"
-  "documento_principal.tex" 1616673126 39149 817f92044f3d80da5a9f37d146d7eb7c ""
+  "documento_principal.aux" 1616674752 295 ec1772b40e21f26d71d5b4a2bfb51e47 "pdflatex"
+  "documento_principal.tex" 1616674750 42603 73d0d6629a1ebecd3ebf95a84d367efb ""
   "imagenes/30_central_ej_10.jpeg" 1616671816 6647 e016484ec649686a90ecb4204ce4e99e ""
   "imagenes/Curva de distrubicon_ejer1.png" 1616494074 46709 29ee1f6886352c236f679623bf6ef3bb ""
   "imagenes/Curva de distrubicon_ejer2.png" 1616494074 43533 f359280f8794dd0deea09d9d9b5abce6 ""

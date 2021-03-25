@@ -58,8 +58,39 @@ El número de hijos de las familias de una determinada barriada de una ciudad es
     \end{align*}
 \end{table}
 
+\textbf{Conceptos:}
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población\label{poblacion}: Es el conjunto de unidades o elementos con alguna/s característica/s en común, sobre el que se desea obtener cierta información. En este caso las familias de una determinada barriada de una ciudad.
+        \item Tamaño de la población: 500.
+        \item Variable estadística: Es toda propiedad que se desea estudiar en la población y que debe poder ser observada sobre todos y cada uno de los individuos que la componen. En este caso el número de hijos de cada familia.
+        \item Modalidades: Es una de todas las formas posibles en que la característica estadística que se estudia puede presentarse en la población. Cada individuo solo puede presentar una modalidad. En el ejercicio son todas las distintas \(x_i\). En este caso son 0, 1, 2, 3, 4, 5, o 6 hijos.
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+
+\newpage
+
 \begin{enumerate}[label=\textit{\alph*})]
     \item Completar la tabla de frecuencias.
+    
+       En toda tabla de una variable estadística discreta (y siempre que las modalidades se puedan ordenar) podemos identificar: 
+    \begin{center}
+    \fbox{
+    \begin{minipage}[h]{1\linewidth}
+    \begin{itemize}
+        \item Frecuencia absoluta del valor o modalidad \(x_i\) (\(n_i\)): Número total de individuos en la población que presenta dicho valor (modalidad). 
+        \item Frecuencia relativa del valor o modalidad \(x_i\) (\(f_i\)): Proporción del número de individuos que presenta dicho valor (modalidad).
+        \item Frecuencia absoluta acumulada del valor o modalidad \(x_i\) (\(N_i\)): Número de individuos que presentan un valor (modalidad) menor o igual que \(x_i\).
+        \item Frecuencia relativa acumulada del valor o modalidad \(x_i\) (\(F_i\)): Proporción de individuos que presentan un valor (modalidad) menor o igual que \(x_i\).
+    \end{itemize}
+    \end{minipage}
+    }
+    \end{center}
+    
     
     \begin{center}
     \begin{tabular}{|c|c|c|c|}
@@ -79,6 +110,25 @@ El número de hijos de las familias de una determinada barriada de una ciudad es
     
     \item Representar la distribución mediante un diagrama de barras y la curva de distribución.
     
+    \begin{center}
+    \fbox{
+    \begin{minipage}[h]{1\linewidth}
+    \begin{itemize}
+        \item Diagrama de barras: Se trata de una representación en un sistema de ejes cartesianos donde el eje de abscisas presenta los valores de la variable, y se trazan barras verticales con longitudes proporcionales a sus frecuencias (absolutas o relativas). 
+        \item Es la función definida para cada número real, x, como la proporción de datos menores o iguales que \(x\). 
+        \[
+        f(x)= \left\{ \begin{array}{lcc}
+             0 \hspace{0.3cm} \forall x < x_1  & & \\
+             \dfrac{\sum_{j=1}^in_j}{n} = \sum_{j=1}^if_j = \dfrac{N_i}{n} = F_i \hspace{0.3cm} \forall x \hspace{0.2cm} / \hspace{0.2cm} x_i \leq x < x_{i+1} \\
+             1 \hspace{0.2cm} \forall x \geq x_k
+             \end{array}
+   \right.
+        \]
+    \end{itemize}
+    \end{minipage}
+    }
+    \end{center}
+    
     \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.45\linewidth}
@@ -94,6 +144,18 @@ El número de hijos de las familias de una determinada barriada de una ciudad es
     \newpage
     
     \item Promediar los valores de la variable mediante diferentes medidas. Interprétalas.
+    
+    \begin{center}
+    \fbox{
+    \begin{minipage}[h]{1\linewidth}
+    \begin{itemize}
+        \item Media: Medida de tendencia central que representa el valor promedio que más se ajusta a la distribución de los datos observados en la población.
+        \item Mediana: Medida de posición que divide a los individuos de la población en dos efectivos iguales, supuestos ordenados por valor creciente del carácter.
+        \item Moda: Medida de posición que determina la modalidad de mayor frecuencia (absoluta o relativa), la que más se repite.
+    \end{itemize}
+    \end{minipage}
+    }
+    \end{center}
     
     \begin{enumerate}[label=\textit{\roman*})]
         \item Media: Puesto que se pueden sumar el número de hijos y la media es única calculamos su media aritmética.
