@@ -2,6 +2,7 @@
 
 \usepackage{amsmath} %Todos los paquetes de matematicas
 \usepackage{amsthm}
+\usepackage{mathtools}
 \providecommand{\abs}[1]{\lvert#1\rvert}
 \providecommand{\norm}[1]{\lVert#1\rVert}
 \usepackage{yhmath}
@@ -307,6 +308,8 @@ La distribución de la renta familiar en el año 2003 por comunidades autónomas
     \end{minipage}
     }
 \end{center}
+
+\(\ast\) \textit{Cabe mencionar que el enunciado de este ejercicio no es del todo preciso, primero porque el número de comunidades autónomas que componen el Estado Español es 17 no 18 (de ahí que se considere a Ceuta y Melilla) y además la variable que se ha medido se supone que es le renta familiar \textbf{media} de las familias no la renta familiar a secas.} 
 
 \begin{enumerate}[label=\textit{\alph*)}]
     \item Completar la tabla.
@@ -868,6 +871,19 @@ Calcular para cada una de ellas:
 Un móvil efectúa un recorrido de 100 km en dos sentidos. En uno va a una velocidad constante de \(V_1 = 60\) km/h y en el otro va a una velocidad constante de \(V_2 = 70\) km/h. Calcular la velocidad media del recorrido. 
 \newline
 
+\begin{center}
+            \fbox{
+            \begin{minipage}[h!]{1\linewidth}
+            \begin{itemize}
+                \item Población: trayectos realizados por un móvil en un espacio de tiempo.
+                \item Tamaño de la población: 2 trayectos.
+                \item Variable estadística: la velocidad del móvil en cada uno de los trayectos
+                \item Modalidades: presenta 2; \(60 \hspace{0.2cm} km/h\) y \(70 \hspace{0.2cm} km/h\).
+            \end{itemize}
+            \end{minipage}
+            }
+    \end{center}
+
 Para ello emplearemos la media armónica, pues se usa para promediar datos que son cocientes de dos magnitudes distintas; esto es, magnitudes relativas (en este caso nuestros datos son velocidades, es decir, \(\frac{e}{t}\):
 
 \[
@@ -894,13 +910,26 @@ Las acciones de una empresa han producido los siguientes rendimientos netos anua
 
 Obtener el rendimiento neto medio en esos cincos años. \\
 
+\begin{center}
+            \fbox{
+            \begin{minipage}[h!]{1\linewidth}
+            \begin{itemize}
+                \item Población: los distintos años a estudiar de la empresa.
+                \item Tamaño de la población: 5 años.
+                \item Variable estadística: la rentabilidad de las acciones de dicha empresa cada año.
+                \item Modalidades: presenta 5. 12 \%, 10 \%; 7 \%, 6 \%, 5 \%.
+            \end{itemize}
+            \end{minipage}
+            }
+    \end{center}
+
 Como nuestra variable (la rentabilidad) presenta efectos multiplicativos acumulativos, lo más lógico será emplear la media geométrica:
 
 \[
 G = \sqrt[5]{1.12 \cdot 1.10 \cdot 1.07 \cdot 1.06 \cdot 1.05} -1= 0.079 \quad de \quad rentabilidad
 \]
 
-Así, obtenemos que 0.079 es la rentabilidad neta media en esos 5 años.
+Así, observamos que el rendimiento neto medio entre 1994 y 1998 es del 7,97 \%.
 \end{ej}
 
 \begin{ej}
@@ -918,6 +947,21 @@ Un profesor califica a sus alumnos según el criterio siguiente: 40\% de suspens
 
 Calcular las notas máximas para obtener cada una de las calificaciones. \\
 
+\bigskip
+\textbf{Conceptos:}
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población\label{poblacion}: alumnos que cierto profesor ha calificado
+        \item Tamaño de la población: \(n = 498\)
+        \item Variable estadística (X): nota obtenida por cada alumno
+        \item Modalidades: intervalos de amplitud 1 que van de 0 a 10; (10 modalidades)
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+\bigskip
 Sabemos que el orden es el siguiente:
 
 \begin{center}
@@ -934,7 +978,7 @@ Para saber la nota máxima de los suspensos hemos de hallar el cuantil 0.40, es 
 \hline
      & \((0,1]\) & \((1,2]\) & \((2,3]\) & \((3,4]\) & \((4,5]\) & \((5,6]\) & \((6,7]\) & \((7,8]\) & \((8,9]\) & \((9,10]\) \\
      \hline
-     & 34 & 74 & 56 & 81 & 94 & 70 & 41 & 28 & 16 & 4 \\
+     \(n_i\) & 34 & 74 & 56 & 81 & 94 & 70 & 41 & 28 & 16 & 4 \\
      \hline
      \(N_i\) & 34 & 108 & 164 & 245 & 339 & 409 & 450 & 478 & 494 & 498 \\
      \hline
@@ -959,13 +1003,13 @@ Para el cálculo de la nota máxima en aprobados, notables, sobresalientes, y ma
 Aprobados \(\Rightarrow\) cuantil 0.70 \(\Rightarrow n \cdot 0.7= 348.6 \Rightarrow\) La nota máxima de los aprobados está en el intervalo (5,6].
 
 \[
-C_{0.70} = 6 + \frac{348.6 - 409}{70} \cdot 1 = 5.137
+C_{0.70} = 6 + \frac{348.6 - 409}{70} \cdot 1 = 5.137142857
 \]
 
 Notables \(\Rightarrow\) Cuantil 0.85 \(\Rightarrow n \cdot 0.85 = 423.3 \Rightarrow\) Buscar en (6,7].
 
 \[
-C_{0.85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.349 
+C_{0.85} = 7 + \frac{423.3 - 450}{41} \cdot 1 = 6.349
 \]
 
 Sobresalientes \(\Rightarrow\) Cuantil 0.95 \(\Rightarrow n \cdot 0.95 = 473.1 \Rightarrow\) Buscar en (7,8].
@@ -976,7 +1020,7 @@ C_{0.95} = 8 + \frac{473.1 - 478}{28} \cdot 1 = 7.825
 
 Matrículas \(\Rightarrow\) Es obvio, pues el cuantil 1 es \(C_{1} = 10\)
 \end{ej}
-
+\bigskip
 \begin{ej}
 Se ha medido la altura de 110 jóvenes, obteniendo:
 
@@ -994,32 +1038,48 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
     \end{tabular}
 \end{center}
 
+\bigskip
+\textbf{Conceptos:}
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población\label{poblacion}: jóvenes
+        \item Tamaño de la población: \(n = 110\)
+        \item Variable estadística (X): altura de cada joven
+        \item Modalidades: intervalos de distinta amplitud que van de 1.55 a 2.00; (5 modalidades)
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+\bigskip
+
 \begin{enumerate}[label=\textit{\alph*)}]
     \item Si se considera bajos al 3\% de los individuos de menor altura, ¿cuál es la altura máxima que pueden alcanzar?
     \\\\
     Para poder saberlo, es necesario calcular el cuantil $0.03$, que indica la altura por debajo de la cual se halla el $3\%$ de la población estudiada. Deduzcamos la fórmula para los cuantiles:
   \\ 
-  $1. \ n\alpha = 3.3 \leftarrow$ Como $N_{1} = 18$ es inmediatamente mayor que $n\alpha$, $C_{0.03}$ ha de hallarse en el intervalo $(155,160]$. \\
-    $2$. Si tomamos el tramo de la curva de distribución de $I_{i}$ 
+  $1 \ n\alpha = 3.3 \leftarrow$ Como $N_{1} = 18$ es inmediatamente mayor que $n\alpha$, $C_{0.03}$ ha de hallarse en el intervalo $(155,160]$. \\
+    $2$ Si tomamos el tramo de la curva de distribución de $I_{i}$ 
     \\
     Empleamos la formula para $C_{0.03}$ 
-    $$C_{0.03} = 1.55 + \frac{3.3 - 0}{18} \cdot 0.05 = 1.5591\wideparen{6} \approx 1.56 m$$
+    $$C_{0.03} = 1.55 + \frac{3.3 - 0}{18}0 0.05 = 1.5591\wideparen{6} \approx 1.56 m$$
     \item Si se condiera altos al 18\% de los individuos de mayor altura, ¿cuál es su altura mínima? \\\\
     Debemos calcular la altura por debajo de la cual queda el $82\%$ de la población. Repitiendo el proceso anterior empleando la fórmula: 
     \\
     1 $n\alpha=90.2 \implies N_{y} = 93$ es inmediatamente mayor que $n\alpha$, $C_{0.82}$ ha de hallarse $I_{y}$:
-    $$C_{0.82} = 1.80 + \frac{90.2 - 73}{20}0.1 = 1.886m$$
+    $$C_{0.82} = 1.80 + \frac{90.2 - 73}{20}0.1 = 1.886$$
     \item ¿Qué altura es superada sólo por 1/4 de los jóvenes? \\\\
     Como el $\frac{3}{4}$ de los jóvenes no superan esa altura y $\frac{3}{4}=0.75$, hemos de calcular $C_{0.75}$:
     \\
     1 $n\alpha = 82.5 \implies C_{0.75}$ ha de hallarse en $I_{4}$:
-    $$C_{0.75} = 1.80 + \frac{82.2 - 73}{20}0.1 = 1.848m$$
+    $$C_{0.75} = 1.80 + \frac{82.2 - 73}{20}0.1 = 1.848$$
     \item Calcular el número de jóvenes cuya altura es superior a 1.75. \\\\
-    En este caso sería hacer el cuartil inverso, es decir, deducir qué cuantil cumple que $C_{\alpha} = 1.75$ y finalmente calcular $n\alpha$ . Deduciendo que está en $I_{3}$, empleemos la fórmula:
+    En este caso sería hacer el cuantil inverso, es decir, deducir qué cuantil cumple que $C_{\alpha} = 1.75$ y finalmente calcular $n\alpha$ . Deduciendo que está en $I_{3}$, empleemos la fórmula:
     $$1.75 = 1.75 + \frac{110\alpha - 49}{24}0.1 \longleftrightarrow \alpha = 0.5\wideparen{54}$$
     $n\alpha = 110 \cdot 0.5\wideparen{54} = 61$ jóvenes no superan dicha altura y, por tanto, $49$ la superan. \\
     \item Calcular la altura máxima de los 11 jóvenes más bajos.\\\\
-    $\frac{11}{110} = 0.1 \ \implies$ Se nos pide el cuartil $0.1$, $C_{0.1}$, que se halla en $I_{1}$: \\
+    $\frac{11}{110} = 0.1 \ \implies$ Se nos pide el cuantil $0.1$, $C_{0.1}$, que se halla en $I_{1}$: \\
     $C_{0.1} = 1.55 + \frac{11-0}{18}0.05 = 1.580\wideparen{5} \approx 1.58$ m. \\
     \item Calcular la altura mínima de los 11 jóvenes más altos.
     \\\\
@@ -1027,8 +1087,6 @@ Se ha medido la altura de 110 jóvenes, obteniendo:
     $$C_{0.9} = 1.90 + \frac{99-93}{17}0.1 = 1.935 \ m$$
 \end{enumerate}
 \end{ej}
-
-\newpage
 
 \begin{ej}
 Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la siguiente tabla según la edad de los enfermos:
@@ -1040,8 +1098,25 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
          \hline
          Nº enfermos & 15 & 22 & 48 & 40 & 25 \\ 
          \hline
-    \end{tabular} \\ 
-    \vspace{0.5cm}
+    \end{tabular} \\
+    \end{center}
+    
+    \bigskip
+    
+\textbf{Conceptos:}
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población\label{poblacion}: enfermos de cáncer
+        \item Tamaño de la población: \(n = 150\)
+        \item Variable estadística (X): edad de cada enfermo
+        \item Modalidades: intervalos de distinta amplitud que van de 10 a 90; (5 modalidades)
+    \end{itemize}
+    \end{minipage}
+    }
+\bigskip
+
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
     \hline
          Edad & $n_{i}$ & $a_{i}$ & $h_{i}$ & $N_{i}$ & $C_{i}$ & $n_{i}c_{i}$ & $n_{i}c_{i}^2$ & $n_{i}c_{i}^3$ & $n_{i}c_{i}^4$ \\
@@ -1057,12 +1132,15 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
          (60,90] & 25 & 30 & $0.8\wideparen{3}$ & 150 & 75 & 1875 & 140625 & 10546875 & 791015625\\ 
          \hline
          & 150 & & & & & 7305 & 391775 & 22639125 & 1389284375 \\ 
+         \hline
     \end{tabular}
 \end{center}
 
 \begin{enumerate}[label=\textit{\alph*)}]
     \item Calcular la edad más común de los individuos estudiados. \\
-    Se nos está pidiendo la moda, la cual la encontraremos en el intervalo modal, es decir, el intervalo con mayor densidad de frecuencia $h_{i} = \frac{n_{i}}{a_{i}}$. En este caso, $h_{3} > h_{j} \ \forall j \not = 3$ con $j \in \ \{1,\dots,5\}$. Ahora llevamos a cabo la semejanza de triángulos vista en clase sobre un trozo del histograma (el intervalo modal y sus contiguos): \\
+    Se nos está pidiendo la moda, la cual la encontraremos en el intervalo modal, es decir, el intervalo con mayor densidad de frecuencia $h_{i} = \frac{n_i}{a_i}$
+
+ $\frac{n_{i}}{a_{i}}$. En este caso, $h_{3} > h_{j} \ \forall j \not = 3$ con $j \in \ \{1,\dots,5\}$. Ahora llevamos a cabo la semejanza de triángulos vista en clase sobre un trozo del histograma (el intervalo modal y sus contiguos): \\
     
     \begin{figure}[h!]
     \centering
@@ -1076,7 +1154,7 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
     \begin{figure}[h!]
     \centering
     \includegraphics[scale=2.5]{imagenes/30_central_ej_10.jpeg}
-	´\end{figure}
+	\end{figure}
 
     Lo que se nos pide es equivalente a calcular $C_{0.35}$ y $C_{0.65}$. Emplearemos la fórmula demostrada en el ejercicio 8: \\
     1 $n\alpha = 150\cdot0.35 = 52.5 \implies \ C_{0.35}$ estará en $I_{3}$ pues $N_{3}$ es inmediatamente mayor que $n_{\alpha}$ \\
@@ -1096,8 +1174,49 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
     $$\sigma^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - \bar{x}^2 = \frac{1}{n} \sum_{i = 1}^k n_{i}c{i}^2 - (\frac{1}{n} \sum_{i = 1}^k n_{i}c{i})^2 = \frac{391775}{150}- (\frac{7305}{150})^2 = 240.1434 \text{ años al cuadrado}$$
     $\sigma = +\sqrt{\sigma^2} = 15.49656$ años $\implies$ Esto significa que la mayoría de los datos de nuestra distribución se hallan en el intervalo $[\bar{x}-\sigma, \bar{x} + \sigma]$.
     \item Calcular e interpretar los valores de los coeficientes de asimetría y curtosis. \\
+    
+
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Momentos: son indicadores genéricos de una distribución. Se basan en una generalización de la idea de media. Si dos distribuciones son iguales todos sus infinitos momentos coinciden. \\ Momento de orden $r$ respecto al valor $a$:\qquad sea $r$ un número real positivo 
+        \[\prescript{}{a}{m}_{r} = \sum_{i=1}^{k} f_{i}(x_{i} - a)^{r} = \frac{1}{n}\sum_{i=1}^{k} n_{i}(x_{i} - a)^{r}\]
+        \begin{itemize}
+            \item Momentos no centrales: momentos respecto del origen; $a=0$
+            \[m_r = \sum_{i=1}^{k} f_i x_i^r\]
+            \item Momentos centrales: momentos respecto de la media aritmética; $a=\overline{x}$
+            \[\mu_r = \sum_{i=1}^{k} f_{i}(x_{i} - \overline{x})^{r}\]
+        \end{itemize}
+        \item Medidas de asimetría: sea $X$ una variable estadística, se entiende por asimetría de $X$ a la falta de simetría respecto del eje vertical $x = \overline{x}$. Una distribución es simétrica si la perpendicular que pasa por la media aritmética divide al diagrama diferencial (histograma, en el caso continuo; o diagrama de barras, en el discreto) en dos partes iguales; de lo contrario, es asimétrica.
+        \begin{itemize}
+            \item Coeficiente de asimetría de Fisher,  $\gamma_{1}(x)$
+            \item Coeficientes de asimetría de Pearson,  $A_{p}$ , $A_{p^*}$
+            \begin{itemize}
+                \item $coeficiente > 0 \Rightarrow$ distribución asimétrica por la derecha o positiva
+                \item $coeficiente < 0 \Rightarrow$ distribución asimétrica por la izquierda o negativa
+                \item $coeficiente = 0 \Rightarrow$ distribución simétrica
+                \end{itemize}
+        \end{itemize}
+        \item Medidas de apuntamiento o curtosis: miden la menor o mayor concentración central de frecuencias de una distribución respecto a la que presenta una distribución Normal de su misma media y su misma desviación típica.
+        \begin{itemize}
+            \item Coeficiente de curtosis de Fisher,  $\gamma_{2}(x)$
+            \item Coeficiente de curtosis de Kelley,  $K$
+            \begin{itemize}
+                \item $coeficiente > 0 \Rightarrow$ distribución leptocúrtica
+                \item $coeficiente < 0 \Rightarrow$ distribución platicúrtica
+                \item $coeficiente = 0 \Rightarrow$ distribución mesocúrtica
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    \end{minipage}
+    }
+
+\bigskip
+    
     De asimetría son 3: \\
+  
     - De Fisher: $\rightarrow  \gamma_{1}(x) = \frac{\mu_{3}}{\sigma_{x}^3}$ \\
+    \\
     - De Pearson: 
     $$A_{p} = \frac{\bar{x}-Mo}{\sigma_{x}}$$
     $$A_{p^*} = \frac{3(\bar{x}-Me)}{\sigma_{x}}$$
@@ -1112,6 +1231,7 @@ Realizando una prueba para el estudio del cáncer a 150 personas se obtuvo la si
     $$A_{p^*} = \frac{3(\bar{x}-Me)}{\sigma_{x}} = \frac{3\cdot(\frac{7305}{150}-47.91\wideparen{6})}{15.49656} = 0.151647$$
     \\
     Ahora pasamos a los coeficientes de Curtosis: \\
+    \\
     - Fisher: $\gamma_{2(x)} = \frac{\mu_{4}}{\sigma^4}-3$ \ Hallemos $\mu_{4} = m_{4} - 4m_{3}m_{1}+6m_{1}^2m_{2}-3m_{1}^4$: \\
     $$\mu_{4}=\frac{1}{n}\sum n_{i}c_{i}^4-4\frac{1}{n} \sum n_{i}c_{i}^3\cdot \bar{x}+6\bar{x}^2\cdot\frac{1}{n} \sum n_{i}c_{i}^2 - 3\bar{x}^4 = $$
     $$= \frac{1389284375}{150}-4 \cdot\frac{1}{150}\cdot(22639125)\cdot\frac{7305}{150} + 6\cdot(\frac{7305}{150})^2\cdot\frac{1}{150}\cdot 391775 - 3\cdot (\frac{7305}{150})^4 =153232.46$$
