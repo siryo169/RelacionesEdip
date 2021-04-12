@@ -14,8 +14,8 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{{images/}}
-\usepackage{subcaption}
 \usepackage{hyperref}
+\usepackage{subcaption}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{eurosym} %Euro, de nada misniños
 
@@ -62,7 +62,7 @@ En una encuesta de familias sobre el número de individuos que la componen \((X)
 \begin{enumerate}[label=\alph*)]
 	\item Calcular la recta de regresión de \(Y\) sobre \(X\).
 	\begin{center}
-	\begin{tabular}{c|c c c c c c c}
+	\begin{tabular}{c|c c c c | c c c}
 	\(X/Y\) & 1 & 2 & 3 & 4 & \(n_{i.}\) & \(n_{i.}x_i\) & \(n_{i.}x_i^2\) \\
 	\hline
 	1 & 7 & 0 & 0 & 0 & 7 & 7 & 7 \\
@@ -73,6 +73,7 @@ En una encuesta de familias sobre el número de individuos que la componen \((X)
 	6 & 1 & 2 & 3 & 1 & 7 & 43 & 252 \\
 	7 & 1 & 0 & 0 & 1 & 2 & 14 & 98 \\
 	8 & 0 & 0 & 1 & 1 & 2 & 16 & 128 \\
+	\hline
 	\(n_{.j}\) & 48 & 21 & 15 & 5 & 89 \\
 	\(n_{.j} y_j\) & 48 & 42 & 45 & 20 \\
 	\(n_{.j} y_j^2\) & 48 & 84 & 135 & 80 \\
@@ -428,6 +429,8 @@ Las rectas que se nos pide determinar son la recta de regresión lineal de \(Y\)
 	x - \overline{x}  =\frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y}) \Rightarrow x = \frac{\sigma_{xy}}{\sigma_y^2}y - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y} + \overline{x}
 \]
 
+\newpage
+
 Por lo tanto, será necesario calcular las medias y varianzas marginales de cada carácter y la covarianza. Antes de desarrollar los cálculos de la tabla, vamos a especificar cómo calcularemos la covarianza. Como se vio en clase, $\sigma_{xy} = \mu_{11} = m_{11} -m_{10} m_{01}$, siendo $\mu_{rs}$ el momento conjunto central de órdenes r y s y $m_{rs}$ el momento conjunto respecto al origen de órdenes r y s. Recordemos que $m_{10} = \bar{x}$, $m_{01} = \bar{y}$ y $m_{11} = \sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i y_j$. Procedamos a efectuar los cálculos pertinentes en la tabla:
 
 \begin{center}
@@ -467,7 +470,7 @@ Por lo tanto, será necesario calcular las medias y varianzas marginales de cada
 \]
 
 \[
-    \sigma_{x}^{2} = \frac{1}{n} \sum_{i=1}^{4} n_{i.} x_i^2 - \overline{x}^2 = 0.8871  \text{ balanzas} \qquad \sigma_{y}^{2} = \frac{1}{n} \sum_{j=1}^{4} n_{.j} y_j^2 - \overline{y}^2 = 0.9564  \text{ dependientes}
+    \sigma_{x}^{2} = \frac{1}{n} \sum_{i=1}^{4} n_{i.} x_i^2 - \overline{x}^2 = 0.8871  \text{ balanzas}^{2} \qquad \sigma_{y}^{2} = \frac{1}{n} \sum_{j=1}^{4} n_{.j} y_j^2 - \overline{y}^2 = 0.9564  \text{ dependientes}^{2}
 \]
 
 Ahora que tenemos todos los datos que necesitábamos, sustituimos sus valores en las expresiones de las rectas expuestas al principio del ejercicio:
@@ -479,6 +482,8 @@ Ahora que tenemos todos los datos que necesitábamos, sustituimos sus valores en
 \[
     x = \frac{\sigma_{xy}}{\sigma_y^2}y - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y} + \overline{x} \Rightarrow x = 0.623y+0.7721
 \]
+
+\newpage
 
 \item ¿Es apropiado suponer que existe una relación lineal entre las variables?
 
@@ -516,8 +521,209 @@ Por el apartado anterior, podemos afirmar que esta predicción no es fiable al e
 \end{ej}
 
 \begin{ej}
-De las estadísticas de ”Tiempos de vuelo y consumos de combustible”de una compañía aérea, se
+De las estadísticas de ”Tiempos de vuelo y consumos de combustible ”de una compañía aérea, se
 han obtenido datos relativos a 24 trayectos distintos realizados por el avión DC-9. A partir de
 estos datos se han obtenido las siguientes medidas:
+
+\[
+    \sum_{j=1}^{p}n_{.j}y_j = 219.719 \qquad \sum_{j=1}^{p}n_{.j}y_{j}^{2} = 2396.504 \qquad \sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_i y_j = 349.486
+\]
+
+\[
+    \sum_{i=1}^{k}n_{i.}x_i = 31.470 \qquad \sum_{i=1}^{k}n_{i.}x_{i}^{2} = 51.075 \qquad \sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{2} y_j = 633.993
+\]
+
+\[
+    \sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{4} = 182.977 \qquad \sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{3} = 93.6
+\]
+
+La variable Y expresa el consumo total de combustible, en miles de libras, correspondiente a
+un vuelo de duración X (el tiempo se expresa en horas, y se utilizan como unidades de orden
+inferior fracciones decimales de la hora).
+
+\begin{enumerate}[label=\alph*)]
+\item Ajustar un modelo del tipo $Y = aX +b$. ¿Qué consumo total se estimaría para un programa
+de vuelos compuesto de 100 vuelos de media hora, 200 de una hora y 100 de dos horas? ¿Es
+fiable esta estimación?
+
+\newpage
+
+Hemos de calcular la expresión de la recta de regresión lineal de Y sobre X, la cual es de la forma:
+
+\[
+    y - \overline{y}  =\frac{\sigma_{xy}}{\sigma_x^2} (x - \overline{x}) \Rightarrow y = \frac{\sigma_{xy}}{\sigma_x^2}x - \frac{\sigma_{xy}}{\sigma_x^2} \overline{x} + \overline{y}
+\]
+
+Procederemos como en ejercicios anteriores calculando las medias marginales $m_{10} = \bar{x}$ y $m_{11} = \bar{y}$, la varianza del carácter X que es $\sigma_{x}^{2} = \frac{1}{n} \sum_{i=1}^{k} n_{i.} x_i^2 - \overline{x}^{2}$ y la covarianza, que es $\sigma_{xy} = \mu_{11} = m_{11} - m_{10}m_{01} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_i y_j - \bar{x}\bar{y}$. En este caso no se requiere hacer tabla, ya que se nos han proporcionado todos los datos necesarios para calcular lo que necesitamos:
+
+\[
+    m_{10} = \bar{x} = \frac{1}{n} \sum_{i=1}^{k} x_i n_{i.} = \frac{31.470}{24} = 1.3113 \text{ horas de vuelo} \qquad
+\]
+
+\[
+    m_{01} = \bar{y} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j = \frac{2396.504}{24} = 9.155 \text{ miles de libras de combustible}
+\]
+
+
+\[
+    m_{11} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_i y_j = \frac{349.486}{24} = 14.5619 \qquad \mu_{11} = \sigma_{xy} = m_{11} - m_{10}m_{01} = 2.557
+\]
+
+\[
+    \sigma_{x}^{2} = \frac{1}{n} \sum_{i=1}^{k} n_{i.} x_i^2 - \overline{x}^2 = \frac{51.075}{24}-1.3113^{2} = 0.4086 \text{ horas de vuelo}^{2}
+\]
+
+\[
+    \sigma_{y}^{2} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j^2 - \overline{y}^2 = \frac{2396.504}{24}-9.155^{2} = 16.0403 \text{ miles de libras de combustible}^{2}
+\]
+Y sustituimos los valores calculados en la expresión de la recta:
+
+\[
+    y = \frac{\sigma_{xy}}{\sigma_x^2}x - \frac{\sigma_{xy}}{\sigma_x^2} \overline{x} + \overline{y} \Rightarrow y = 6.258x+0.9489
+\]
+
+Haciendo uso de esta recta, podemos estimar el consumo total de combustible tras 100 vuelos de media hora, 200 de una hora y 100 de dos horas respectivamente: 
+
+\[
+    y = 6.258 \cdot 0.5 \cdot 100 + 0.9489 = 4.0779 \text{ miles de libras de combustible}
+\]
+
+\[
+    y = 6.258 \cdot 1 + 0.9489 = 7.2069 \text{ miles de libras de combustible}
+\]
+
+\[
+    y = 6.258 \cdot 2 + 0.9489 = 13.4649 \text{ miles de libras de combustible}
+\]
+
+\[
+    \text{Combustible total} = 4.0779 \cdot 100 + 7.2069 \cdot 200 + 13.4649 \cdot 100 = 3195.66 \text{ miles de libras}
+\]
+ 
+Para saber si esta estimación es fiable, calcularemos el coeficiente de correlación de Pearson y lo interpretaremos:
+
+\[
+    r = \frac{\sigma_{xy}}{\sigma_x \sigma_y} = \frac{2.557}{\sqrt{0.4086}\cdot\sqrt{16.0403}} = 0.9988
+\]
+
+\newpage
+
+En nuestro caso, $0 < r < 1$ $\Rightarrow$ Cuanto más próximo se encuentre $r$ de $1$, mejor dependencia lineal existirá entre el carácter $X$ y el carácter $Y$ en estudio. Como $r$ es prácticamente 1, l relación lineal explica de forma óptima la relación entre las variables y podemos afirmar que las estimaciones hechas son fiables.
+
+\item Ajustar un modelo del tipo $Y = a + bX + cX^2$ . ¿Qué consumo total se estimaría para el
+mismo programa de vuelos del apartado a)?
+
+Para poder hallar los coeficientes $a$, $b$ y $c$ y ajustar al modelo pedido necesitamos minimizar la siguiente función:
+
+\[
+    \psi(a,b,c) = \sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}(y_j-a-bx_i-cx_{i}^{2})^2
+\]
+
+\[
+    \psi(a,b,c) = \sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}(y_{j}^2-2ay_j-2bx_i y_j -2cx_{i}^{2}y_j+a^2+2abx_i+2acx_{i}^{2}+b^2 x_{i}^{2}+2bcx_{i}^{3}+c^2 x_{i}^{4})
+\]
+
+Ahora hallaremos las derivadas parciales de dicha función y las igualaremos a 0, obteniendo así un SEL compatible determinado del cual despejaremos los valores de $a$, $b$ y $c$:
+
+\[
+    \frac{\partial\psi(a,b,c)}{\partial a} = -2\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}y_j + 2a + 2b\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i + 2c\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{2} = 
+\]
+
+\[
+    = -2m_{01}+2a+2bm_{10}+2cm_{20}
+\]
+
+Hallamos $m_{20}$, que no habíamos calculado:
+
+\[
+    m_{20} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{2} = \frac{51.075}{24} = 2.1281
+\]
+
+Y sustituimos $m_{01}$, $m_{10}$ y $m_{20}$ en la expresión anterior igualándola a 0 para obtener la primera ecuación del sistema:
+
+\[
+    -2m_{01}+2a+2bm_{10}+2cm_{20} = 0 \Rightarrow a+1.3113b+2.1281c=9.155
+\]
+
+Repetimos el proceso con las derivadas parciales en función de $b$ y de $c$:
+
+\[
+    \frac{\partial\psi(a,b,c)}{\partial b} = -2\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i y_j + 2a\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i + 2b\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{2}+ 2c\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{3} = 
+\]
+
+\[
+    = -2m_{11}+2am_{10}+2bm_{20}+2cm_{30}
+\]
+
+\newpage
+
+Calculamos $m_{30}$:
+
+\[
+    m_{30} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{3} = \frac{93.6}{24} = 3.9
+\]
+
+Y sustituimos en la expresión igualándola a 0 para obtener la segunda ecuación del sistema:
+
+\[
+    -2m_{11}+2am_{10}+2bm_{20}+2cm_{30} = 0 \Rightarrow 1.3113a+2.1281b+3.9c=14.5619
+\]
+
+\[
+    \frac{\partial\psi(a,b,c)}{\partial c} = -2\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{2} y_j + 2a\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{2} + 2b\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{3}+ 2c\sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_{i}^{4} = 
+\]
+
+\[
+   = -2m_{21}+2am_{20}+2bm_{30}+2cm_{40}
+\]
+
+Calculamos $m_{21}$ y $m_{40}$:
+
+\[
+    m_{21} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{2} = \frac{633.993}{24} = 26.4139 \qquad m_{40} = \frac{1}{n}\sum_{i=1}^{k}\sum_{j=1}^{p}n_{ij}x_{i}^{4} = \frac{182.977}{24} = 7.6240
+\]
+
+Y sustituimos en la expresión anterior igualándola a 0 para obtener la última ecuación del sistema:
+
+\[
+    = -2m_{21}+2am_{20}+2bm_{30}+2cm_{40} \Rightarrow 2.1281a+3.9b+7.624c = 26.4139
+\]
+
+Y resolvemos el sistema resultante:
+\[
+\left.
+\begin{array}{rcl}
+     a+1.3113b+2.1281c&=&9.155
+  \\ 1.3113a+2.1281b+3.9c&=&14.5619
+  \\ 2.1281a+3.9b+7.624c &=& 26.4139
+\end{array}
+\right\}
+\]
+
+La solución del sistema es: $a=0.7491$, $b=6.6368$ y $c=-0.1395$ y por lo tanto la parábola del modelo que se nos pedía es de la forma $y=0.7491+6.6368x-0.1395x^2$. Realicemos las estimaciones que se nos pedían el apartado a) pero con el nuevo modelo:
+
+\[
+    y = 0.7491+6.6368 \cdot 0.5 -0.1395 \cdot 0.5^2 = 4.0326 \text{ miles de libras de combustible}
+\]
+
+\[
+    y = 0.7491+6.6368 \cdot 1 -0.1395 \cdot 1^2 =  7.2464\text{ miles de libras de combustible}
+\]
+
+\[
+    y = 0.7491+6.6368 \cdot 2 -0.1395 \cdot 2^2 =  13.4647 \text{ miles de libras de combustible}
+\]
+
+\[
+    \text{Combustible total} = 4.0326 \cdot 100 + 7.2464 \cdot 200 + 13.4647 \cdot 100 = 3199.01 \text{ miles de libras}
+\]
+
+\newpage
+
+\item ¿Cuál de los dos modelos se ajusta mejor? Razonar la respuesta.
+
+Al observar el segundo modelo, podemos notar que la ecuación del modelo es prácticamente idéntica a la del primer modelo exceptuando el término $-0.1395x^2$. De hecho, en las estimaciones realizadas, ambos modelos nos dan un valor muy parecido (casi 3200). Este modelo es más fino ya que el término $-0.1395x^2$ está añadiendo información a la recta del modelo del apartado a), es decir, no se pierde la información que había en el modelo 1. En conclusión, la razón de correlación de la parábola siempre será mayor o igual que la de la recta.
+
+\end{enumerate}
 \end{ej}
 \end{document}
