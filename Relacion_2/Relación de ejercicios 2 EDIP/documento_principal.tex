@@ -386,6 +386,142 @@ Punto 1: \((0, 1)\) \hspace{1cm} Punto 2: \((0, 2)\) \hspace{1cm} Punto 3: \((0,
 \end{ej}
 
 \begin{ej}
+Dada la siguiente distribución bidemensional:
+
+\begin{center}
+\begin{tabular}{c | c c c c}
+	\(X/Y\) & 1 & 2 & 3 & 4 \\
+	\hline
+	10 & 1 & 3 & 0 & 0 \\
+	12 & 0 & 1 & 4 & 3 \\
+	14 & 2 & 0 & 0 & 2 \\
+	16 & 4 & 0 & 0 & 0
+\end{tabular}
+\end{center}
+
+Primero vamos a obtener unos datos previos que facilitarán los cálculos posteriores:
+
+\begin{center}
+	\begin{tabular}{c | c c c c | c c c}
+	\(X/Y\) & 1 & 2 & 3 & 4 & \(n_{i.}\) & \(n_{i.} x_i\) & \(n_{i.} x_i^2\)\\
+	\hline
+	10 & 1 & 3 & 0 & 0 & 4 & 40 & 400 \\
+	12 & 0 & 1 & 4 & 3 & 8 & 96 & 1152 \\
+	14 & 2 & 0 & 0 & 2 & 4 & 56 & 784 \\
+	16 & 4 & 0 & 0 & 0 & 4 & 64 & 1024 \\
+	\hline
+	& & & & Total & 20 & 256 & 3360 \\
+	\hline
+	\(n_{.j}\) & 7 & 4 & 4 & 5 & 20 & & \\
+	\(n_{.j} y_j\) & 7 & 8 & 12 & 20 & 47 \\
+	\(n_{.j} y_j^2\) & 7 & 16 & 36 & 80 & 139
+	\end{tabular}
+	\end{center}
+	
+Ahora calcularemos la media de x, de y, las varianzas y la covarianza:
+\[
+	\overline{x} = \frac{\sum_{i=1}^{4} n_{i.} x_i}{n} = 12.8 \qquad \overline{y} = \frac{\sum_{j=1}^{4} n_{.j} y_j}{n} = 2.35
+\]
+\[
+	\sigma_x^2 = \frac{1}{n} \sum_{i=1}^{4} x_i^2 n_{i.} - \overline{x}^2 = 4.16
+\]
+\[
+	\sigma_y^2 = \frac{1}{n} \sum_{j=1} n_{.j} y_j^2 - \overline{y}^2 = 1.4275
+\]
+\[
+	\sigma_{xy} = \frac{1}{n} \sum_{i=1}^{4} \sum_{j=1}^{4} n_{ij} x_i y_j - \overline{x}\ \overline{y} = -0.78
+\]
+
+\begin{enumerate}[label=\alph*)]
+	\item ¿Son estadísticamente independientes \(X\) e \(Y\)?
+	
+	Podemos observar que existen ciertos \(n_{ij} = 0\), por tanto las variables no son independientes puesto que la igualdad (\ref{ref:independenciaXY}) no se va a dar a menos que \(n_{ij} = 0 \quad \forall i,j\), lo cual carecería de sentido porque sería estudiar una variable que no ha presentado distribución de frecuencias ninguna. También observamos que como para cada modalidad de \(X\) no encontramos una única modalidad de \(Y\) con frecuencia no nula y por tanto tampoco son funcionalmente dependientes.
+	
+	\item Calcular y representar las curvas de regresión de \(X/Y\) e \(Y/X\).
+	
+	Para calcular la curva de regresión de tipo 1 de \(X/Y\) tenemos que calcular los puntos por los que pasa. Estos son los puntos \((\overline{x}_j, y_j) \quad j=1,\dotsc, p.\)
+\[
+	\overline{x}_1 = \frac{10 + 14 \cdot 2 + 16 \cdot4}{7} = 14.57 \qquad \overline{x}_2 = \frac{10 \cdot 3 + 12}{4} = 10.5
+\]
+\[
+	\overline{x}_3 = \frac{12 \cdot 4}{4} = 12 \qquad \overline{x}_4 = \frac{12 \cdot 3 + 14 \cdot 2}{5} = 12.8
+\]
+
+Punto 1: (14.57, 1) \hspace{1cm} Punto 2: (10.5, 2) \hspace{1cm}  \\
+
+Punto 3: \((12, 3)\) \hspace{1cm} Punto 4: (12.8, 4)
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ejer_6_X_Y.png}
+\end{figure}
+
+Ahora calculamos la curva de regresión de tipo 1 de \(Y/X\), la cual pasa por los puntos \((x_i, \overline{y}_i) \quad i=1,\dotsc,k\)
+\[
+	\overline{y}_{10} = \frac{1 + 2 \cdot 3}{4} = 1.75 \qquad \overline{y}_12 = \frac{2 + 3 \cdot 4 + 4 \cdot 3}{8} = 3.25
+\]
+\[
+	\overline{y}_{14} = \frac{2 + 2 \cdot 4}{4} = 2.5 \qquad \overline{y}_{16} = \frac{4}{4} = 1
+\]
+
+\newpage
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ejer_6_Y_X.png}
+\end{figure}
+
+	\item Cuantificar el grado en que cada variable es explicada por la otra mediante la correspondiente curva de regresión. \\
+	
+	Es necesario resaltar que los valores de las desviaciones típicas han sido calculadas en el siguiente apartado. \\
+	
+	Ahora calculamos los valores de la razón de correlación lineal de \(Y/X\) y \(X/Y\).
+\[
+	\eta_{Y/X}^{2} = \frac{\sigma_{ey}^2}{\sigma_y^2} \qquad \sigma_{ey} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{y}_i - y_j)^2 = 0.765
+\]
+\[
+	\eta_{Y/X}^2 = 0.5359
+\]
+
+\[
+	\eta_{X/Y}^2 = \frac{\sigma_{ex}^2}{\sigma_x^2} \qquad \sigma_{ex} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{x}_j - x_i)^2 = 2.2843
+\]
+\[
+	\eta_{X/Y}^2 = 0.5491
+\]
+
+Concluimos que cada variable explica alrededor de el 54\% de la otra.
+
+	\item ¿Están \(X\) e \(Y\) correladas linealmente? Dar las expresiones de las rectas de regresión.
+	
+Las expresiones de las rectas de regresión de \(Y\) sobre \(X\) y la recta de regresión de \(X\) sobre \(Y\) son respectivamente:
+\[
+	y = \overline{y} + \frac{\sigma_{xy}}{\sigma_x^2} (x - \overline{x}) \qquad x  = \overline{x} + \frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y})
+\]
+\[
+	y = -0.1875x + 4.75 \qquad x = -0.5464y + 14.084
+\]
+
+\newpage
+
+    \begin{figure}[h!]
+        \centering
+        \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=\linewidth]{images/ejer_6_recta_X_Y.png}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=\linewidth]{images/ejer_6_recta_Y_X.png}
+        \end{subfigure}
+    \end{figure}
+    
+Para ver si \(X\) e \(Y\) están  correlacionadas linealmente, calculamos el coeficiente de correlación lineal de Pearson. Hacemos primero la razón de correlación lineal y tomamos la raíz cuadrada negativa ya que la covarianza es negativa.
+\[
+	r^2 = \frac{\sigma_{xy}²}{\sigma_x^2 \sigma_y^2} = 0.1024 \Rightarrow r = -\sqrt{r^2} = -0.32
+\]
+
+Así, concluimos que no están correlacionadas linealmente puesto que el resultado obtenido está bastante alejado de -1. Como se puede observar, la razón de correlación de nuestras rectas no supera a la recta de regresión de tipo 1 lo cual siempre se cumple.
+\end{enumerate}
 
 \end{ej}
 
@@ -428,8 +564,6 @@ Las rectas que se nos pide determinar son la recta de regresión lineal de \(Y\)
 \[
 	x - \overline{x}  =\frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y}) \Rightarrow x = \frac{\sigma_{xy}}{\sigma_y^2}y - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y} + \overline{x}
 \]
-
-\newpage
 
 Por lo tanto, será necesario calcular las medias y varianzas marginales de cada carácter y la covarianza. Antes de desarrollar los cálculos de la tabla, vamos a especificar cómo calcularemos la covarianza. Como se vio en clase, $\sigma_{xy} = \mu_{11} = m_{11} -m_{10} m_{01}$, siendo $\mu_{rs}$ el momento conjunto central de órdenes r y s y $m_{rs}$ el momento conjunto respecto al origen de órdenes r y s. Recordemos que $m_{10} = \bar{x}$, $m_{01} = \bar{y}$ y $m_{11} = \sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i y_j$. Procedamos a efectuar los cálculos pertinentes en la tabla:
 
