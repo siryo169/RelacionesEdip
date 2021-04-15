@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  15 APR 2021 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  15 APR 2021 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,79 +405,168 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 <images/ejer3.png, id=20, 536.0025pt x 321.2pt>
 File: images/ejer3.png Graphic file (type png)
 <use images/ejer3.png>
-Package pdftex.def Info: images/ejer3.png  used on input line 250.
+Package pdftex.def Info: images/ejer3.png  used on input line 252.
 (pdftex.def)             Requested size: 294.80228pt x 176.66054pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+[4] [5 <./images/ejer3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
-<images/ej7regxyA.png, id=24, 607.26875pt x 341.275pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+[6]
+<images/ejer5_Y_X.png, id=30, 435.6275pt x 255.95625pt>
+File: images/ejer5_Y_X.png Graphic file (type png)
+<use images/ejer5_Y_X.png>
+Package pdftex.def Info: images/ejer5_Y_X.png  used on input line 363.
+(pdftex.def)             Requested size: 261.37851pt x 153.57492pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+<images/ejer_5_X_Y.png, id=31, 435.6275pt x 247.92625pt>
+File: images/ejer_5_X_Y.png Graphic file (type png)
+<use images/ejer_5_X_Y.png>
+Package pdftex.def Info: images/ejer_5_X_Y.png  used on input line 374.
+(pdftex.def)             Requested size: 261.37851pt x 148.7569pt.
+[7 <./images/ejer5_Y_X.png> <./images/ejer_5_X_Y.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
+
+ []
+
+<images/ejer_6_X_Y.png, id=36, 465.74pt x 253.94875pt>
+File: images/ejer_6_X_Y.png Graphic file (type png)
+<use images/ejer_6_X_Y.png>
+Package pdftex.def Info: images/ejer_6_X_Y.png  used on input line 448.
+(pdftex.def)             Requested size: 232.86943pt x 126.97406pt.
+[8 <./images/ejer_6_X_Y.png>]
+<images/ejer_6_Y_X.png, id=40, 483.8075pt x 266.9975pt>
+File: images/ejer_6_Y_X.png Graphic file (type png)
+<use images/ejer_6_Y_X.png>
+Package pdftex.def Info: images/ejer_6_Y_X.png  used on input line 463.
+(pdftex.def)             Requested size: 241.90315pt x 133.49841pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+[9 <./images/ejer_6_Y_X.png>]
+<images/ejer_6_recta_X_Y.png, id=44, 481.8pt x 295.1025pt>
+File: images/ejer_6_recta_X_Y.png Graphic file (type png)
+<use images/ejer_6_recta_X_Y.png>
+Package pdftex.def Info: images/ejer_6_recta_X_Y.png  used on input line 502.
+(pdftex.def)             Requested size: 217.66211pt x 133.31721pt.
+<images/ejer_6_recta_Y_X.png, id=45, 472.76625pt x 284.06125pt>
+File: images/ejer_6_recta_Y_X.png Graphic file (type png)
+<use images/ejer_6_recta_Y_X.png>
+Package pdftex.def Info: images/ejer_6_recta_Y_X.png  used on input line 505.
+(pdftex.def)             Requested size: 217.66211pt x 130.78244pt.
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 511.
+
+
+
+LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 511.
+
+
+Missing character: There is no ² in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--523
+
+ []
+
+<images/ej7regxyA.png, id=46, 607.26875pt x 341.275pt>
 File: images/ej7regxyA.png Graphic file (type png)
 <use images/ej7regxyA.png>
-Package pdftex.def Info: images/ej7regxyA.png  used on input line 325.
+Package pdftex.def Info: images/ej7regxyA.png  used on input line 571.
 (pdftex.def)             Requested size: 333.99884pt x 187.70181pt.
-<images/ej7regyxA.png, id=26, 533.995pt x 295.1025pt>
+<images/ej7regyxA.png, id=48, 533.995pt x 295.1025pt>
 File: images/ej7regyxA.png Graphic file (type png)
 <use images/ej7regyxA.png>
-Package pdftex.def Info: images/ej7regyxA.png  used on input line 332.
+Package pdftex.def Info: images/ej7regyxA.png  used on input line 578.
 (pdftex.def)             Requested size: 293.69815pt x 162.30685pt.
-[5 <./images/ejer3.png>] [6 <./images/ej7regxyA.png> <./images/ej7regyxA.png>]
-<images/ej7regyxB.png, id=36, 632.3625pt x 349.305pt>
+[10 <./images/ejer_6_recta_X_Y.png> <./images/ejer_6_recta_Y_X.png>] [11 <./ima
+ges/ej7regxyA.png> <./images/ej7regyxA.png>]
+<images/ej7regyxB.png, id=58, 632.3625pt x 349.305pt>
 File: images/ej7regyxB.png Graphic file (type png)
 <use images/ej7regyxB.png>
-Package pdftex.def Info: images/ej7regyxB.png  used on input line 341.
+Package pdftex.def Info: images/ej7regyxB.png  used on input line 587.
 (pdftex.def)             Requested size: 347.80045pt x 192.11833pt.
-<images/ej7regxyB.png, id=37, 646.415pt x 376.40625pt>
+<images/ej7regxyB.png, id=59, 646.415pt x 376.40625pt>
 File: images/ej7regxyB.png Graphic file (type png)
 <use images/ej7regxyB.png>
-Package pdftex.def Info: images/ej7regxyB.png  used on input line 348.
+Package pdftex.def Info: images/ej7regxyB.png  used on input line 594.
 (pdftex.def)             Requested size: 355.52934pt x 207.02406pt.
-
-[7 <./images/ej7regyxB.png> <./images/ej7regxyB.png>]
-<images/ej7regyxC.png, id=44, 615.29875pt x 327.2225pt>
+ [12 <./images/ej7regyxB.png> <./images/ej7regxyB.png>]
+<images/ej7regyxC.png, id=65, 615.29875pt x 327.2225pt>
 File: images/ej7regyxC.png Graphic file (type png)
 <use images/ej7regyxC.png>
-Package pdftex.def Info: images/ej7regyxC.png  used on input line 357.
+Package pdftex.def Info: images/ej7regyxC.png  used on input line 603.
 (pdftex.def)             Requested size: 338.41536pt x 179.97292pt.
-<images/ej7regxyC.png, id=45, 607.26875pt x 333.245pt>
+<images/ej7regxyC.png, id=66, 607.26875pt x 333.245pt>
 File: images/ej7regxyC.png Graphic file (type png)
 <use images/ej7regxyC.png>
-Package pdftex.def Info: images/ej7regxyC.png  used on input line 364.
+Package pdftex.def Info: images/ej7regxyC.png  used on input line 610.
 (pdftex.def)             Requested size: 333.99884pt x 183.28531pt.
- [8 <./images/ej7regyxC.png> <./images/ej7regxyC.png>] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 508--510
+ [13 <./images/ej7regyxC.png> <./images/ej7regxyC.png>]
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 754--756
 
  []
 
-[11] [12] [13] [14]
-Overfull \hbox (7.17212pt too wide) detected at line 687
+[16] [17] [18] [19]
+Overfull \hbox (7.17212pt too wide) detected at line 933
 \OML/cmm/m/it/12 m[] \OT1/cmr/m/n/12 = [] [] [] \OML/cmm/m/it/12 n[]x[] \OT1/cm
 r/m/n/12 = [] = 26[]4139 \OML/cmm/m/it/12 m[] \OT1/cmr/m/n/12 = [] [] [] \OML/c
 mm/m/it/12 n[]x[] \OT1/cmr/m/n/12 = [] = 7[]6240
  []
 
-[15] [16] (./documento_principal.aux
+[20] [21] (./documento_principal.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6123 strings out of 483007
- 91485 string characters out of 5961757
- 364074 words of memory out of 5000000
- 21085 multiletter control sequences out of 15000+600000
- 540804 words of font info for 51 fonts, out of 8000000 for 9000
+ 6169 strings out of 483007
+ 92564 string characters out of 5961757
+ 360082 words of memory out of 5000000
+ 21124 multiletter control sequences out of 15000+600000
+ 541141 words of font info for 52 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 48i,8n,46p,620b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,8n,46p,620b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
@@ -487,10 +576,10 @@ t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 yhmath/yhcmex.pfb>
-Output written on documento_principal.pdf (16 pages, 204093 bytes).
+Output written on documento_principal.pdf (21 pages, 275957 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
