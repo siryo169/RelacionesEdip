@@ -34,6 +34,146 @@
 \maketitle
 
 \begin{ej}
+
+\end{ej}
+
+\begin{ej}
+Medidos los pesos, X (en Kg), y las alturas, Y (en cm), a un grupo de individuos, se han obtenido
+los siguientes resultados:
+
+\begin{center}
+\begin{tabular}{c|cccccc}
+	\(X/Y\) & 160 & 162 & 164 & 166 & 168 & 170 \\
+	\hline
+	48 & 3 & 2 & 2 & 1 & 0 & 0 \\
+	51 & 2 & 3 & 4 & 2 & 2 & 1 \\
+	54 & 1 & 3 & 6 & 8 & 5 & 1 \\
+	57 & 0 & 0 & 1 & 2 & 8 & 3 \\
+	60 & 0 & 0 & 0 & 2 & 4 & 4\\
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+	\item Calcular el peso medio y la altura media y decir cuál es más representativo.
+	
+	Para ello hemos de trabajar con las distribuciones marginales del carácter X (peso en Kg) y del carácter Y (altura en cm). Tras efectuar los cálculos pertinentes, la tabla anterior queda de la siguiente forma:
+	
+	\begin{center}
+\begin{tabular}{c|ccccccccc}
+	\(X/Y\) & 160 & 162 & 164 & 166 & 168 & 170 & \(n_{i.}\) & \(n_{i.}x_i\) & \(n_{i.}x_i^2\) \\
+	\hline
+	48 & 3 & 2 & 2 & 1 & 0 & 0 & 8 & 384 & 18432 \\
+	51 & 2 & 3 & 4 & 2 & 2 & 1 & 14 & 714 & 36414\\
+	54 & 1 & 3 & 6 & 8 & 5 & 1 & 24 & 1296 & 69984\\
+	57 & 0 & 0 & 1 & 2 & 8 & 3 & 14 & 798 & 45486\\
+	60 & 0 & 0 & 0 & 2 & 4 & 4 & 10 & 600 & 36000\\
+	\(n_{.j}\) & 6 & 8 & 13 & 15 & 19 & 9\\
+	\(n_{.j} y_j\) & 960 & 1296 & 2132 & 2490 & 3192 & 1530\\
+	\(n_{.j} y_j^2\) & 153600 & 209952 & 349648 & 413340 & 536256 & 260100\\
+\end{tabular}
+\end{center}
+
+\[
+	\bar{x} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i.} = \frac{384+714+1296+798+600}{70} = 54.1714 \text{ kilogramos} 
+\]
+
+\[
+	\bar{y} = \frac{1}{n} \sum_{j=1}^{6} y_j n_{.j} = \frac{960+1296+2132+2490+3192+1530}{70} = 165.7143 \text{ centímetros} 
+\]
+
+Para poder determinar cuál de las dos medias es más representativa, haremos uso del coeficiente de variación de Pearson, el cual nos permitirá interpretar independientemente de la escala la variabilidad de los datos respecto de su media:
+
+\[
+	\sigma_x = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i.} x_i^2 - \overline{x}^2} = 3.582 \text{ kilogramos} \qquad C.V(X) = \frac{\sigma_x}{\bar{x}} = 0.0661
+\]
+
+\[
+	\sigma_y = \sqrt{\frac{1}{n} \sum_{j=1}^{6} n_{.j} y_j^2 - \overline{y}^2} = 2.9519 \text{ centímetros} \qquad C.V(Y) = \frac{\sigma_y}{\bar{y}} = 0.0178
+\]
+
+En vista de los resultados, se deduce que la distribución marginal del carácter Y (la altura en cm) es más homogénea, por lo que la altura media es la más representativa de las dos.
+
+ \item Calcular el porcentaje de individuos que pesan menos de 55 Kg y miden más de 165 cm.
+ 
+Si miden más de 165 cm y pesan menos de 55 kg, hemos de tener en cuenta las frecuencias absolutas de todos los pares $(x_i,y_j)$ con $i \in \{1,2,3\}$ e $j \in \{4,5,6\}$. Efectuamos el cálculo:
+
+\[
+	100 \cdot \frac{1}{n} \cdot \sum_{j=4}^{6}\sum_{i=1}^{3}n_{ij} = 100 \cdot \frac{1}{70} \cdot (1+2+2+1+8+5+1) = 28.571\% \text{ de los individuos} 
+\]
+
+\item Entre los que miden más de 165 cm, ¿cuál es el porcentaje de los que pesan más de 52 Kg?
+
+Si miden más de 165 cm y pesan más de 52 kg, hemos de tener en cuenta las frecuencias absolutas de todos los pares $(x_i,y_j)$ con $i \in \{3,4,5\}$ e $j \in \{4,5,6\}$. Efectuamos el cálculo:
+
+\[
+	100 \cdot \frac{1}{n} \cdot \sum_{j=4}^{6}\sum_{i=3}^{5}n_{ij} = 100 \cdot \frac{1}{70} \cdot (8+5+1+2+8+3+2+4+4) = 52.857\% \text{ de los individuos} 
+\]
+
+\item ¿Cuál es la altura más frecuente entre los individuos cuyo peso oscila entre 51 y 57 Kg?
+
+Esto es equivalente a hallar la modalidad $y_j$ a la que le corresponde el máximo de $n_{2j}+n_{3j}+n_{4j}$:
+
+\begin{center}
+\begin{tabular}{c|c}
+	\(y_j\) & \(n_{2j}+n_{3j}+n_{4j}\)\\
+	\hline
+	160 & 3 \\
+	162 & 6\\
+	164 & 11\\
+	166 & 12\\
+	168 & 15\\
+	170 & 5\\
+\end{tabular}
+\end{center}
+
+De la tabla se obtiene que la altura más frecuente entre los individuos cuyo peso oscila entre 51 y 57 kg es $y_5 = 168$ cm.
+
+\item ¿Qué peso medio es más representativo, el de los individuos que miden 164 cm o el de los
+que miden 168 cm?
+
+Para poder determinar lo que se nos pide, hemos de estudiar de estudiar dos distribuciones condicionadas: la del carácter X condicionada a la modalidad $y_3$ y la del carácter X condicionada a la modalidad $y_5$:
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+	\(x_i\) & \(n_{i3}\) & \(x_i n_{i3}\) & \(x_{i}^{2} n_{i3}\)\\
+	\hline
+	48 & 2 & 96 & 4608\\
+	51 & 4 & 204 & 10404\\
+	54 & 6 & 324 & 17496\\
+	57 & 1 & 57 & 3249\\
+	60 & 0 & 0 & 0\\
+	& 13 & 681 & 35757\\
+	
+	\(x_i\) & \(n_{i5}\) & \(x_i n_{i5}\) & \(x_{i}^{2} n_{i5}\)\\
+	\hline
+	48 & 0 & 0 & 0\\
+	51 & 2 & 102 & 5202\\
+	54 & 5 & 270 & 14580\\
+	57 & 8 & 456 & 25992\\
+	60 & 4 & 240 & 14400\\
+	& 19 & 1068 & 60174\\
+\end{tabular}
+\end{center}
+
+\[
+	\bar{x}_{3} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i3} = \frac{681}{13} =  52.3846\text{ kg} \qquad \bar{x}_{5} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i5} = \frac{1068}{19} =  56.2105\text{ kg} 
+\]
+
+\[
+	\sigma_{x,3} = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i3} x_i^2 - \overline{x}_{3}^{2}} = 2.5283 \text{ kg} \qquad \sigma_{x,5} = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i5} x_i^2 - \overline{x}_{5}^{2}} = 2.7216 \text{ kg}
+\]
+
+Al igual que se ha hecho en el apartado a), haremos uso del coeficiente de variación de Pearson para poder determinar qué peso medio es más representativo:
+
+\[
+	C.V_3(Y) = \frac{\sigma_{x,3}}{\bar{x}_{3}} = 0.0483 \qquad C.V_5(Y) = \frac{\sigma_{x,5}}{\bar{x}_{5}} = 0.0484
+\]
+
+En vista de lo obtenido, podemos concluir que el peso medio de la distribución condicionada del carácter X a la modalidad $y_3$ es el más representativo de los dos, aunque en este caso los coeficientes de Pearson son prácticamente iguales.
+\end{enumerate}
+\end{ej}
+
+\begin{ej}
 En una encuesta de familias sobre el número de individuos que la componen \((X)\) y el número de personas activas en ellas \((Y)\) se han obtenido los siguientes resultados:
 \begin{center}
 \begin{tabular}{c|cccc}
@@ -114,147 +254,6 @@ Observando estos resultados podemos afirmar que no es adecuado suponer esta rela
 
 \end{ej}
 
-
-\newpage
-
-\begin{ej}
-Medidos los pesos, X (en Kg), y las alturas, Y (en cm), a un grupo de individuos, se han obtenido
-los siguientes resultados:
-
-\begin{center}
-\begin{tabular}{c|cccccc}
-	\(X/Y\) & 160 & 162 & 164 & 166 & 168 & 170 \\
-	\hline
-	48 & 3 & 2 & 2 & 1 & 0 & 0 \\
-	51 & 2 & 3 & 4 & 2 & 2 & 1 \\
-	54 & 1 & 3 & 6 & 8 & 5 & 1 \\
-	57 & 0 & 0 & 1 & 2 & 8 & 3 \\
-	60 & 0 & 0 & 0 & 2 & 4 & 4\\
-\end{tabular}
-\end{center}
-
-\begin{enumerate}[label=\alph*)]
-	\item Calcular el peso medio y la altura media y decir cuál es más representativo.
-	
-	Para ello hemos de trabajar con las distribuciones marginales del carácter X (peso en Kg) y del carácter Y (altura en cm). Tras efectuar los cálculos pertinentes, la tabla anterior queda de la siguiente forma:
-	
-	\begin{center}
-\begin{tabular}{c|ccccccccc}
-	\(X/Y\) & 160 & 162 & 164 & 166 & 168 & 170 & \(n_{i.}\) & \(n_{i.}x_i\) & \(n_{i.}x_i^2\) \\
-	\hline
-	48 & 3 & 2 & 2 & 1 & 0 & 0 & 8 & 384 & 18432 \\
-	51 & 2 & 3 & 4 & 2 & 2 & 1 & 14 & 714 & 36414\\
-	54 & 1 & 3 & 6 & 8 & 5 & 1 & 24 & 1296 & 69984\\
-	57 & 0 & 0 & 1 & 2 & 8 & 3 & 14 & 798 & 45486\\
-	60 & 0 & 0 & 0 & 2 & 4 & 4 & 10 & 600 & 36000\\
-	\(n_{.j}\) & 6 & 8 & 13 & 15 & 19 & 9\\
-	\(n_{.j} y_j\) & 960 & 1296 & 2132 & 2490 & 3192 & 1530\\
-	\(n_{.j} y_j^2\) & 153600 & 209952 & 349648 & 413340 & 536256 & 260100\\
-\end{tabular}
-\end{center}
-
-\[
-	\bar{x} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i.} = \frac{384+714+1296+798+600}{70} = 54.1714 \text{ kilogramos} 
-\]
-
-\[
-	\bar{y} = \frac{1}{n} \sum_{j=1}^{6} y_j n_{.j} = \frac{960+1296+2132+2490+3192+1530}{70} = 165.7143 \text{ centímetros} 
-\]
-
-Para poder determinar cuál de las dos medias es más representativa, haremos uso del coeficiente de variación de Pearson, el cual nos permitirá interpretar independientemente de la escala la variabilidad de los datos respecto de su media:
-
-\[
-	\sigma_x = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i.} x_i^2 - \overline{x}^2} = 3.582 \text{ kilogramos} \qquad C.V(X) = \frac{\sigma_x}{\bar{x}} = 0.0661
-\]
-
-\[
-	\sigma_y = \sqrt{\frac{1}{n} \sum_{j=1}^{6} n_{.j} y_j^2 - \overline{y}^2} = 2.9519 \text{ centímetros} \qquad C.V(Y) = \frac{\sigma_y}{\bar{y}} = 0.0178
-\]
-
-En vista de los resultados, se deduce que la distribución marginal del carácter Y (la altura en cm) es más homogénea, por lo que la altura media es la más representativa de las dos.
-
-\newpage
-
- \item Calcular el porcentaje de individuos que pesan menos de 55 Kg y miden más de 165 cm.
- 
-Si miden más de 165 cm y pesan menos de 55 kg, hemos de tener en cuenta las frecuencias absolutas de todos los pares $(x_i,y_j)$ con $i \in \{1,2,3\}$ e $j \in \{4,5,6\}$. Efectuamos el cálculo:
-
-\[
-	100 \cdot \frac{1}{n} \cdot \sum_{j=4}^{6}\sum_{i=1}^{3}n_{ij} = 100 \cdot \frac{1}{70} \cdot (1+2+2+1+8+5+1) = 28.571\% \text{ de los individuos} 
-\]
-
-\item Entre los que miden más de 165 cm, ¿cuál es el porcentaje de los que pesan más de 52 Kg?
-
-Si miden más de 165 cm y pesan más de 52 kg, hemos de tener en cuenta las frecuencias absolutas de todos los pares $(x_i,y_j)$ con $i \in \{3,4,5\}$ e $j \in \{4,5,6\}$. Efectuamos el cálculo:
-
-\[
-	100 \cdot \frac{1}{n} \cdot \sum_{j=4}^{6}\sum_{i=3}^{5}n_{ij} = 100 \cdot \frac{1}{70} \cdot (8+5+1+2+8+3+2+4+4) = 52.857\% \text{ de los individuos} 
-\]
-
-\item ¿Cuál es la altura más frecuente entre los individuos cuyo peso oscila entre 51 y 57 Kg?
-
-Esto es equivalente a hallar la modalidad $y_j$ a la que le corresponde el máximo de $n_{2j}+n_{3j}+n_{4j}$:
-
-\begin{center}
-\begin{tabular}{c|c}
-	\(y_j\) & \(n_{2j}+n_{3j}+n_{4j}\)\\
-	\hline
-	160 & 3 \\
-	162 & 6\\
-	164 & 11\\
-	166 & 12\\
-	168 & 15\\
-	170 & 5\\
-\end{tabular}
-\end{center}
-
-De la tabla se obtiene que la altura más frecuente entre los individuos cuyo peso oscila entre 51 y 57 kg es $y_5 = 168$ cm.
-
-\item ¿Qué peso medio es más representativo, el de los individuos que miden 164 cm o el de los
-que miden 168 cm?
-
-Para poder determinar lo que se nos pide, hemos de estudiar de estudiar dos distribuciones condicionadas: la del carácter X condicionada a la modalidad $y_3$ y la del carácter X condicionada a la modalidad $y_5$:
-
-\begin{tabular}{c|c|c|c}
-	\(x_i\) & \(n_{i3}\) & \(x_i n_{i3}\) & \(x_{i}^{2} n_{i3}\)\\
-	\hline
-	48 & 2 & 96 & 4608\\
-	51 & 4 & 204 & 10404\\
-	54 & 6 & 324 & 17496\\
-	57 & 1 & 57 & 3249\\
-	60 & 0 & 0 & 0\\
-	& 13 & 681 & 35757\\
-	
-	\(x_i\) & \(n_{i5}\) & \(x_i n_{i5}\) & \(x_{i}^{2} n_{i5}\)\\
-	\hline
-	48 & 0 & 0 & 0\\
-	51 & 2 & 102 & 5202\\
-	54 & 5 & 270 & 14580\\
-	57 & 8 & 456 & 25992\\
-	60 & 4 & 240 & 14400\\
-	& 19 & 1068 & 60174\\
-\end{tabular}
-
-\newpage
-
-\[
-	\bar{x}_{3} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i3} = \frac{681}{13} =  52.3846\text{ kg} \qquad \bar{x}_{5} = \frac{1}{n} \sum_{i=1}^{5} x_i n_{i5} = \frac{1068}{19} =  56.2105\text{ kg} 
-\]
-
-\[
-	\sigma_{x,3} = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i3} x_i^2 - \overline{x}_{3}^{2}} = 2.5283 \text{ kg} \qquad \sigma_{x,5} = \sqrt{\frac{1}{n} \sum_{i=1}^{5} n_{i5} x_i^2 - \overline{x}_{5}^{2}} = 2.7216 \text{ kg}
-\]
-
-Al igual que se ha hecho en el apartado a), haremos uso del coeficiente de variación de Pearson para poder determinar qué peso medio es más representativo:
-
-\[
-	C.V_3(Y) = \frac{\sigma_{x,3}}{\bar{x}_{3}} = 0.0483 \qquad C.V_5(Y) = \frac{\sigma_{x,5}}{\bar{x}_{5}} = 0.0484
-\]
-
-En vista de lo obtenido, podemos concluir que el peso medio de la distribución condicionada del carácter X a la modalidad $y_3$ es el más representativo de los dos, aunque en este caso los coeficientes de Pearson son prácticamente iguales.
-\end{enumerate}
-\end{ej}
-
 \begin{ej}
 
 \end{ej}
@@ -275,6 +274,8 @@ En vista de lo obtenido, podemos concluir que el peso medio de la distribución 
 Para cada una de las distribuciones:
 \\
 \\
+
+\begin{center}
 \begin{tabular}{c|ccc}[Distribución A]
 	\(X/Y\) & 10 & 15 & 20 \\
 	\hline
@@ -282,9 +283,10 @@ Para cada una de las distribuciones:
 	2 & 1 & 0 & 0 \\
 	3 & 0 & 0 & 3 \\
 	4 & 0 & 1 & 0 \\
-\end{tabular}  \\
-\\
-\\
+\end{tabular}  
+\end{center}
+
+\begin{center}
 \begin{tabular}{c|ccc}[Distribución B]
 	\(X/Y\) & 10 & 15 & 20 \\
 	\hline
@@ -292,9 +294,9 @@ Para cada una de las distribuciones:
 	2 & 1 & 0 & 0 \\
 	3 & 0 & 0 & 3 \\
 \end{tabular}
- \\
- \\
- \\
+ \end{center}
+ 
+ \begin{center}
 \begin{tabular}{c|cccc}[Distribución C]
 	\(X/Y\) & 10 & 15 & 20 & 25 \\
 	\hline
@@ -302,6 +304,7 @@ Para cada una de las distribuciones:
 	2 & 0 & 0 & 1 & 0 \\
 	3 & 2 & 0 & 0 & 0 \\
 \end{tabular}
+\end{center}
 \begin{enumerate}
     \item[a) ] ¿Dependen funcionalmente X de Y o Y de X? 
     \\
