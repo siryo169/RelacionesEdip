@@ -284,22 +284,19 @@ y - \overline{y} = \frac{\sigma_{xy}}{\sigma_{x}^2} \cdot (x - \overline{x})
 
 Escribimos la tabla utilizando las marcas de clase \\
 
-\begin{centering}
-\begin{tabular}{c|ccc|c|c|c|}
-    $X/Y$ & 1 & 2 & 4 & $n_{i.}$ & $c_i\cdot n_{i.}$ & $c_i^2\cdot n_{i.}$ \\
+\begin{center}
+\begin{tabular}{c|ccc|ccc}
+    $X/Y$ & 1 & 2 & 4 & $n_{i.}$ & $c_i n_{i.}$ & $c_i^2 n_{i.}$ \\
     \hline
     8 & 4 & 2 & 0 & 6 & 48 & 384 \\
     20 & 1 & 4 & 2 & 7 & 140 & 2800 \\
-    27.5 & 0 & 3 & 5 & 8 & 220 & 6050 \\
+    27,5 & 0 & 3 & 5 & 8 & 220 & 6050 \\
     \hline
     $n_{.j}$ & 5 & 9 & 7 & 21 & 408 & 9234 \\
-    \hline
-    $d_{j}\cdot n_{.j}$ & 5 & 18 & 28 & 51 \\
-    \hline
-    $d_{j}^2\cdot n_{.j}$ & 5 & 36 & 112 & 153 \\
-    \hline
+    $d_{j}n_{.j}$ & 5 & 18 & 28 & 51 \\
+    $d_{j}^2 n_{.j}$ & 5 & 36 & 112 & 153 \\
 \end{tabular}
-\end{centering} \\
+\end{center} \\
 \\
 
 Media de la distribución marginal de $X$:
@@ -474,27 +471,66 @@ Dada la siguiente distribución bidemensional:
 \end{tabular}
 \end{center}
 
-Primero vamos a obtener unos datos previos que facilitarán los cálculos posteriores:
+Ampliamos la tabla calculando datos que nos resultarán de utilidad
 
 \begin{center}
-	\begin{tabular}{c | c c c c | c c c}
-	\(X/Y\) & 1 & 2 & 3 & 4 & \(n_{i.}\) & \(n_{i.} x_i\) & \(n_{i.} x_i^2\)\\
+	\begin{tabular}{c | c c c c | c c c c}
+	\(X/Y\) & 1 & 2 & 3 & 4 & \(n_{i.}\) & \(n_{i.} x_i\) & \(n_{i.} x_i^2\) & $\overline{y}_i$\\
 	\hline
-	10 & 1 & 3 & 0 & 0 & 4 & 40 & 400 \\
-	12 & 0 & 1 & 4 & 3 & 8 & 96 & 1152 \\
-	14 & 2 & 0 & 0 & 2 & 4 & 56 & 784 \\
-	16 & 4 & 0 & 0 & 0 & 4 & 64 & 1024 \\
+	10 & 1 & 3 & 0 & 0 & 4 & 40 & 400 & 1,75\\
+	12 & 0 & 1 & 4 & 3 & 8 & 96 & 1152 & 3,25\\
+	14 & 2 & 0 & 0 & 2 & 4 & 56 & 784 & 2,5\\
+	16 & 4 & 0 & 0 & 0 & 4 & 64 & 1024 & 1\\
 	\hline
-	& & & & Total & 20 & 256 & 3360 \\
-	\hline
-	\(n_{.j}\) & 7 & 4 & 4 & 5 & 20 & & \\
+	\(n_{.j}\) & 7 & 4 & 4 & 5 & 20 & 256 & 3360 & \\
 	\(n_{.j} y_j\) & 7 & 8 & 12 & 20 & 47 \\
-	\(n_{.j} y_j^2\) & 7 & 16 & 36 & 80 & 139
+	\(n_{.j} y_j^2\) & 7 & 16 & 36 & 80 & 139 \\
+	$\overline{x}_j$ & 14,571 & 10,5 & 12 & 12,8
 	\end{tabular}
 	\end{center}
+\begin{enumerate}[label=\alph*)]
+	\item ¿Son estadísticamente independientes \(X\) e \(Y\)?
 	
-Ahora calcularemos la media de x, de y, las varianzas y la covarianza:
+	\(n_{13} =  0 \not= \frac{4\cdot4}{20} = \frac{n_{1\cdot}\cdot n_{\cdot3}}{n}\Longrightarrow\) existe al menos un par de valores de las variables tal que la frecuencia absoluta nde ese par o coincide con el producto de las de las marginales partido por el tamaño de la población, lego podemos afirmar que $X$ e $Y$ no son independientes.\\ También observamos que como para cada modalidad de \(X\) no encontramos una única modalidad de \(Y\) con frecuencia no nula y por tanto tampoco son funcionalmente dependientes.
+	
+	
+	\item Calcular y representar las curvas de regresión de \(X/Y\) e \(Y/X\).
+	
+	Para calcular la curva de regresión de tipo I de \(X/Y\) tenemos que calcular los puntos por los que pasa. Estos son los puntos \((\overline{x}_j, y_j) \quad j=1,\dotsc, p.\)
 \[
+	\overline{x}_1 = \frac{10 + 14 \cdot 2 + 16 \cdot4}{7} = 14.57 \qquad \overline{x}_2 = \frac{10 \cdot 3 + 12}{4} = 10.5
+\]
+\[
+	\overline{x}_3 = \frac{12 \cdot 4}{4} = 12 \qquad \overline{x}_4 = \frac{12 \cdot 3 + 14 \cdot 2}{5} = 12.8
+\]
+
+Puntos:\qquad(14.57, 1)\qquad(10.5, 2)\qquad\((12, 3)\)\qquad(12.8, 4)
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ejer_6_X_Y.png}
+\end{figure}
+
+Ahora calculamos la curva de regresión de tipo I de \(Y/X\), la cual pasa por los puntos \((x_i, \overline{y}_i) \quad i=1,\dotsc,k\)
+\[
+	\overline{y}_{1} = \frac{1 + 2 \cdot 3}{4} = 1.75 \qquad \overline{y}_{2} = \frac{2 + 3 \cdot 4 + 4 \cdot 3}{8} = 3.25
+\]
+\[
+	\overline{y}_{3} = \frac{2 + 2 \cdot 4}{4} = 2.5 \qquad \overline{y}_{4} = \frac{4}{4} = 1
+\]
+
+Puntos:\qquad(10, 1.75)\qquad(12, 3.25)\qquad(14, 2.5)\qquad(16, 1)
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ejer_6_Y_X.png}
+\end{figure}
+
+	\item Cuantificar el grado en que cada variable es explicada por la otra mediante la correspondiente curva de regresión. \\
+	
+	Calculamos media de $X$ e $Y$, sus varianzas y la covarianza:
+	\[
 	\overline{x} = \frac{\sum_{i=1}^{4} n_{i.} x_i}{n} = 12.8 \qquad \overline{y} = \frac{\sum_{j=1}^{4} n_{.j} y_j}{n} = 2.35
 \]
 \[
@@ -504,82 +540,31 @@ Ahora calcularemos la media de x, de y, las varianzas y la covarianza:
 	\sigma_y^2 = \frac{1}{n} \sum_{j=1} n_{.j} y_j^2 - \overline{y}^2 = 1.4275
 \]
 \[
-	\sigma_{xy} = \frac{1}{n} \sum_{i=1}^{4} \sum_{j=1}^{4} n_{ij} x_i y_j - \overline{x}\ \overline{y} = -0.78
+	\sigma_{xy} = \frac{1}{n} \sum_{i=1}^{4} \sum_{j=1}^{4} n_{ij} x_i y_j - \overline{x}\ \overline{y} = \frac{586}{20}-30.08 = -0.78
 \]
-
-\begin{enumerate}[label=\alph*)]
-	\item ¿Son estadísticamente independientes \(X\) e \(Y\)?
-	
-	Podemos observar que existen ciertos \(n_{ij} = 0\), por tanto las variables no son independientes puesto que la igualdad (\ref{ref:independenciaXY}) no se va a dar a menos que \(n_{ij} = 0 \quad \forall i,j\), lo cual carecería de sentido porque sería estudiar una variable que no ha presentado distribución de frecuencias ninguna. También observamos que como para cada modalidad de \(X\) no encontramos una única modalidad de \(Y\) con frecuencia no nula y por tanto tampoco son funcionalmente dependientes.
-	
-	\item Calcular y representar las curvas de regresión de \(X/Y\) e \(Y/X\).
-	
-	Para calcular la curva de regresión de tipo 1 de \(X/Y\) tenemos que calcular los puntos por los que pasa. Estos son los puntos \((\overline{x}_j, y_j) \quad j=1,\dotsc, p.\)
-\[
-	\overline{x}_1 = \frac{10 + 14 \cdot 2 + 16 \cdot4}{7} = 14.57 \qquad \overline{x}_2 = \frac{10 \cdot 3 + 12}{4} = 10.5
-\]
-\[
-	\overline{x}_3 = \frac{12 \cdot 4}{4} = 12 \qquad \overline{x}_4 = \frac{12 \cdot 3 + 14 \cdot 2}{5} = 12.8
-\]
-
-Punto 1: (14.57, 1) \hspace{1cm} Punto 2: (10.5, 2) \hspace{1cm}  \\
-
-Punto 3: \((12, 3)\) \hspace{1cm} Punto 4: (12.8, 4)
-
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.5]{images/ejer_6_X_Y.png}
-\end{figure}
-
-Ahora calculamos la curva de regresión de tipo 1 de \(Y/X\), la cual pasa por los puntos \((x_i, \overline{y}_i) \quad i=1,\dotsc,k\)
-\[
-	\overline{y}_{10} = \frac{1 + 2 \cdot 3}{4} = 1.75 \qquad \overline{y}_12 = \frac{2 + 3 \cdot 4 + 4 \cdot 3}{8} = 3.25
-\]
-\[
-	\overline{y}_{14} = \frac{2 + 2 \cdot 4}{4} = 2.5 \qquad \overline{y}_{16} = \frac{4}{4} = 1
-\]
-
-\newpage
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.5]{images/ejer_6_Y_X.png}
-\end{figure}
-
-	\item Cuantificar el grado en que cada variable es explicada por la otra mediante la correspondiente curva de regresión. \\
-	
-	Es necesario resaltar que los valores de las desviaciones típicas han sido calculadas en el siguiente apartado. \\
 	
 	Ahora calculamos los valores de la razón de correlación lineal de \(Y/X\) y \(X/Y\).
 \[
-    \eta_{Y/X}^{2} = \frac{\sigma_{ey}^2}{\sigma_y^2} \qquad \sigma_{ey} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{y}_i - y_j)^2 = 0.765
-\]
-\[
-	\eta_{Y/X}^2 = 0.5359
+	\sigma_{ey}^2=\frac{1}{n}\sum_{i=1}^k\sum_{j=1}^p n_{ij}(\overline{y}_i - \overline{y}^2) = 0.765\quad\Longrightarrow\qquad
+	\eta_{Y/X}^{2} = \frac{\sigma_{ey}^2}{\sigma_y^2} = \frac{0.765}{1.428} = 0.536 
 \]
 
 \[
-	\eta_{X/Y}^2 = \frac{\sigma_{ex}^2}{\sigma_x^2} \qquad \sigma_{ex} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{x}_j - x_i)^2 = 2.2843
+	\sigma_{ex}^2=\frac{1}{n}\sum_{j=1}^p\sum_{i=1}^k n_{ij}(\overline{x}_i - \overline{x}^2) = 2.284\quad \Longrightarrow \qquad
+	\eta_{X/Y}^{2} = \frac{\sigma_{ex}^2}{\sigma_x^2} = \frac{2.284}{4.16} = 0.549
 \]
-\[
-	\eta_{X/Y}^2 = 0.5491
-\]
-
-Concluimos que cada variable explica alrededor de el 54\% de la otra.
+$Y$ queda explicada por $X$ un 53.60\% mediante la curva de regresión de tipo I de $Y/X$ \\
+$X$ queda explicada por $Y$ un 54.90\% mediante la curva de regresión de tipo I de $X/Y$ \\
 
 	\item ¿Están \(X\) e \(Y\) correladas linealmente? Dar las expresiones de las rectas de regresión.
 	
 Las expresiones de las rectas de regresión de \(Y\) sobre \(X\) y la recta de regresión de \(X\) sobre \(Y\) son respectivamente:
 \[
-	y = \overline{y} + \frac{\sigma_{xy}}{\sigma_x^2} (x - \overline{x}) \qquad x  = \overline{x} + \frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y})
+	y = \overline{y} + \frac{\sigma_{xy}}{\sigma_x^2} (x - \overline{x})\quad\Longrightarrow\qquad y = -0.188x + 4.75
 \]
 \[
-	y = -0.1875x + 4.75 \qquad x = -0.5464y + 14.084
+	 x  = \overline{x} + \frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y})\quad\Longrightarrow\qquad x = -0.546y + 14.083
 \]
-
-\newpage
-
     \begin{figure}[h!]
         \centering
         \begin{subfigure}[b]{0.45\linewidth}
@@ -590,12 +575,16 @@ Las expresiones de las rectas de regresión de \(Y\) sobre \(X\) y la recta de r
         \end{subfigure}
     \end{figure}
     
-Para ver si \(X\) e \(Y\) están  correlacionadas linealmente, calculamos el coeficiente de correlación lineal de Pearson. Hacemos primero la razón de correlación lineal y tomamos la raíz cuadrada negativa ya que la covarianza es negativa.
+    
+Coeficiente de correlación lineal:
 \[
-	r^2 = \frac{\sigma_{xy}²}{\sigma_x^2 \sigma_y^2} = 0.1024 \Rightarrow r = -\sqrt{r^2} = -0.32
+    r = \pm\sqrt{r^2} = \frac{\sigma_{xy}}{\sigma{x}\sigma{y}} = \pm\sqrt{\frac{\sigma_{xy}^2}{\sigma{x}^2\sigma{y}^2}}
 \]
-
-Así, concluimos que no están correlacionadas linealmente puesto que el resultado obtenido está bastante alejado de -1. Como se puede observar, la razón de correlación de nuestras rectas no supera a la recta de regresión de tipo 1 lo cual siempre se cumple.
+\[
+\sigma_{xy} < 0 \Longrightarrow r = -\sqrt{r^2} = \frac{-0,78}{\sqrt{4.16\cdot 1.428}} = -0,320
+\]
+El coeficiente de correlación lineal es negativo (por serlo la covarianza) y está más cerca del 0 que del -1, lo que indica una baja correlación lineal entre $X$ e $Y$.
+Como se puede observar, la razón de correlación de nuestras rectas no supera a la recta de regresión de tipo 1 lo cual siempre se cumple.
 \end{enumerate}
 
 \end{ej}
