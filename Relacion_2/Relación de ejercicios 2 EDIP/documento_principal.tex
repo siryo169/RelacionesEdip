@@ -34,6 +34,7 @@
 \maketitle
 
 \begin{ej}
+Lo primero de todo es necesario mencionar que 
 
 \end{ej}
 
@@ -296,8 +297,7 @@ Escribimos la tabla utilizando las marcas de clase \\
     $d_{j}n_{.j}$ & 5 & 18 & 28 & 51 \\
     $d_{j}^2 n_{.j}$ & 5 & 36 & 112 & 153 \\
 \end{tabular}
-\end{center} \\
-\\
+\end{center} 
 
 Media de la distribución marginal de $X$:
 \[
@@ -834,7 +834,47 @@ $$r = \dfrac{\sigma_{xy}}{\sigma_x \cdot \sigma_y} = 0.608$$
 De este resultado se puede observar que la correlación es positiva y el grado de dependencia lineal es elevado.
 \end{ej}
 
+\bigskip
+
 \begin{ej}
+Calcular el coeficiente de correlación lineal de dos variables cuyas rectas de regresión son:
+\[
+	x + 4y = 1
+\]
+\[
+	x + 5y = 2
+\]
+
+Como no nos indican cuál es la recta de regresión lineal \(Y/X\) y cúal es la \(X/Y\), supondremos que la pimera es la que explica la variable \(x\) en función de la variable \(y\) \((X/Y)\) y la segunda la que explica la variable \(y\) en función de la variable \(x\) y \((Y/X)\). \\
+
+Se nos está pidiendo el coeficiente de correlación lienal \(r = \frac{\sigma_{xy}}{\sigma_x \sigma_y}\), y para hallarlo hemos de tener en cuenta la forma de dichas rectas para poder hallar \(\sigma_{xy}, \sigma_x, \text{ y } \sigma_y\):
+\[
+	x + 4y = 1 \Rightarrow x = 1 - 4y \Rightarrow x = \frac{\sigma_{xy}}{\sigma_y^2}y + \overline{x} - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y}
+\]
+\[
+	x +5y = 2 \Rightarrow y = - \frac{1}{5}x + \frac{2}{5} \Rightarrow y = \frac{\sigma_{xy}}{\sigma_x^2}x -\frac{\sigma_{xy}}{\sigma_x^2} \overline{x} + \overline{y}
+\]
+
+Por otro lado:
+\[
+	r^2 = \frac{\sigma_{xy}}{\sigma_y^2} \cdot \frac{\sigma_{xy}}{\sigma_x^2} = (-4) \cdot (-\frac{1}{5}) = \frac{4}{5} \Rightarrow r = -\sqrt{r^2} = -0.89443
+\]
+Es necesario mencionar que tomamos el valor negativo de la raíz pues sabemos que la covarianza es negativa. \\
+
+Como \(r \in [-1, 0]\), sabemos que es un resultado lógico. Veamos qué hubiese ocurrido si las rectas las hubieramos tomado del revés:
+\[
+	x + 4y = 1 \Rightarrow y = - \frac{1}{4}x + \frac{1}{4} \Rightarrow y = \frac{\sigma_{xy}}{\sigma_x^2}x + \overline{y} - \frac{\sigma_{xy}}{\sigma_x^2} \overline{x}
+\]
+\[
+	x + 5y = 2 \Rightarrow x = -5y +2 \Rightarrow x = \frac{\sigma_{xy}}{\sigma_y^2}y + \overline{x} - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y}
+\]
+
+Actuamos igual que antes:
+\[
+	r^2 = \frac{\sigma_{xy}}{\sigma_x^2} \cdot \frac{\sigma_{xy}}{\sigma_y^2} = (-\frac{1}{4}) \cdot (-5) = \frac{5}{4} \Rightarrow r = -\sqrt{r^2} = -1.11803
+\]
+
+Observamos que \(r < -1\). Esto no tiene ningún tipo de sentido, por lo que la interpretación correcta era la anterior.
 \end{ej}
 
 \begin{ej}
@@ -915,8 +955,6 @@ inferior fracciones decimales de la hora).
 de vuelos compuesto de 100 vuelos de media hora, 200 de una hora y 100 de dos horas? ¿Es
 fiable esta estimación?
 
-\newpage
-
 Hemos de calcular la expresión de la recta de regresión lineal de Y sobre X, la cual es de la forma:
 
 \[
@@ -975,8 +1013,6 @@ Para saber si esta estimación es fiable, calcularemos el coeficiente de correla
     r = \frac{\sigma_{xy}}{\sigma_x \sigma_y} = \frac{2.557}{\sqrt{0.4086}\cdot\sqrt{16.0403}} = 0.9988
 \]
 
-\newpage
-
 En nuestro caso, $0 < r < 1$ $\Rightarrow$ Cuanto más próximo se encuentre $r$ de $1$, mejor dependencia lineal existirá entre el carácter $X$ y el carácter $Y$ en estudio. Como $r$ es prácticamente 1, l relación lineal explica de forma óptima la relación entre las variables y podemos afirmar que las estimaciones hechas son fiables.
 
 \item Ajustar un modelo del tipo $Y = a + bX + cX^2$ . ¿Qué consumo total se estimaría para el
@@ -1023,8 +1059,6 @@ Repetimos el proceso con las derivadas parciales en función de $b$ y de $c$:
 \[
     = -2m_{11}+2am_{10}+2bm_{20}+2cm_{30}
 \]
-
-\newpage
 
 Calculamos $m_{30}$:
 
@@ -1086,8 +1120,6 @@ La solución del sistema es: $a=0.7491$, $b=6.6368$ y $c=-0.1395$ y por lo tanto
 \[
     \text{Combustible total} = 4.0326 \cdot 100 + 7.2464 \cdot 200 + 13.4647 \cdot 100 = 3199.01 \text{ miles de libras}
 \]
-
-\newpage
 
 \item ¿Cuál de los dos modelos se ajusta mejor? Razonar la respuesta.
 
