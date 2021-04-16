@@ -553,7 +553,7 @@ Ahora calculamos la curva de regresión de tipo 1 de \(Y/X\), la cual pasa por l
 	
 	Ahora calculamos los valores de la razón de correlación lineal de \(Y/X\) y \(X/Y\).
 \[
-	\eta_{Y/X}^{2} = \frac{\sigma_{ey}^2}{\sigma_y^2} \qquad \sigma_{ey} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{y}_i - y_j)^2 = 0.765
+    \eta_{Y/X}^{2} = \frac{\sigma_{ey}^2}{\sigma_y^2} \qquad \sigma_{ey} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (\overline{y}_i - y_j)^2 = 0.765
 \]
 \[
 	\eta_{Y/X}^2 = 0.5359
@@ -861,6 +861,42 @@ Consideremos una distribución bidimensional en la que la recta de regresión de
 
 Determinar la recta de regresión de $X$ sobre $Y$ , y la bondad de los ajustes lineales.
 
+\begin{center}
+\begin{tabular}{c|cccc|c}
+    $x_i$ & 3 & 5 & 8 & 9 & 25 \\
+    \hline
+    $n_{i.}$ & 5 & 1 & 2 & 1 & 9\\
+    \hline
+    $x_in_{i.}$ & 15 &  5 & 16 & 9 & 45 \\
+    \hline
+    $x_i^2n_{i.}$ & 45 & 25 & 128 & 81 & 279 \\
+\end{tabular}
+\end{center}
+
+\[
+\overline{x} = \frac{1}{n}\sum_{i=1}^4x_in_{i.}= \frac{1}{\sum^4_{i=1}n_{i.}}\sum_{i=1}^4x_in_{i.}=\frac{45}{9} = 5
+\]
+\[
+\sigma_x^2 = \frac{1}{n}\sum_{i=1}^4n_{i.}x_i^2 - \overline{x}^2 = \frac{279}{9} -25 = 6
+\]
+\[
+\frac{\sigma_{xy}}{\sigma_x^2}=5 \Longrightarrow \sigma_{xy} = 5 \cdot\sigma_x^2= 5\cdot 6 = 30
+\]
+\[
+\overline{y}=5\overline{x} -20 = 25-20 = 5
+\]
+\[
+\sigma_y^2 = \frac{1}{n}\sum_{j=1}^4n_{.j}y_j^2 -\overline{y}^2 = \frac{3240}{9}-5^2 = 335
+\]
+Recta de regresión de $X$ sobre $Y$:
+\[
+x - \overline{x} = \frac{\sigma_{xy}}{\sigma_{y}^2} \cdot (y - \overline{y}) \Longrightarrow x=\frac{\sigma_{xy}}{\sigma_y^2}y-\frac{\sigma_{xy}}{\sigma_y^2}\overline{y}+\overline{x}= \frac{30}{335}y-\frac{30}{335}\cdot 5 + 5 \Longrightarrow x = 0.090y + 4.552
+\]
+Coeficiente de determinación lineal
+\[
+\eta_{Y/X}^{2} = \frac{\sigma_{xy}^2}{\sigma_y^2\sigma_x^2} = \frac{30^2}{6\cdot 335} = 0.448 \Longrightarrow \text{explican el 44.80\% de los casos}
+\]
+Las rectas de regresión explican menos del 50\% de los casos, lego podemos conluir que no se trata de un buen ajuste.
 
 \end{ej}
 
