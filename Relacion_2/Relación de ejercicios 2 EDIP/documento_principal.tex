@@ -34,7 +34,86 @@
 \maketitle
 
 \begin{ej}
-Lo primero de todo es necesario mencionar que 
+Se han lanzado dos dados varias veces, obteniendo los resultados que se presentan en la siguiente tabla donde \(X\) desgina el resultado del primer dado e \(Y\) el resultado del segundo:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\(X\) & 1 & 2 & 2 & 3 & 5 & 4 & 1 & 3 & 3 & 4 & 1 & 2 & 5 & 4 & 3 & 4 & 4 & 5 & 3 & 1 & 6 & 5 & 4 & 6 \\
+\hline
+\(Y\) & 2 & 3 & 1 & 4 & 3 & 2 & 6 & 4 & 1 & 6 & 6 & 5 & 1 & 2 & 5 & 1 & 1 & 2 & 6 & 6 & 2 & 1 & 2 & 5
+\end{tabular}
+\end{center}
+
+Es necesario mencionar que este ejercicio carece absolutamente de interés estadístico pues no tiene ningún sentido el estudiar de manera estadística un dado que se supone totalmente aleatorio. Si se mencionase, por ejemplo, que uno de los dados está cargado por un mago pues entonces sí sería interesante el ejercicio.
+
+\begin{enumerate}[label=\alph*)]
+	\item Construir la tabla de frecuencias.
+	
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\(X/Y\) & 1 & 2 & 3 & 4 & 5 & 6 & \(n_{i.}\) & \(n_{i.} x_i\) & \(n_{i.}x_i^2\) \\
+	\hline
+	1 & 0 & 1 & 0 & 0 & 0 & 4 & 4 & 4 & 4 \\
+	\hline
+	2 & 1 & 0 & 1 & 0 & 1 & 0 & 3 & 6 & 12 \\
+	\hline
+	3 & 1 & 0 & 0 & 2 & 1 & 1 & 5 & 15 & 45\\
+	\hline
+	4 & 2 & 3 & 0 & 0 & 0 & 1 & 6 & 24 & 96 \\
+	\hline
+	5 & 2 & 1 & 1 & 0 & 0 & 0 & 4 & 20 & 100 \\
+	\hline
+	6 & 0 & 1 & 0 & 0 & 1 & 0 & 2 & 12 & 72\\
+	\hline 
+	 & & & & & & & 24 & 81 & 329 \\
+	\hline
+	\(n_{.j}\) & 6 & 6 & 2 & 2 & 3 & 5 & 24 & & \\
+	\hline
+	\(n_{.j} y_j\) & 6 & 12 & 6 & 8 & 15 & 30 & 77 & & \\
+	\hline
+	\(n_{.j}y_j^2\) & 6 & 24 & 18 & 32 & 75 & 180 & 335 & & \\
+	\hline
+	\end{tabular}
+	\end{center}
+	
+	\item Calcular las puntuaciones medias obtenidas con cada dado y ver cuales son más homogéneas.
+	
+	Primero calcularemos lo pedido para la variable \(X\):
+	
+\[
+	\overline{x} = \frac{1}{n} \sum_{i=1}^{j} n_{i.}x_i = \frac{81}{24} = 3.375 \text{ puntos}
+\]
+\[
+	\sigma_x^2 = \frac{1}{n} \sum_{i=1}^{k} n_{i.} (x_i - \overline{x})^2 = \frac{329}{24} - \left(\frac{81}{24}\right)^2 = 2.317 \text{ puntos}^2
+\]
+\[
+	C.V.(x) = \frac{\sigma_x}{\abs{\overline{x}}} = \frac{\sqrt{2.317}}{3.375} = 0.451
+\]
+
+\newpage
+
+Ahora pasamos a la variable \(Y\):
+\[
+	\overline{y} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j = \frac{77}{24} = 3.208 \text{ puntos}
+\]
+\[
+	\sigma_y^2 = \frac{1}{n} \sum_{j=1}^{p} n_{.j}(y_j - \overline{y})^2 = \frac{335}{24} - \left( \frac{77}{24} \right)^2 = 3.664 \text{ puntos}^2
+\]
+\[
+	C.V.(y) = \frac{\sigma_y}{\abs{\overline{y}}} = \frac{\sqrt{3.664}}{3.208} = 0.596
+\]
+
+Podemos observar que la primera distribución presenta un coeficiente de variación menor que la segunda y por tanto podemos afirmar que esta es la más homogénea de las dos.
+
+	\item ¿Qué resultado del segundo dado es más frecuente cuando en el primero se obtiene un 3?
+	
+	Podemos observar que:
+\[
+	n_{34} > n_{3j} \quad \forall j \in \{1,2,3,5,6\}
+\]
+Cuando el primer dado obtiene 3, el 4 es el resultado más frecuente en el segundo dado.
+\end{enumerate}
 
 \end{ej}
 
