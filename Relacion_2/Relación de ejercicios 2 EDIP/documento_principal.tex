@@ -46,6 +46,19 @@ Se han lanzado dos dados varias veces, obteniendo los resultados que se presenta
 
 Es necesario mencionar que este ejercicio carece absolutamente de interés estadístico pues no tiene ningún sentido el estudiar de manera estadística un dado que se supone totalmente aleatorio. Un enunciado más adecuado sería aquel en el que la variable \(X\) fuese el número de mascotas por hogar y la variable \(Y\) el número de paseos que se da a estas mascotas al día.
 
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población: lanzamiento de los dados.
+        \item Tamaño de la población: 24 lanzamientos.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es la puntuación del primer dado e \(Y\) que es la puntuación del segundo dado.
+        \item Modalidades: En este caso \(X\) presenta 6 modalidades distintas al igual que \(Y\).
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+
 \begin{enumerate}[label=\alph*)]
 	\item Construir la tabla de frecuencias.
 	
@@ -91,8 +104,6 @@ Es necesario mencionar que este ejercicio carece absolutamente de interés estad
 	C.V.(x) = \frac{\sigma_x}{\abs{\overline{x}}} = \frac{\sqrt{2.317}}{3.375} = 0.451
 \]
 
-\newpage
-
 Ahora pasamos a la variable \(Y\):
 \[
 	\overline{y} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j = \frac{77}{24} = 3.208 \text{ puntos}
@@ -113,8 +124,28 @@ Podemos observar que la primera distribución presenta un coeficiente de variaci
 	n_{34} > n_{3j} \quad \forall j \in \{1,2,3,5,6\}
 \]
 Cuando el primer dado obtiene 3, el 4 es el resultado más frecuente en el segundo dado.
-\end{enumerate}
 
+	\item Calcular la puntuación máxima del 50\% de las puntuaciones más bajas obtenidas con el primer dado si con el segundo se ha obtenido un 2 o un 5.
+	
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\(x_i\) & \(n_{i2} + n_{i5}\) & \(N_{i2} + N_{i5}\) \\
+	\hline
+	1 & 1 & 1 \\
+	2 & 1 & 2 \\
+	3 & 1 & 3 \\
+	4 & 3 & 6 \\
+	5 & 1 & 7 \\
+	6 & 2 & 9 \\
+	\hline
+\end{tabular}
+\end{center}
+
+\[
+	\frac{50}{100} \cdot 9 = 4.5 \Rightarrow Me = 4 \text{ puntos}
+\]
+\end{enumerate}
 \end{ej}
 
 \begin{ej}
@@ -131,6 +162,18 @@ los siguientes resultados:
 	57 & 0 & 0 & 1 & 2 & 8 & 3 \\
 	60 & 0 & 0 & 0 & 2 & 4 & 4\\
 \end{tabular}
+\end{center}
+
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población: grupo de individuos.
+        \item Tamaño de la población: 70 individuos.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es el peso del individuo e \(Y\) que es la altura del mismo.
+    \end{itemize}
+    \end{minipage}
+    }
 \end{center}
 
 \begin{enumerate}[label=\alph*)]
@@ -272,7 +315,17 @@ En una encuesta de familias sobre el número de individuos que la componen \((X)
 \end{tabular}
 \end{center}
 
-\newpage
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población: un grupo de familias.
+        \item Tamaño de la población: 89 familias.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es el número de individuos de cada familia e \(Y\) que es la cantidad de personas activas en las mismas.
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
 
 \begin{enumerate}[label=\alph*)]
 	\item Calcular la recta de regresión de \(Y\) sobre \(X\).
@@ -340,7 +393,7 @@ temperaturas	\includegraphics[scale=0.55]{images/ejer3.png}
 
 \begin{ej}
 Se realiza un estudio sobre la tensión de vapor de agua ($Y$ , en ml. de Hg.) a distintas temperaturas
-($X$, en o C). Efectuadas 21 medidas, los resultados son:
+($X$, en ºC). Efectuadas 21 medidas, los resultados son:
 
 \begin{center}
 \begin{tabular}{c|ccc}
@@ -354,6 +407,18 @@ Se realiza un estudio sobre la tensión de vapor de agua ($Y$ , en ml. de Hg.) a
 
 Explicar el comportamiento de la tensión de vapor en términos de la temperatura mediante una
 función lineal. ¿Es adecuado asumir este tipo de relación? \\
+
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población: las distintas mediciones.
+        \item Tamaño de la población: 21 mediciones.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es la temperatura e \(Y\) que es la tensión del vapor de agua en \(ml\) de \(Hg\).
+        \end{itemize}
+    \end{minipage}
+    }
+\end{center}
 
 \(n_{13} =  0 \not= \frac{6\cdot7}{21} = \frac{n_{1\cdot}\cdot n_{\cdot3}}{n}\Longrightarrow\) existe al menos un par de valores de las variables tal que la frecuencia absoluta nde ese par o coincide con el producto de las de las marginales partido por el tamaño de la población, lego podemos afirmar que $X$ e $Y$ no son independientes. \\
 
@@ -515,8 +580,6 @@ Este resultado nos demuestra que si las variables son independientes, su covaria
 Ahora calcularemos la curva de regresión de tipo 1 de \(Y/X\), que es la curva que pasa por los puntos \((x_i, \overline{y}_i) \quad i=1, \dotsc, k\). \\
 
 Punto 1: \((-1, 2)\) \hspace{1cm} Punto 2: \((0, 2)\) \hspace{1cm} Punto 3: \((1, 2)\)
-
-\newpage
 
 \begin{figure}[!h]
 	\centering
@@ -729,7 +792,6 @@ Para cada una de las distribuciones:
         	\centering
     	    \includegraphics[scale=0.55]{images/ej7regyxA.png}
         \end{figure} 
-        \newpage
         \textbf{Distribución B} \\
         Curva de regresión Y/X: \\
         $\bar{y}_1 = \frac{2 \cdot 15}{2} = 15$  $\bar{y}_2 = \frac{1 \cdot 10}{1} = 10$  $\bar{y}_3 = \frac{3 \cdot 20}{3} = 20$  \\
@@ -796,8 +858,6 @@ Las rectas que se nos pide determinar son la recta de regresión lineal de \(Y\)
 \[
 	x - \overline{x}  =\frac{\sigma_{xy}}{\sigma_y^2} (y - \overline{y}) \Rightarrow x = \frac{\sigma_{xy}}{\sigma_y^2}y - \frac{\sigma_{xy}}{\sigma_y^2} \overline{y} + \overline{x}
 \]
-
-\newpage
 
 Por lo tanto, será necesario calcular las medias y varianzas marginales de cada carácter y la covarianza. Antes de desarrollar los cálculos de la tabla, vamos a especificar cómo calcularemos la covarianza. Como se vio en clase, $\sigma_{xy} = \mu_{11} = m_{11} -m_{10} m_{01}$, siendo $\mu_{rs}$ el momento conjunto central de órdenes r y s y $m_{rs}$ el momento conjunto respecto al origen de órdenes r y s. Recordemos que $m_{10} = \bar{x}$, $m_{01} = \bar{y}$ y $m_{11} = \sum_{i=1}^{k}\sum_{j=1}^{p}f_{ij}x_i y_j$. Procedamos a efectuar los cálculos pertinentes en la tabla:
 
@@ -890,6 +950,19 @@ Se eligen 50 matrimonios al azar y se les pregunta la edad de ambos al contraer 
 \end{tabular}
 \end{center}
 Estudiar la interdependencia lineal entre ambas variables.
+
+\begin{center}
+    \fbox{
+    \begin{minipage}[h!]{1\linewidth}
+    \begin{itemize}
+        \item Población: los distintos matrimonios.
+        \item Tamaño de la población: 50 matrimonios.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es la del hombre al contraer matrimonio e \(Y\) que es la edad de la mujer en el mismo instante.
+    \end{itemize}
+    \end{minipage}
+    }
+\end{center}
+
 Primero, se han de determinar las marcas de clase y crear la tabla con éstas:
 \begin{center}
 \begin{tabular}{c|ccccccccc}
@@ -1205,5 +1278,90 @@ La solución del sistema es: $a=0.7491$, $b=6.6368$ y $c=-0.1395$ y por lo tanto
 Al observar el segundo modelo, podemos notar que la ecuación del modelo es prácticamente idéntica a la del primer modelo exceptuando el término $-0.1395x^2$. De hecho, en las estimaciones realizadas, ambos modelos nos dan un valor muy parecido (casi 3200). Este modelo es más fino ya que el término $-0.1395x^2$ está añadiendo información a la recta del modelo del apartado a), es decir, no se pierde la información que había en el modelo 1. En conclusión, la razón de correlación de la parábola siempre será mayor o igual que la de la recta.
 
 \end{enumerate}
+\end{ej}
+
+\begin{ej}
+La curva de Engel, que expresa el gasto en un determinado bien en función de la renta, adopta en ocasiones la forma de una hipérbola equilátera. Ajustar dicha curva a los siguientes datos, en los que \(X\) denota la renta en miles de euros e \(Y\) el gasto en euros. Cuantificar la bondad del ajuste:
+\begin{center}
+\begin{tabular}{c|cccc}
+	\(X\) 10 & 12.5 & 20 & 25 \\
+	\hline
+	\(Y\) 50 & 90 & 160 & 180 \\
+\end{tabular}
+\end{center}
+
+Por lo visto en teoría en clase, la hipérbola equilátera es un modelo de regresión dado por la función
+\[
+	y = f(x) = a \frac{1}{x} + b
+\]
+
+Para poder terminar \(a\) y \(b\), hemos de linealizar realizando la siguiente transformación: \(z = \frac{1}{x}\). Esto nos permite expresar la anterior función de la siguiente forma:
+\[
+	y = az + b
+\]
+
+Y ya, simplemente hemos de hallar \(a\) y \(b\) como si de una recta de regresión lineal se tratase, por lo que:
+\[
+	a = \frac{\sigma_{zy}}{\sigma_z^2} \qquad b = \overline{y} - a \overline{z} \Rightarrow b = \overline{y} - \frac{\sigma_{zy}}{\sigma_z^2}
+\]
+
+Efectuamos los cálculos:
+\[
+	\overline{z} = \frac{1}{n} \sum_{i=1}^{4} n_{i.} z_i = \frac{\frac{1}{10}+\frac{1}{12.5}+\frac{1}{20}+\frac{1}{25}}{4} = 0.0675 \text{ miles de euros}^{-1}
+\]
+\[
+	\overline{y} = \frac{1}{n} \sum_{j=1}^{4} n_{.j} y_j = \frac{50 + 90 + 160 + 180}{4} = 120 \text{ euros}
+\]
+\[
+	\sigma_z^2 = \frac{1}{n} \sum_{i=1}^{4} n_{i.} z_i^2 - \overline{z}^2 = \frac{0.0205}{4} - 0.0675^2 = 0.00056875 \text{ miles de euros}^{-2}
+\]
+
+\[
+	\sigma_{zy} = m_{11} - m_{10} m_{01} 
+\]
+\[
+	m_{11} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{i.} z_i y_j = \frac{5 + \frac{36}{5} + 8 + \frac{36}{5}}{4} = 6.85
+\]
+\[
+	\sigma_{zy} = 6.85 - 120 \cdot 0.0675 = -1.25
+\]
+
+Así, ya podemos calcular los parámetros \(a\) y \(b\):
+\[
+	a = \frac{-1.25}{0.00056875} = -2197.8
+\]
+\[
+	b = 120 + 2197.8 \cdot 0.0675 = 268.35
+\]
+
+Por lo tanto la recta de regresión que buscamos era:
+\[
+	y = -2197.8z + 268.35
+\]
+
+Y deshaciendo el cambio auxiliar, la hipérbola equilátera será de la forma:
+\[
+	y = - \frac{2197.8}{x} + 268.35
+\] \\
+
+Para poder determinar la bondad del ajuste lineal, necesitamos interpretar el coeficiente de determinación, que tiene la siguiente forma:
+\[
+	\eta_{Y/X}^2 = 1 - \frac{\sigma_{rY/X}^2}{\sigma_y^2} \rightarrow \text{ varianza residual}
+\]
+
+Para poder calcularlo nos falta el valor de la varianza residual y de la varianza de \(y\):
+\[
+	\sigma_{rX/Y}^2 = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} (y_j - f(x_i))^2 f_{ij} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (y_j - (a \frac{1}{x_i} + b)^2 = 2.64563
+\]
+\[
+	\sigma_y^2 = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j^2 - \overline{y}^2 = \frac{2500+8100+25600+32400}{4} - 120^2 = 2750 \text{ euros}^2
+\]
+
+Así:
+\[
+	\eta_{Y/X}^2 = 1 - \frac{2.64563}{2750} = 0.9990379
+\]
+
+Sabemos siempre que \(0 \leq \eta_{X/Y}^2 \leq 1\). Cuanto mñas próximo esté este valor a 1, mejor correlación existirá entre las variables según la función de regresión ajustada. Como en este caso es casi 1, podemos afirmar que hay una correlación prácticamente perfecta y concluimos que el ajuste es muy bueno.
 \end{ej}
 \end{document}
