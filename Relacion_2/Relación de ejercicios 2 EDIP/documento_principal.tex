@@ -34,7 +34,7 @@
 \maketitle
 
 \begin{ej}
-Se han lanzado dos dados varias veces, obteniendo los resultados que se presentan en la siguiente tabla donde \(X\) desgina el resultado del primer dado e \(Y\) el resultado del segundo:
+Se han estudiado 24 domicilios, obteniendo los resultados que se presentan en la siguiente tabla donde \(X\) designa el número de mascotas e \(Y\) el número de paseos a sus mascotas realizados por los dueños al día:
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -50,9 +50,9 @@ Es necesario mencionar que este ejercicio carece absolutamente de interés estad
     \fbox{
     \begin{minipage}[h!]{1\linewidth}
     \begin{itemize}
-        \item Población: lanzamiento de los dados.
-        \item Tamaño de la población: 24 lanzamientos.
-        \item Variable estadística: en este caso se presentan 2. \(X\) que es la puntuación del primer dado e \(Y\) que es la puntuación del segundo dado.
+        \item Población: domicilios con mascotas.
+        \item Tamaño de la población: 24 domicilios.
+        \item Variable estadística: en este caso se presentan 2. \(X\) que es el número de mascotas por hogar e \(Y\) que es el número de paseos que se da a estas mascotas al día.
         \item Modalidades: En este caso \(X\) presenta 6 modalidades distintas al igual que \(Y\).
     \end{itemize}
     \end{minipage}
@@ -90,15 +90,15 @@ Es necesario mencionar que este ejercicio carece absolutamente de interés estad
 	\end{tabular}
 	\end{center}
 	
-	\item Calcular las puntuaciones medias obtenidas con cada dado y ver cuales son más homogéneas.
+	\item Calcular las medias de mascotas y paseos por domicilio y ver cuales son más homogéneas.
 	
 	Primero calcularemos lo pedido para la variable \(X\):
 	
 \[
-	\overline{x} = \frac{1}{n} \sum_{i=1}^{j} n_{i.}x_i = \frac{81}{24} = 3.375 \text{ puntos}
+	\overline{x} = \frac{1}{n} \sum_{i=1}^{k} n_{i.}x_i = \frac{81}{24} = 3.375 \text{ mascotas}
 \]
 \[
-	\sigma_x^2 = \frac{1}{n} \sum_{i=1}^{k} n_{i.} (x_i - \overline{x})^2 = \frac{329}{24} - \left(\frac{81}{24}\right)^2 = 2.317 \text{ puntos}^2
+	\sigma_x^2 = \frac{1}{n} \sum_{i=1}^{k} n_{i.} (x_i - \overline{x})^2 = \frac{329}{24} - \left(\frac{81}{24}\right)^2 = 2.317 \text{ mascotas}^2
 \]
 \[
 	C.V.(x) = \frac{\sigma_x}{\abs{\overline{x}}} = \frac{\sqrt{2.317}}{3.375} = 0.451
@@ -106,10 +106,10 @@ Es necesario mencionar que este ejercicio carece absolutamente de interés estad
 
 Ahora pasamos a la variable \(Y\):
 \[
-	\overline{y} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j = \frac{77}{24} = 3.208 \text{ puntos}
+	\overline{y} = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j = \frac{77}{24} = 3.208 \text{ paseos}
 \]
 \[
-	\sigma_y^2 = \frac{1}{n} \sum_{j=1}^{p} n_{.j}(y_j - \overline{y})^2 = \frac{335}{24} - \left( \frac{77}{24} \right)^2 = 3.664 \text{ puntos}^2
+	\sigma_y^2 = \frac{1}{n} \sum_{j=1}^{p} n_{.j}(y_j - \overline{y})^2 = \frac{335}{24} - \left( \frac{77}{24} \right)^2 = 3.664 \text{ paseos}^2
 \]
 \[
 	C.V.(y) = \frac{\sigma_y}{\abs{\overline{y}}} = \frac{\sqrt{3.664}}{3.208} = 0.596
@@ -123,9 +123,9 @@ Podemos observar que la primera distribución presenta un coeficiente de variaci
 \[
 	n_{34} > n_{3j} \quad \forall j \in \{1,2,3,5,6\}
 \]
-Cuando el primer dado obtiene 3, el 4 es el resultado más frecuente en el segundo dado.
+De entre los domicilios con 3 mascotas, el resultado más frecuente es 4 paseos.
 
-	\item Calcular la puntuación máxima del 50\% de las puntuaciones más bajas obtenidas con el primer dado si con el segundo se ha obtenido un 2 o un 5.
+	\item Calcular las mascotas máximas del 50\% de las puntuaciones de los domicilios en los que se han hecho 2 o 5 paseos.
 	
 \begin{center}
 \begin{tabular}{|c|c|c|}
@@ -143,7 +143,7 @@ Cuando el primer dado obtiene 3, el 4 es el resultado más frecuente en el segun
 \end{center}
 
 \[
-	\frac{50}{100} \cdot 9 = 4.5 \Rightarrow Me = 4 \text{ puntos}
+	\frac{50}{100} \cdot 9 = 4.5 \Rightarrow Me = 4 \text{ mascotas}
 \]
 \end{enumerate}
 \end{ej}
@@ -380,7 +380,7 @@ Por tanto:
 \[
 	r^2 = \frac{0.7907^2}{2.5146 \cdot 0.8657} = 0.2872 \qquad r = 0.536
 \]
-Observando estos resultados podemos afirmar que no es adecuado suponer esta relación linear puesto que el coeficiente de correlación lineal está demasiado alejado de 1.
+Observando estos resultados podemos afirmar que no es adecuado suponer esta relación linear puesto que el $r^2$ está demasiado alejado de 1 y el modelo explica menos del 29\% de los casos.
 
 \begin{figure}[h!]
 	\centering
@@ -427,7 +427,7 @@ Buscamos la recta de regresión $Y/X$:
 y - \overline{y} = \frac{\sigma_{xy}}{\sigma_{x}^2} \cdot (x - \overline{x})
 \]
 
-Escribimos la tabla utilizando las marcas de clase \\
+Escribimos la tabla utilizando las marcas de clase:  \\
 
 \begin{center}
 \begin{tabular}{c|ccc|ccc}
@@ -475,7 +475,7 @@ b= \overline{y} - a\overline{x} = 2.429 - 0.098\cdot 19.429 = 0.525;
 \[
 y=0.098x + 0.525
 \]
-Razón de correlacón:
+Razón de correlación:
 \[
 \eta_{Y/X}^{2} = \eta_{X/Y}^{2} = r^2 = \frac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2} = \frac{6.093^2}{62.228\cdot 1386} = 0.430
 \]
@@ -530,7 +530,7 @@ Ahora comprobemos si esto se cumple en la distribución representada por la tabl
 	j = 5 \qquad \frac{8}{30} = \frac{4}{15} = \frac{12}{45} = \frac{16}{60}
 \]
 
-Podemos observar que, efectivamente, \(Y\) es independiente de \(X\) y por tanto carace de sentido estudiar la curva de regresión y afirmamos que:
+Podemos observar que, efectivamente, \(Y\) es independiente de \(X\) y por tanto carece de sentido estudiar la curva de regresión ya que su objetivo principal es predecir el valor de la variable dependiente $Y$ dado el valor $x_i$ de la variable independiente asociada $X$, es decir, predecir el comportamiento de la variable condicionada $Y/X = x_i$, el cual ya sabemos pues $\frac{n_{1j}}{n_{1.}} = \frac{n_{2j}}{n_{2.}} = \dotsm = \frac{n_{ij}}{n_{i.}} = \dotsm = \frac{n_{kj}}{n_{k.}}$. Afirmamos que:
 \[
 	\sigma_{xy} = 0
 \]
@@ -1346,12 +1346,12 @@ Y deshaciendo el cambio auxiliar, la hipérbola equilátera será de la forma:
 
 Para poder determinar la bondad del ajuste lineal, necesitamos interpretar el coeficiente de determinación, que tiene la siguiente forma:
 \[
-	\eta_{Y/X}^2 = 1 - \frac{\sigma_{rY/X}^2}{\sigma_y^2} \rightarrow \text{ varianza residual}
+	\eta_{Y/X}^2 = 1 - \frac{\sigma_{ey}^2}{\sigma_y^2} \rightarrow \text{ varianza residual}
 \]
 
 Para poder calcularlo nos falta el valor de la varianza residual y de la varianza de \(y\):
 \[
-	\sigma_{rX/Y}^2 = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} (y_j - f(x_i))^2 f_{ij} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (y_j - (a \frac{1}{x_i} + b)^2 = 2.64563
+	\sigma_{ey}^2 = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} (y_j - f(x_i))^2 f_{ij} = \frac{1}{n} \sum_{i=1}^{k} \sum_{j=1}^{p} n_{ij} (y_j - (a \frac{1}{x_i} + b)^2 = 2.64563
 \]
 \[
 	\sigma_y^2 = \frac{1}{n} \sum_{j=1}^{p} n_{.j} y_j^2 - \overline{y}^2 = \frac{2500+8100+25600+32400}{4} - 120^2 = 2750 \text{ euros}^2
@@ -1362,7 +1362,7 @@ Así:
 	\eta_{Y/X}^2 = 1 - \frac{2.64563}{2750} = 0.9990379
 \]
 
-Sabemos siempre que \(0 \leq \eta_{X/Y}^2 \leq 1\). Cuanto mñas próximo esté este valor a 1, mejor correlación existirá entre las variables según la función de regresión ajustada. Como en este caso es casi 1, podemos afirmar que hay una correlación prácticamente perfecta y concluimos que el ajuste es muy bueno.
+Sabemos siempre que \(0 \leq \eta_{X/Y}^2 \leq 1\). Cuanto más próximo esté este valor a 1, mejor correlación existirá entre las variables según la función de regresión ajustada. Como en este caso es casi 1, podemos afirmar que hay una correlación prácticamente perfecta y concluimos que el ajuste es muy bueno.
 \end{ej}
 \end{ej}
 \begin{ej}
@@ -1399,8 +1399,8 @@ Explicar el comportamiento de Y por X mediante: \\
     \\
     Sustituyendo en la expresión al principio del apartado, $y = 4.506x + 6.567$.
     \\
-    Para ver como de bueno es el ajuste, calcularé el coeficiente de determinación lineal:
-    $$ r^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2 = o.915}$$
+    Para ver cómo de bueno es el ajuste, calcularemos el coeficiente de determinación lineal:
+    $$ r^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2} = 0.915$$
     \item[b) ] Hipérbola equilátera.
     \\
     Es de la forma : $y = \frac{a}{x} + b$, si $z = \frac{1}{x}$ entonces buscaremos $y = az + b$. \\
@@ -1453,15 +1453,15 @@ Explicar el comportamiento de Y por X mediante: \\
     $$y = 3.785x^{1.088}$$
     \\
     Con una razón de correlación:
-    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2}$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ey}^2}{\sigma_y^2}$$
     $$f(9) = 41.368$$
     $$f(10) = 46.394$$
     $$f(12) = 56.778$$
     $$f(15) = 72.131$$
     $$f(22) = 109.436$$
     $$f(32) = 164.334$$
-    $$\sigma_{ry}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 183.019$$
-    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2} = 0.874$$
+    $$\sigma_{ey}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 183.019$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ey}^2}{\sigma_y^2} = 0.874$$
     \item[d) ] Curva exponencial \\
     $$y = ba^x \iff log \ y = log \ b + xlog \ a$$
     $$y' = b' + xa' \text{ con } y' = log \ y \\ b' = log \ b \\ a' = log \ a$$
@@ -1474,21 +1474,21 @@ Explicar el comportamiento de Y por X mediante: \\
     $$\bar{x} = 16.667 \ \ \sigma_x^2 = 65.221$$
     $$\sigma_{xy'} = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} \cdot x_i \cdot y'_j - \bar{x} \cdot \bar{y'} = 3.67$$
     $$y' = 0.056x + 3.341$$
-    $$a = e^{a'} = 1-058 \ \ b = e^{b'} = 28.247$$
+    $$a = e^{a'} = 1.058 \ \ b = e^{b'} = 28.247$$
     $$y = 28.247 \cdot 1.058^x$$
      Con una razón de correlación:
-    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2}$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ey}^2}{\sigma_y^2}$$
     $$f(9) = 46.879$$
     $$f(10) = 49.593$$
     $$f(12) = 55.503$$
     $$f(15) = 65.712$$
     $$f(22) = 97.445$$
     $$f(32) = 171.083$$
-    $$\sigma_{ry}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 362.372$$
-    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2} = 0.75$$
+    $$\sigma_{ey}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 362.372$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ey}^2}{\sigma_y^2} = 0.75$$
     \
     \
-    DE aquí observamos que el ajuste más adecuado es el del apartado b, la hipérbola equilátera, ya que su razón de correlación se acerca más a 1 que las demás y por tanto es la que mejor se ajusta a la nube de puntos.
+    De aquí observamos que el ajuste más adecuado es el del apartado b, la hipérbola equilátera, ya que su razón de correlación se acerca más a 1 que las demás y por tanto es la que mejor se ajusta a la nube de puntos.
     \end{enumerate}
 \end{ej}
 \end{document}
