@@ -1364,4 +1364,131 @@ Así:
 
 Sabemos siempre que \(0 \leq \eta_{X/Y}^2 \leq 1\). Cuanto mñas próximo esté este valor a 1, mejor correlación existirá entre las variables según la función de regresión ajustada. Como en este caso es casi 1, podemos afirmar que hay una correlación prácticamente perfecta y concluimos que el ajuste es muy bueno.
 \end{ej}
+\end{ej}
+\begin{ej}
+Se dispone de la siguiente informaci ́on referente al gasto en espect ́aculos (Y, en euros) y la rentadisponible mensual (X, en cientos de euros) de 6 familias: \\ \\
+\centering
+\begin{tabular}{c|cccccc}
+    Y & 30 & 50 & 70 & 80 & 120 & 140\\ \hline
+    X & 9 & 10 & 12 & 15 & 22 & 32
+\end{tabular} \\
+Explicar el comportamiento de Y por X mediante: \\
+\begin{enumerate}
+    \item[a) ] Relación lineal. \\
+    Para esto, debemos calcular la recta de regresión, que viene dada por:
+    $$y = \bar{y} + \frac{\sigma_{xy}}{\sigma_x^2}x - \frac{\sigma_{xy}}{\sigma_x^2}\bar{x}$$
+    Para realizar la recta, usaré una tabla para ir almacenando los cálculos: \\
+    \begin{tabular}{c|cccccccccc}
+    X/Y & 30 & 50 & 70 & 80 & 120 & 140 & $n_{i \cdot}$ & $n_{i \cdot} \cdot x_i$ &  $n_{i \cdot} \cdot x_i^2$ & $x_i \displaystyle \sum_{i = 1}^6 n_{ij} \cdot y_j$\\ \hline
+    9 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 81 & 270 \\
+    10 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 10 & 100 & 500 \\
+    12 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 12& 144 & 840 \\
+    15 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 15 & 225 & 1200 \\
+    22 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 22 & 484 & 2640 \\
+    32 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 32 & 1024 & 4480 \\
+    $n_{\cdot j}$ & 1 & 1 & 1 & 1 & 1 & 1 & 6 & & & \vline 9930 \vline \\
+    $n_{\cdot j} \cdot y_j$ & 30 & 50 & 70 & 80 & 120 & 140 & & & &\\
+    $n_{\cdot j} \cdot y_j^2$ & 900 & 2500 & 4900 & 6400 & 14400 & 19600
+    \end{tabular}
+    
+    $$\bar{x} = \frac{\displaystyle\sum_{i=1}^6 x_i \cdot n_{i \cdot}}{n} = 16.667 \text{ cientos de euros} \ \bar{y} = \frac{\displaystyle\sum_{j=1}^6 y_j \cdot n_{\cdot j}}{n} = 81.667 \text{ euros}$$
+    $$\sigma_x^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 n_{i \cdot} \cdot x_i^2 - \bar{x}^2 = 65.221 \text{ cientos de euro} s^2$$
+    $$\sigma_y^2 = \frac{1}{n} \displaystyle \sum_{j = 1}^6 n_{\cdot j} \cdot y_j^2 - \bar{y}^2 = 1447.217 \text{ euro} s^2$$
+    $$\sigma_{xy} = \frac{1}{n}   \displaystyle \sum_{i = 1}^6 \sum_{j=1}^6 n_{ij} \cdot x_i \cdot y_i - \bar{x} \bar{y} = 293.884$$
+    \\
+    \\
+    Sustituyendo en la expresión al principio del apartado, $y = 4.506x + 6.567$.
+    \\
+    Para ver como de bueno es el ajuste, calcularé el coeficiente de determinación lineal:
+    $$ r^2 = \dfrac{\sigma_{xy}^2}{\sigma_x^2 \sigma_y^2 = o.915}$$
+    \item[b) ] Hipérbola equilátera.
+    \\
+    Es de la forma : $y = \frac{a}{x} + b$, si $z = \frac{1}{x}$ entonces buscaremos $y = az + b$. \\
+    
+    \begin{tabular}{c|cccccc}
+         Y & 30 & 50 & 70 & 80 & 120 & 140 \\ \hline
+         Z & 0.111 & 0.1 & 0.083 & 0.067 & 0.046 & 0.031
+    \end{tabular} \\
+    $$\bar{z} = \dfrac{\displaystyle \sum_{i = 1}^6 z_i \cdot n_{i \cdot}}{n} = 0.073 $$
+    $$\sigma_z^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 n_{i \cdot} \cdot z_i^2 - \bar{z}^2 = 0.0008 $$
+    $$\sigma_{zy} = \frac{1}{n}   \displaystyle \sum_{i = 1}^6 \sum_{j=1}^6 n_{ij} \cdot z_i \cdot y_i - \bar{z} \bar{y} = -1.069$$
+    $$y = \bar{y} + \frac{\sigma_{zy}}{\sigma_z^2}z - \frac{\sigma_{zy}}{\sigma_z^2}\bar{z}$$
+    $$y = -1333.712z + 179.25$$
+    Sustituyendo la z: 
+    $$y = -\frac{1333.712}{x} + 179.2501$$
+    \\
+    Al igual que en el apartado anterior, debemos calcular la razón de correlación para ver como de bueno es el ajuste:
+    \\
+    $$\eta_{Y/X}^2 = \frac{\sigma_{ey}^2}{\sigma_y^2}.$$
+    $$\sigma_{ey}^2 = \frac{1}{n} \displaystyle\sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij}(f(x_i) - \bar{y})^2$$
+    $$f(9) = 31.0598$$
+    $$f(10) = 45.8789$$
+    $$f(12) = 68.1074$$
+    $$f(15) = 90.3359$$
+    $$f(22) = 118.6268$$
+    $$f(32) = 137.5716$$
+    $$\displaystyle\sum_{i=1}^6 \sum_{j=1}^6 n_{ij}(f(x_i) - \bar{y})^2 = 2561.058 + 1280.767 + 183.855 + 75.153 + 1366.049 + 3125.337 = 8592.241$$
+    $$\sigma_{ey}^2 = \frac{1}{n} \displaystyle\sum_{i = 1}^6 \sum_{j=1}^6 n_{ij}(f(x_i) - \bar{y})^2 = 1432.04$$
+    $$\eta_{Y/X}^2 = \dfrac{\sigma_{ey}^2}{\sigma_y^2} = 0.99$$
+    \item[c) ] Curva potencial
+    \\
+    Es de la forma $y = bx^a$. Para lo que haré:
+    $$log \ y = log \ bx^a \iff log \ y = log \ b + alog \ x$$
+    $$y' = az + b' \text{ con } y' = log \ y \ \ b' = log \ b \  \ z' = log \ x $$
+    \\
+    \begin{tabular}{c|cccccc}
+         Y' & 3.401 & 3.912 & 4.249 & 4.382 & 4.788 & 4.942 \\ \hline
+         Z & 2.197 & 2.303 & 2.485 & 2.708 & 3.091 & 3.466
+    \end{tabular}
+    \\
+    $$\bar{z} = \dfrac{\displaystyle \sum_{i = 1}^6 z_i \cdot n_{i \cdot}}{n} = 2.708 $$
+    $$\bar{y'} = \dfrac{\displaystyle \sum_{j = 1}^6 y_j \cdot n_{\cdot j}}{n} = 4.273 $$
+    $$\sigma_z^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 n_{i \cdot} \cdot z_i^2 - \bar{z}^2 = 0.199$$
+    $$\sigma_{zy'} = \frac{1}{n}   \displaystyle \sum_{i = 1}^6 \sum_{j=1}^6 n_{ij} \cdot z_i \cdot y'_i - \bar{z} \bar{y'} = 0.217$$
+    
+    $$y = \bar{y} + \frac{\sigma_{zy'}}{\sigma_z^2}\cdot z - \frac{\sigma_{zy'}}{\sigma_x^2}\cdot \bar{z}$$
+    
+    $$y = 1.0884z + 1.331$$
+    $$b = e^{b'} = 3.785$$
+    $$y = 3.785x^{1.088}$$
+    \\
+    Con una razón de correlación:
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2}$$
+    $$f(9) = 41.368$$
+    $$f(10) = 46.394$$
+    $$f(12) = 56.778$$
+    $$f(15) = 72.131$$
+    $$f(22) = 109.436$$
+    $$f(32) = 164.334$$
+    $$\sigma_{ry}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 183.019$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2} = 0.874$$
+    \item[d) ] Curva exponencial \\
+    $$y = ba^x \iff log \ y = log \ b + xlog \ a$$
+    $$y' = b' + xa' \text{ con } y' = log \ y \\ b' = log \ b \\ a' = log \ a$$
+    \\ 
+    \begin{tabular}{c|cccccc}
+        Y' & 3.401 & 3.912 & 4.249 & 4.382 & 4.788 & 4.942\\ \hline
+        X  & 9 & 10 & 12 & 15 & 22 & 32 
+    \end{tabular} \\
+    Del primer apartado sabemos que:
+    $$\bar{x} = 16.667 \ \ \sigma_x^2 = 65.221$$
+    $$\sigma_{xy'} = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} \cdot x_i \cdot y'_j - \bar{x} \cdot \bar{y'} = 3.67$$
+    $$y' = 0.056x + 3.341$$
+    $$a = e^{a'} = 1-058 \ \ b = e^{b'} = 28.247$$
+    $$y = 28.247 \cdot 1.058^x$$
+     Con una razón de correlación:
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2}$$
+    $$f(9) = 46.879$$
+    $$f(10) = 49.593$$
+    $$f(12) = 55.503$$
+    $$f(15) = 65.712$$
+    $$f(22) = 97.445$$
+    $$f(32) = 171.083$$
+    $$\sigma_{ry}^2 = \frac{1}{n} \displaystyle \sum_{i = 1}^6 \sum_{j = 1}^6 n_{ij} (y_j - f(x_i))^2 = 362.372$$
+    $$\eta_{Y/X}^2 = 1 - \frac{\sigma_{ry}^2}{\sigma_y^2} = 0.75$$
+    \
+    \
+    DE aquí observamos que el ajuste más adecuado es el del apartado b, la hipérbola equilátera, ya que su razón de correlación se acerca más a 1 que las demás y por tanto es la que mejor se ajusta a la nube de puntos.
+    \end{enumerate}
+\end{ej}
 \end{document}
