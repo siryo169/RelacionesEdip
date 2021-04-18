@@ -63,30 +63,19 @@ Es necesario mencionar que este ejercicio carece absolutamente de interés estad
 	\item Construir la tabla de frecuencias.
 	
 	\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-	\hline
+	\begin{tabular}{c|c c c c c c|c c c}
 	\(X/Y\) & 1 & 2 & 3 & 4 & 5 & 6 & \(n_{i.}\) & \(n_{i.} x_i\) & \(n_{i.}x_i^2\) \\
 	\hline
 	1 & 0 & 1 & 0 & 0 & 0 & 4 & 4 & 4 & 4 \\
-	\hline
 	2 & 1 & 0 & 1 & 0 & 1 & 0 & 3 & 6 & 12 \\
-	\hline
 	3 & 1 & 0 & 0 & 2 & 1 & 1 & 5 & 15 & 45\\
-	\hline
 	4 & 2 & 3 & 0 & 0 & 0 & 1 & 6 & 24 & 96 \\
-	\hline
 	5 & 2 & 1 & 1 & 0 & 0 & 0 & 4 & 20 & 100 \\
-	\hline
 	6 & 0 & 1 & 0 & 0 & 1 & 0 & 2 & 12 & 72\\
 	\hline 
-	 & & & & & & & 24 & 81 & 329 \\
-	\hline
-	\(n_{.j}\) & 6 & 6 & 2 & 2 & 3 & 5 & 24 & & \\
-	\hline
+	\(n_{.j}\) & 6 & 6 & 2 & 2 & 3 & 5 & 24 & 81 & 329 \\
 	\(n_{.j} y_j\) & 6 & 12 & 6 & 8 & 15 & 30 & 77 & & \\
-	\hline
 	\(n_{.j}y_j^2\) & 6 & 24 & 18 & 32 & 75 & 180 & 335 & & \\
-	\hline
 	\end{tabular}
 	\end{center}
 	
@@ -182,7 +171,7 @@ los siguientes resultados:
 	Para ello hemos de trabajar con las distribuciones marginales del carácter X (peso en Kg) y del carácter Y (altura en cm). Tras efectuar los cálculos pertinentes, la tabla anterior queda de la siguiente forma:
 	
 	\begin{center}
-\begin{tabular}{c|ccccccccc}
+\begin{tabular}{c|cccccc|ccc}
 	\(X/Y\) & 160 & 162 & 164 & 166 & 168 & 170 & \(n_{i.}\) & \(n_{i.}x_i\) & \(n_{i.}x_i^2\) \\
 	\hline
 	48 & 3 & 2 & 2 & 1 & 0 & 0 & 8 & 384 & 18432 \\
@@ -190,6 +179,7 @@ los siguientes resultados:
 	54 & 1 & 3 & 6 & 8 & 5 & 1 & 24 & 1296 & 69984\\
 	57 & 0 & 0 & 1 & 2 & 8 & 3 & 14 & 798 & 45486\\
 	60 & 0 & 0 & 0 & 2 & 4 & 4 & 10 & 600 & 36000\\
+	\hline
 	\(n_{.j}\) & 6 & 8 & 13 & 15 & 19 & 9\\
 	\(n_{.j} y_j\) & 960 & 1296 & 2132 & 2490 & 3192 & 1530\\
 	\(n_{.j} y_j^2\) & 153600 & 209952 & 349648 & 413340 & 536256 & 260100\\
@@ -265,6 +255,7 @@ Para poder determinar lo que se nos pide, hemos de estudiar de estudiar dos dist
 	54 & 6 & 324 & 17496\\
 	57 & 1 & 57 & 3249\\
 	60 & 0 & 0 & 0\\
+	\hline
 	& 13 & 681 & 35757\\
 \end{tabular}
 \qquad
@@ -276,6 +267,7 @@ Para poder determinar lo que se nos pide, hemos de estudiar de estudiar dos dist
 	54 & 5 & 270 & 14580\\
 	57 & 8 & 456 & 25992\\
 	60 & 4 & 240 & 14400\\
+	\hline
 	& 19 & 1068 & 60174\\
 \end{tabular}
 \end{center}
@@ -330,7 +322,7 @@ En una encuesta de familias sobre el número de individuos que la componen \((X)
 \begin{enumerate}[label=\alph*)]
 	\item Calcular la recta de regresión de \(Y\) sobre \(X\).
 	\begin{center}
-	\begin{tabular}{c|c c c c c c c}
+	\begin{tabular}{c|c c c c | c c c}
 	\(X/Y\) & 1 & 2 & 3 & 4 & \(n_{i.}\) & \(n_{i.}x_i\) & \(n_{i.}x_i^2\) \\
 	\hline
 	1 & 7 & 0 & 0 & 0 & 7 & 7 & 7 \\
@@ -341,6 +333,7 @@ En una encuesta de familias sobre el número de individuos que la componen \((X)
 	6 & 1 & 2 & 3 & 1 & 7 & 43 & 252 \\
 	7 & 1 & 0 & 0 & 1 & 2 & 14 & 98 \\
 	8 & 0 & 0 & 1 & 1 & 2 & 16 & 128 \\
+	\hline
 	\(n_{.j}\) & 48 & 21 & 15 & 5 & 89 \\
 	\(n_{.j} y_j\) & 48 & 42 & 45 & 20 \\
 	\(n_{.j} y_j^2\) & 48 & 84 & 135 & 80 \\
@@ -965,15 +958,16 @@ Estudiar la interdependencia lineal entre ambas variables.
 
 Primero, se han de determinar las marcas de clase y crear la tabla con éstas:
 \begin{center}
-\begin{tabular}{c|ccccccccc}
-	\(X/Y\) & 15 & 22.5 & 27.5 & 32.5 & 37.5 & $n_{i \cdot} $ & $c_i \cdot n_i$ & $c_i^2 \cdot n_i$ & $c_i \cdot \displaystyle\sum_{j=1}^5 n_{ij}\cdot c_j$\\
+\begin{tabular}{c|ccccc|cccc}
+	\(X/Y\) & 15 & 22.5 & 27.5 & 32.5 & 37.5 & $n_{i \cdot} $ & $c_i n_i$ & $c_i^2 n_i$ & $c_i \displaystyle\sum_{j=1}^5 n_{ij} c_j$\\
 	\hline
 	16.5 & 3 & 2 & 3 & 0 & 0 & 8 & 132 & 2178 & 2846.25 \\
 	19.5 & 0 & 4 & 2 & 2 & 0 & 8 & 156 & 3042 & 4095 \\
 	22.5 & 0 & 7 & 10 & 6 & 1 & 24 & 540 & 12150 & 14962.5 \\
 	25.5 & 0 & 0 & 2 & 5 & 3 & 10 & 255 & 6502.5 & 8415 \\
+	\hline
 	$n_{\cdot j}$ & 3 & 13 & 17 & 13 & 4 & 50 &  &  & \vline 30318.75 \vline \\
-	$c_j^2 \cdot n_{\cdot j}$ & 675 & 6581.25 & 12836.3 & 13731.3 & 5625 &  &  &  &  \\
+	$c_j^2  n_{\cdot j}$ & 675 & 6581.25 & 12836.3 & 13731.3 & 5625 &  &  &  &  \\
 \end{tabular}
 \end{center}
 $$\bar{x} = \dfrac{\displaystyle\sum_{j=1}^4 c_i \cdot n_{i \cdot}}{n} = 21.66 \text{ años hombre   } \bar{y} = \dfrac{\displaystyle\sum_{j=1}^5 c_j \cdot n_{\cdot j}}{n} = 27.55 \text{ años mujer}$$
@@ -1028,6 +1022,8 @@ Actuamos igual que antes:
 
 Observamos que \(r < -1\). Esto no tiene ningún tipo de sentido, por lo que la interpretación correcta era la anterior.
 \end{ej}
+
+\vspace{2mm}
 
 \begin{ej}
 Consideremos una distribución bidimensional en la que la recta de regresión de $Y$ sobre $X$ es $y=5x-20$, y $\sum y_j^2n_{.j} = 3240$. Supongamos, además, que la distribución marginal de $X$ es:
@@ -1389,17 +1385,19 @@ Explicar el comportamiento de Y por X mediante: \\
     Para esto, debemos calcular la recta de regresión, que viene dada por:
     $$y = \bar{y} + \frac{\sigma_{xy}}{\sigma_x^2}x - \frac{\sigma_{xy}}{\sigma_x^2}\bar{x}$$
     Para realizar la recta, usaré una tabla para ir almacenando los cálculos: \\
-    \begin{tabular}{c|cccccccccc}
-    X/Y & 30 & 50 & 70 & 80 & 120 & 140 & $n_{i \cdot}$ & $n_{i \cdot} \cdot x_i$ &  $n_{i \cdot} \cdot x_i^2$ & $x_i \displaystyle \sum_{i = 1}^6 n_{ij} \cdot y_j$\\ \hline
+    \begin{tabular}{c|cccccc|cccc}
+    X/Y & 30 & 50 & 70 & 80 & 120 & 140 & $n_{i \cdot}$ & $n_{i \cdot} x_i$ &  $n_{i \cdot} x_i^2$ & $x_i \displaystyle \sum_{i = 1}^6 n_{ij} y_j$\\
+    \hline
     9 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 81 & 270 \\
     10 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 10 & 100 & 500 \\
     12 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 12& 144 & 840 \\
     15 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 15 & 225 & 1200 \\
     22 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 22 & 484 & 2640 \\
     32 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 32 & 1024 & 4480 \\
+    \hline
     $n_{\cdot j}$ & 1 & 1 & 1 & 1 & 1 & 1 & 6 & & & \vline 9930 \vline \\
-    $n_{\cdot j} \cdot y_j$ & 30 & 50 & 70 & 80 & 120 & 140 & & & &\\
-    $n_{\cdot j} \cdot y_j^2$ & 900 & 2500 & 4900 & 6400 & 14400 & 19600
+    $n_{\cdot j} y_j$ & 30 & 50 & 70 & 80 & 120 & 140 & & & &\\
+    $n_{\cdot j} y_j^2$ & 900 & 2500 & 4900 & 6400 & 14400 & 19600
     \end{tabular}
     
     $$\bar{x} = \frac{\displaystyle\sum_{i=1}^6 x_i \cdot n_{i \cdot}}{n} = 16.667 \text{ cientos de euros} \ \bar{y} = \frac{\displaystyle\sum_{j=1}^6 y_j \cdot n_{\cdot j}}{n} = 81.667 \text{ euros}$$
