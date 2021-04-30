@@ -1,0 +1,95 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{amsmath} %Todos los paquetes de matematicas
+\usepackage{amsthm}
+\usepackage{mathtools}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{yhmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{wrapfig} %Figuras flotantes
+\usepackage{parselines}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{subcaption}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{eurosym} %Euro, de nada misniños
+
+\theoremstyle{definition}
+\newtheorem{ej}{Ejercicio}
+
+
+
+\title{\textbf{Relación de ejercicios 3 EDIP}}
+\author{Carlos García, Bora Goker, Javier Gómez,  \\ Ana Graciani, J.Alberto Hoces}
+\date{2020/2021}
+
+\setlength{\parindent}{0px}
+
+\begin{document}
+
+\maketitle
+
+\begin{ej}
+Durante un año, las personas de una ciudad utilizan 3 tipos de transportes: metro (M), autobús (A), y coche particular (C). Las probabilidades de que durante el año hayan usado unos u otros transportes son:
+
+\medskip
+
+\begin{tabular}{c c c c c c c}
+	M: 0.3; & A: 0.2; & C: 0.15; & M y A: 0.1; & M y C: 0.05; & A y C: 0.06; & M, A y C: 0.01
+\end{tabular} 
+
+\medskip
+
+Calcular las probabilidades siguientes:
+\begin{enumerate}[label=\textit{\alph*)}]
+	\item que una persona viaje en metro y no en autobús.
+\[
+	P(M \cap \bar{A}) = P(M) - P(M \cap A) = 0.3 - 0.1 = \underline{0.2}
+\]
+	\item que una persona tome al menos dos medios de transporte.
+\[
+	P((M \cap A) \cup (M \cap C) \cup (A \cap C) \cup (M \cap A \cap C)) = P((M \cap A) \cup (M \cap C)) + P((A \cap C) \cup (M \cap A \cap C)) 
+\]
+\[
+	- P(((M \cap A) \cup (M \cap C)) \cap ((A \cap C) \cup (M \cap A \cap C))) =
+\]
+\[
+	P(M \cap A) + P(M \cap C) - P(M \cap A \cap C) + P(A \cap C) + P(M \cap A \cap C) - P(M \cap A \cap C) - P(M \cap A \cap C) =
+\]
+\[
+	0.1 + 0.05 - 0.01 + 0.06 + 0.01 - 0.01 - 0.01 = \underline{0.19}
+\]
+	\item que una persona viaje en metro o en coche, pero no en autobús.
+\[
+	P((M \cup C) \cap \bar{A}) = P(M \cup C) - P((M \cup C) \cap A) = P(M) + P(C) - P(M \cap C) - [P((M \cap A) \cup (A \cap C))] =
+\]
+\[
+	P(M) + P(C) - P(M \cap C) - P(M \cap A) - P(A \cap A) + P(M \cap A \cap C) =
+\]
+\[
+	0.3 + 0.15 - 0.05 - 0.1 - 0.06 + 0.01 = \underline{0.25}
+\]
+	\item que viaje en metro, o bien en autobús y en coche.
+\[
+	P(M \cup (A \cap C)) = P(M) + P(A \cap C) - P(M \cap A \cap C) = 0.3 + 0.06 - 0.01 = \underline{0.35}
+\]
+	\item que una persona vaya a pie.
+	Aquí se  nos plantean dos posibilidades: que o el ir a pie sea la única alternativa a los medios de transportes propuestos en el enunciado, o que no sea así. En el segundo caso el problema sería imposible de resolver puesto que faltarían datos. Resolvamoslo para el primer caso:
+\[
+	P(\overline{M \cup A \cup C}) = 1 - P(M \cup A \cup C) = 1 - [P(M \cup A) + P(C) - P((M \cup A) \cap C)] = 
+\]
+\[
+	1 - [P(M) + P(A) - P(M \cap A) + P(C) - P((M \cap C) \cup (A \cap C))] =
+\]
+\[
+	1 - [0.3 + 0.2 - 0.1 + 0.15 - 0.05 - 0.06 + 0.01] = \underline{0.55}
+\]
+\end{enumerate}
+
+\end{ej}
+
+\end{document}
