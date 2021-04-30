@@ -89,7 +89,77 @@ Calcular las probabilidades siguientes:
 	1 - [0.3 + 0.2 - 0.1 + 0.15 - 0.05 - 0.06 + 0.01] = \underline{0.55}
 \]
 \end{enumerate}
+\end{ej}
 
+\newpage
+
+\begin{ej}
+Sean \(A,B\) y \(C\) tres sucesos de un espacio probabilístico \(\Omega, \mathcal{A}, P)\), tales que \(P(A) = 0.4\), \(P(B) = 0.2\), \(P(C) = 0.3\), \(P(A \cap B) = 0.1\) y \((A \cup B) \cap C = \emptyset\). Calcular las probabilidades de los siguientes sucesos:
+
+\medskip
+
+\begin{enumerate}[label=\textit{\alph*)}]
+	\item sólo ocurre \(A\).
+\[
+	P(A \cap \bar{B} \cap \bar{C}) = P(A \cap (\overline{B \cup C})) = P(A) - P(A \cap (B \cup C)) = P(A) - P((A \cap B) \cup (A \cap C)) =
+\]
+\[
+	P(A) - P(A \cap B) - P(A \cap C) + P(A \cap B \cap C) = 0.4 - 0.1 - 0 - 0 = \underline{0.3}
+\]
+	\item ocurren los tres sucesos
+\[
+	P((A \cup B) \cap C) = P((A \cap C) \cup (B \cap C)) = 0 \Rightarrow P(A \cap C) = 0 \text{ y } P(B \cap C) = 0
+\]
+\[
+	P(A \cap B \cap C) = \underline{0}
+\]
+	\item ocurren \(A\) y \(B)\) pero no \(C\).
+\[
+	P(A \cap B \cap \bar{C}) = P(A \cap B) - P(A \cap B \cap C) = P(A \cap B) = \underline{0.1}
+\]
+	\item por los menos dos ocurren.
+\[
+	P((A \cap B) \cup (B \cap C) \cup (A \cap C)) = P((A \cap B) \cup ((A \cup B) \cap C)) = P((A \cap B) \cup \emptyset) = P(A \cap B) = \underline{0.1}
+\]
+	\item ocurren dos y no más.
+\[
+	P((A \cap B) \cup (B \cap C) \cup (A \cap C)) = P(A \cap B) = \underline{0.1}
+\]
+	\item no ocurren más de dos.
+\[
+	P(\overline{A \cap B \cap C}) = 1 - P(A \cap B \cap C) = \underline{1}
+\]
+	\item ocurre por lo menos uno
+\[
+	P(A \cup B \cup C) = P(A \cup B) + P(C) - P((A \cup B) \cap C) = P(A) + P(B) + P(C) - P(A \cap B) = 
+\]
+\[
+	0.4 + 0.2 + 0.4 - 0.1 = \underline{0.8}
+\]
+	\item ocurre sólo uno.
+\[
+	P((A \cap \bar{B} \cap \bar{C}) \cup (\bar{A} \cap B \cap \bar{C}) \cup (\bar{A} \cap \bar{B} \cap C)) = P((A \cap \bar{B} \cap \bar{C}) \cup (\bar{A} \cap B \cap \bar{C})) + P(\bar{A} \cap \bar{B} \cap C) - 0 = 
+\]
+\[
+	P(A \cap \bar{B} \cap \bar{C}) + P(\bar{A} \cap B \cap \bar{C}) + P(\bar{A} \cap \bar{B} \cap C) - 0 - 0 = 
+\]
+\[
+	P(A \cap \bar{B}) - P(A \cap \bar{B} \cap C) + P(\bar{A} \cap B) - P(\bar{A} \cap B \cap C) + P(\bar{A} \cap C) - P(\bar{A} \cap B \cap C) =
+\]
+\[
+	P(A) - P(A \cap B) - P(A \cap C) + P(A \cap B \cap C) + P(B) - P(A \cap B) - P(B \cap C) +
+\]
+\[
+	+ P(A \cap B \cap C) + P(C) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C) =
+\]
+\[
+	P(A) - P(A \cap B) + P(B) - P(A \cap B) + P(C) = 0.4 - 0.1 + 0.2 - 0.1 + 0.3 = \underline{0.7}
+\]
+	\item no ocurre ninguno.
+\[
+	P(\overline{A \cup B \cup C}) = 1 - P(A \cup B \cup C) = 1 - 0.8 = \underline{0.2}
+\]
+\end{enumerate}
 \end{ej}
 
 \end{document}

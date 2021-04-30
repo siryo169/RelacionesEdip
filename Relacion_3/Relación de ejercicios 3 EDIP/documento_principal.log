@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  30 APR 2021 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  30 APR 2021 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -453,15 +453,30 @@ r/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 P\OT1/cmr/m/n
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./documento_principal.aux
+Overfull \hbox (1.10721pt too wide) detected at line 123
+\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 \ \OML/
+cmm/m/it/12 B\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 B \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 C\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 
+[ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 C\OT1
+/cmr/m/n/12 )) = \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 A \OMS/cm
+sy/m/n/12 \ \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OT1/cmr/m/n
+/12 ((\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 )
+ \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 C\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 P\O
+T1/cmr/m/n/12 ((\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 B\OT1/cm
+r/m/n/12 ) \OMS/cmsy/m/n/12 [ ;\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 P\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 A \OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 
+) = []
+ []
+
+[2] (./documento_principal.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 6073 strings out of 483007
- 90487 string characters out of 5961757
- 355074 words of memory out of 5000000
- 21044 multiletter control sequences out of 15000+600000
+ 6074 strings out of 483007
+ 90495 string characters out of 5961757
+ 356074 words of memory out of 5000000
+ 21045 multiletter control sequences out of 15000+600000
  540754 words of font info for 51 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  48i,7n,46p,330b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -470,10 +485,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on documento_principal.pdf (1 page, 54591 bytes).
+Output written on documento_principal.pdf (2 pages, 60417 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
