@@ -1,0 +1,56 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{amsmath} %Todos los paquetes de matematicas
+\usepackage{amsthm}
+\usepackage{mathtools}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{yhmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{wrapfig} %Figuras flotantes
+\usepackage{parselines}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{subcaption}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{eurosym} %Euro, de nada misniños
+
+\theoremstyle{definition}
+\newtheorem{ej}{Ejercicio}
+
+
+
+\title{\textbf{Relación de ejercicios 4 EDIP}}
+\author{Carlos García, Bora Goker, Javier Gómez,  \\ Ana Graciani, J.Alberto Hoces}
+\date{2020/2021}
+
+\setlength{\parindent}{0px}
+
+\begin{document}
+
+\maketitle
+
+\begin{ej}
+En una batalla naval, tres destructores localizan y disparan simultáneamente a un submarino. La probabilidad de que el primer destructor acierte el disparo es 0.6, la de que lo acierte el segundo es 0.3 y la de que lo acierte el tercero es 0.1. ¿Cuál es la probabilidad de que el submarino sea alcanzado por algún disparo? \\
+
+Lo primero de todo, es necesario destacar el hecho de que los tres sucesos son independientes, pues que un disparo acierte o no al submarino no influye en el hecho de que lo hagan los otros. \\
+
+Así, sea \(A\) el suceso de que el primer destructor alcance al submarino y \(P(A) = 0.6\). \(B\) es el suceso de que el segundo destructor alcance al submarino y \(P(B) = 0.3\). Y \(C\) el suceso de que el tercer destructor alcance al submarino y \(P(C) = 0.1\).
+\[
+	P(A \cup B \cup C) = P(A \cup B) + P(C) - P((A \cup B) \cap C) = P(A) + P(B) + P(C) - P(A \cap B) -
+\]
+\[
+	- P((A\cap C) \cup (B \cap C)) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - 
+\]
+\[
+	- P(B \cap C) + P(A \cap B \cap C) = 0.6 + 0.3 + 0.1 - 0.6 \cdot 0.3 - 0.6 \cdot 0.1 - 0.3 \cdot 0.1 + 0.6 \cdot 0.3 \cdot 0.1 =
+\]
+\[
+	= \underline{0.748}
+\]
+
+\end{ej}
+\end{document}
