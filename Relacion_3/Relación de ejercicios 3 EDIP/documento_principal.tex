@@ -207,7 +207,7 @@ Aunque en el enunciado del problema se nos especifique que ambas bolas se extrae
 
 \begin{ej}
 Una tienda compra bombillas en lotes de 300 unidades. Cuando un lote llega, se comprueban 60
-unidades elegidas al azar, rechazándose el envı́o si se supera la cifra de 5 defectuosas. ¿Cuál es
+unidades elegidas al azar, rechazándose el envío si se supera la cifra de 5 defectuosas. ¿Cuál es
 la probabilidad de aceptar un lote en el que haya 10 defectuosas?
 
 \medskip
@@ -225,31 +225,31 @@ Estamos ante un problema de combinatoria. Haremos uso del esquema dado en clase:
 Por lo tanto, estamos ante combinaciones sin repetición. El número total de combinaciones posibles será $C_{300}^{60} = \frac{300!}{60!240!}$. Ahora necesitamos hallar las probabilidades de los sucesos favorables a que el lote sea aceptado, es decir, que de las 60 uds. escogidas haya 0, 1, 2, 3, 4 o 5 bombillas defectuosas. Llamemos A, B, C, D, E y F a los sucesos de sacar 0, 1, 2, 3, 4 y 5 piezas defectuosas entre las 60 escogidas respectivamente. Si tenemos 10 bombillas defectuosas entre las 300, habrá 290 bombillas perfectas. Para calcular la probabilidad de que en las 60 escogidas haya 0 defectuosas (suceso A) tendremos que hallar el cociente entre $C_{290}^{60}$ (combinaciones de 290 elementos tomados de 60 en 60) y $C_{300}^{60}$ (esto se debe a la regla de Laplace):
 
 \[
-    P(A) = \frac{C_{10}^{0} \cdot C_{290}^{60}}{C_{300}^{60}} = \frac{\binom{10}{0} \binom{290}{60}}{\binom{300}{60}} = 0.10333 
+    P(A) = \frac{C_{10}^{0} \cdot C_{290}^{60}}{C_{300}^{60}} = \frac{\binom{10}{0} \binom{290}{60}}{\binom{300}{60}} = \underline{0.10333} 
 \]
 
 Para la probabilidad de que en las 60 haya una defectuosa (suceso B) hemos de tener en cuenta que habrá 1 bombilla defectuosa y 59 buenas, por lo que por cada combinación de bombillas defectuosas que se han fijado en las 60 habrá $C_{290}^{59}$ combinaciones posibles de bombillas buenas, y concluimos que la probabilidad del suceso B es:
 
 \[
-    P(B) = \frac{C_{10}^{1} \cdot C_{290}^{59}}{C_{300}^{60}} = \frac{\binom{10}{1} \binom{290}{59}}{\binom{300}{60}} = 0.26838
+    P(B) = \frac{C_{10}^{1} \cdot C_{290}^{59}}{C_{300}^{60}} = \frac{\binom{10}{1} \binom{290}{59}}{\binom{300}{60}} = \underline{0.26838}
 \]
 
 Repetimos los mismos razonamientos con los sucesos C, D, E y F:
 
 \[
-    P(C) = \frac{C_{10}^{2} \cdot C_{290}^{58}}{C_{300}^{60}} = \frac{\binom{10}{2} \binom{290}{58}}{\binom{300}{60}} = 0.307137 \hspace{0.3cm}
-    P(D) = \frac{C_{10}^{3} \cdot C_{290}^{57}}{C_{300}^{60}} = \frac{\binom{10}{3} \binom{290}{57}}{\binom{300}{60}} = 0.20388
+    P(C) = \frac{C_{10}^{2} \cdot C_{290}^{58}}{C_{300}^{60}} = \frac{\binom{10}{2} \binom{290}{58}}{\binom{300}{60}} = \underline{0.307137} \hspace{0.3cm}
+    P(D) = \frac{C_{10}^{3} \cdot C_{290}^{57}}{C_{300}^{60}} = \frac{\binom{10}{3} \binom{290}{57}}{\binom{300}{60}} = \underline{0.20388}
 \]
 
 \[
-    P(E) = \frac{C_{10}^{4} \cdot C_{290}^{56}}{C_{300}^{60}} = \frac{\binom{10}{4} \binom{290}{56}}{\binom{300}{60}} = 0.08691 \hspace{0.3cm}
-    P(F) = \frac{C_{10}^{5} \cdot C_{290}^{55}}{C_{300}^{60}} = \frac{\binom{10}{5} \binom{290}{55}}{\binom{300}{60}} = 0.024853
+    P(E) = \frac{C_{10}^{4} \cdot C_{290}^{56}}{C_{300}^{60}} = \frac{\binom{10}{4} \binom{290}{56}}{\binom{300}{60}} = \underline{0.08691} \hspace{0.3cm}
+    P(F) = \frac{C_{10}^{5} \cdot C_{290}^{55}}{C_{300}^{60}} = \frac{\binom{10}{5} \binom{290}{55}}{\binom{300}{60}} = \underline{0.024853}
 \]
 
 Y calculamos la probabilidad de aceptar el lote como la suma de todas las probabilidades calculadas:
 
 \[
-    P(\text{Aceptar lote con 10 piezas defectuosas}) = 0.99449
+    P(\text{Aceptar lote con 10 piezas defectuosas}) = \underline{0.99449}
 \]
 
 
