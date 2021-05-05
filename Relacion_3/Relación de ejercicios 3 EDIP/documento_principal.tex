@@ -193,8 +193,34 @@ Aunque en el enunciado del problema se nos especifique que ambas bolas se extrae
 
 \end{ej}
 
+\medskip
+
 \begin{ej}
+Una urna contiene 5 bolas blancas y 3 rojas. Se extraen 2 bolas simultáneamente. Calcular la
+probabilidad de obtener:
+\begin{enumerate}[label=\textit{\alph*)}]
+\item dos bolas rojas
+\item dos bolas blancas
+\item una blanca y otra roja.
+\end{enumerate}
+
+No influye el orden en el que sacamos las bolas, los pares se sacan simultáneamente, y no se pueden repetir elementos porque no podemos sacar la misma bola 2 veces, luego para calcular las situaciones posibles calculamos las combinaciones sin repetición. \\
+Tenemos 8 bolas en total y sacamos 2; $\qquad n=8 , \quad p=2$
+\[C^p_n = C^2_8 = \binom{8}{2} = 28\]
+\begin{enumerate}[label=\textit{\alph*)}]
+\item No influye el orden y no se pueden repetir elementos $\longrightarrow$ combinaciones sin repetición
+
+Hay 3 bolas rojas $\quad\Longrightarrow\quad$ situaciones favorables: $\quad C_3^2 = \binom{3}{2} = 3$
+\[P(\text{dos bolas rojas}) = \frac{C_3^2}{C_8^2} = \frac{3}{28} = 0.107\]
+\item \[P(\text{dos bolas blancas}) = \frac{C_5^2}{C_8^2} = \frac{\binom{5}{2}}{\binom{8}{2}} = \frac{10}{28} = \frac{5}{14} = 0.357\]
+\item 5 bolas blancas $\quad\Longrightarrow\quad \text{situaciones favorables 1 bola blanca:}\quad C_5^1 = \binom{5}{1} = 5$ \\
+3 bolas rojas $\quad\Longrightarrow\quad \text{situaciones favorables 1 bola roja:}\quad C_3^1 = \binom{3}{1} = 3$
+\[P(\text{una bola blanca y otra roja}) = \frac{C_5^2 \cdot C_3^2}{C_8^2} = \frac{5\cdot3}{28} = \frac{15}{28} = 0.536\]
+\end{enumerate}
+
 \end{ej}
+
+\medskip
 
 \begin{ej}
 \end{ej}
@@ -202,8 +228,31 @@ Aunque en el enunciado del problema se nos especifique que ambas bolas se extrae
 \begin{ej}
 \end{ej}
 
+\medskip
+
 \begin{ej}
+En una carrera de relevos cada equipo se compone de 4 atletas. La sociedad deportiva de un colegio cuenta con 10 corredores y su entrenador debe formar un equipo de relevos que disputará el
+campeonato, y el orden en que participarán los seleccionados.
+\begin{enumerate}[label=\textit{\alph*)}]
+\item ¿Entre cuántos equipos distintos habrá de elegir el entrenador si los 10 corredores son de
+igual valía? (Dos equipos con los mismos atletas en orden distinto se consideran diferentes)
+
+\medskip
+
+Influye el orden de los atletas en el equipo, no intervienen los 10 corredores del colegio en el equipo y un mismo corredor no puede ocupar dos puestos en un equipo, por lo que no se pueden repetir $\longrightarrow$ variaciones sin repetición \\
+Calculamos el número de variaciones sin repetición, que será el número de equipos distintos posibles; $n = 10,\qquad p = 4$
+\[V^4_{10} = \frac{10!}{(10-4)!} = 7\cdot8\cdot9\cdot10 = 5040\text{  equipos}\]
+\item Calcular la probabilidad de que un alumno cualquiera sea seleccionado.
+
+\medskip
+
+$A$: ser seleccionado
+\[P(A) = \frac{4}{10} = 0.4\]
+
+\end{enumerate}
 \end{ej}
+
+\medskip
 
 \begin{ej}
 Una tienda compra bombillas en lotes de 300 unidades. Cuando un lote llega, se comprueban 60
