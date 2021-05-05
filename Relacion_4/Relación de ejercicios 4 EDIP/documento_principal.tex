@@ -66,4 +66,151 @@ Así:
 	P \left( \cap_{i=1}^{5} A_i \right) = \prod_{i=1}^{5} \frac{1}{7-i} = \frac{1}{6} \cdot \frac{1}{5} \cdot \frac{1}{4} \cdot \frac{1}{3} \cdot \frac{1}{2} = \underline{1.3888 \cdot 10^{-3}}
 \]
 \end{ej}
+
+\newpage
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+En una población de moscas, el 25 \% presentan mutación en los ojos, el 50 \% presentan mutación
+en las alas, y el 40 \% de las que presentan mutación en los ojos presentan mutación en las alas.
+
+\begin{enumerate}
+
+\item[a)] ¿Cuál es la probabilidad de que una mosca elegida al azar presente al menos una de las
+mutaciones?
+
+Primero hemos de nombrar los sucesos del experimento:
+
+\begin{center}
+    $O \equiv \text{escoger mosca con mutación en los ojos}$
+    $A \equiv \text{escoger mosca con mutación en las alas}$
+\end{center}
+
+De la información aportada en el enunciado deducimos fácilmente que:
+
+\begin{center}
+    $P(O) = 0.25$ \hspace{1cm} $P(A) = 0.5$ \hspace{1cm} $P(A|O) = 0.4$
+\end{center}
+
+Que la mosca elegida tenga al menos una mutación  significa que tenga mutación en los ojos, en las alas o en ambos a la vez, es decir, se nos está pidiendo la probabilidad del suceso $A\cup O$:
+
+\begin{center}
+    $P(A\cup O) = P(A) + P(O) - P(A\cap O) =$
+    $= P(A) + P(O) - P(O)\cdot P(A|O) = 0.25 + 0.5 - 0.1 = 0.65$
+\end{center}
+
+\item[b)] ¿Cuál es la probabilidad de que presente mutación en los ojos pero no en las alas?
+
+Que la mosca elegida tenga mutación en los ojos pero no en las alas es el suceso $O-A$, por lo que calcularemos su probabilidad:
+
+\begin{center}
+    $P(O-A) = P(O\cap \overline{A}) = P(O) - P(O\cap A) = P(O) - P(O)\cdot P(A|O) = 0.25 - 0.1 = 0.15$
+\end{center}
+\end{enumerate}
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\newpage
+
+\begin{ej}
+Se dispone de 6 cajas, cada una con 12 tornillos; una caja tiene 8 buenos y 4 defectuosos; dos
+cajas tienen 6 buenos y 6 defectuosos y tres cajas tienen 4 buenos y 8 defectuosos. Se elige al
+azar una caja y se extraen 3 tornillos con reemplazamiento, de los cuales 2 son buenos y 1 es
+defectuoso. ¿Cuál es la probabilidad de que la caja elegida contuviera 6 buenos y 6 defectuosos?
+
+\medskip
+
+En este experimento debemos tener en cuenta que primero se escoge una de las 6 cajas y una vez hecho esto, se realiza la extracción con reemplazamiento de 3 tornillos de la caja escogida. Nombremos los sucesos que nos harán falta para el cálculo de la probabilidad pedida:
+
+\begin{center}
+    $A \equiv \text{escoger la caja de 8 tornillos buenos y 4 defectuosos}$
+    
+    $B \equiv \text{escoger la caja de 6 tornillos buenos y 6 defectuosos}$
+    
+    $C \equiv \text{escoger la caja de 4 tornillos buenos y 8 defectuosos}$
+    
+    $T \equiv \text{extraer 2 tornillos buenos y 1 defectuoso de la caja escogida}$
+\end{center}
+
+En vista de los sucesos nombrados, sabemos que debemos hallar $P(B|T) = \frac{P(B \cap T)}{P(T)}$. De la información del enunciado también sabemos el valor de las probabilidades de algunos sucesos:
+
+\begin{center}
+    $P(A) = 0.1667$ \hspace{1cm} $P(B) = 0.3333$ \hspace{1cm} $P(C) = 0.5$
+\end{center}
+
+Nos centraremos en hallar $P(B \cap T)$ y $P(T)$ a partir de los datos que tenemos:
+\[
+    P(B \cap T) = P(B) \cdot P(T|B) = 0.3333 \cdot \left(\frac{1}{2} \cdot \dfrac{1}{2} \cdot \frac{1}{2} \right) = 0.0417 
+\]
+
+Nos falta hallar $P(T)$, y lo haremos con el uso del Teorema de la probabilidad total:
+
+\begin{center}
+    $P(T) = P(A) \cdot P(T|A) + P(B) \cdot P(T|B) + P(C) \cdot P(T|C) = P(T \cap A) + P(T \cap B) + P(T \cap C) = $
+\end{center}
+
+\[
+    \frac{1}{6}\cdot \left(\frac{8}{12} \cdot \dfrac{8}{12} \cdot \frac{4}{12} \right) + \frac{1}{3} \cdot \left(\frac{1}{2} \cdot \dfrac{1}{2} \cdot \frac{1}{2} \right) + \frac{1}{2} \cdot \left(\frac{4}{12} \cdot \dfrac{4}{12} \cdot \frac{8}{12} \right) = 0.103395
+\]
+
+Ya podemos calcular la probabilidad que se nos pedía:
+
+\[
+    P(B|T) = \frac{P(B \cap T)}{P(T)} = \frac{0.0417}{0.103395} = 0.4033
+\]
+\end{ej}
+
+\begin{ej}
+\end{ej}
+
+\begin{ej}
+Se lanza una moneda; si sale cara, se introducen $k$ bolas blancas en una urna y si sale cruz, se
+introducen $2k$ bolas blancas. Se hace una segunda tirada, poniendo en la urna $h$ bolas negras
+si sale cara y $2h$ si sale cruz. De la urna así compuesta se toma una bola al azar. ¿Cuál es la
+probabilidad de que sea negra?
+
+
+\medskip
+
+La probabilidad de que salga negra será igual a la suma de las probabilidades de que salga negra en cada una de las 4 composiciones posibles de las cajas. La composición de cada caja vendrá dada por el experimento del lanzamiento de una moneda 2 veces seguidas, cuyo espacio muestral es el siguiente: $\Omega = \{CC,CX,XC,XX\}$. Es un espacio de sucesos equiprobables donde cada suceso elemental tiene una probabilidad es de $0.25$. Veamos qué composición presenta la caja para cada uno de estos sucesos:
+
+\begin{center}
+    $CC \longrightarrow \text{k bolas blancas y h bolas negras}$
+    
+    $CX \longrightarrow \text{k bolas blancas y 2h bolas negras}$
+    
+    $XC \longrightarrow \text{2k bolas blancas y h bolas negras}$
+    
+    $XX \longrightarrow \text{2k bolas blancas y 2h bolas negras}$
+\end{center}
+
+\newpage
+
+Una vez analizada la composición de las cajas en función del doble lanzamiento de una moneda, podemos calcular la probabilidad de que salga negra mediante el Teorema de la probabilidad total (nombramos el suceso ``sacar bola negra'' como N):
+
+\begin{center}
+    $P(N) = P(CC) \cdot P(N|CC) + P(CX) \cdot P(N|CX) + P(XC) \cdot P(N|XC) + P(XX) \cdot P(N|XX) = $
+\end{center}
+
+\[
+    = \frac{1}{4} \cdot \frac{h}{k+h} + \frac{1}{4} \cdot \frac{2h}{k+2h} + \frac{1}{4} \cdot \frac{h}{2k+h} + \frac{1}{4} \cdot \frac{2h}{2k+2h} = \frac{8h^3+9k^{2}h+19kh^2}{8h^3+8k^3+28k^{2}h+28kh^2}
+\]
+\end{ej}
+
 \end{document}
