@@ -70,14 +70,50 @@ Así:
 \]
 \end{ej}
 
+\medskip
+
 \begin{ej}
+En una ciudad, el 40\% de las personas tienen pelo rubio, el 25\% tienen ojos azules y el 5\% el
+pelo rubio y los ojos azules. Se selecciona una persona al azar. Calcular la probabilidad de los
+siguientes sucesos:
+
+\begin{enumerate}[label=\textit{\alph*)}]
+\item tener el pelo rubio si se tiene los ojos azules,
+
+\medskip
+
+A: tener el pelo rubio \\
+B: tener los ojos azules \\
+$P(A) = 0.4; \qquad P(B)= 0.25;\qquad P(A\cap B) = 0.05$
+\[P(A|B) = \frac{P(A\cap B)}{P(B)} = \frac{0.05}{0.25} = 0.2\]
+\item tener los ojos azules si se tiene el pelo rubio,
+
+\[P(B|A) = \frac{P(A\cap B)}{P(B)} = \frac{0.05}{0.4} = 0.125\]
+
+\item no tener pelo rubio ni ojos azules,
+\begin{center}
+$P(\bar{A} \cap \bar{B}) = P(\overline{ A\cup B}) = 1 - P(A\cup B) = 1- (P(A)+P(B)-P(A\cap B)) =$ \\ $= 1- (0.4 + 0.25 -0.05) = 1 - 0.6 = 0.4$
+\end{center}
+
+\item tener exactamente una de estas características
+
+\medskip
+\begin{center}
+$P((A\cap B)\cup (B \cap \bar{A})) = P(A\cap\bar{B})+P(B\cap\bar{A})-P((A\cap B)\cap (B \cap \bar{A})))=$\\
+$=P(A-B)+P(B-A)=P(A)-P(A\cap B) +P(B) - P(A \cap B) =$\\$= 0.4 +0.25 -2\cdot 0.05 = 0.55$
+\end{center}
+\end{enumerate}
+
 \end{ej}
+
+\medskip
 
 \begin{ej}
 En una población de moscas, el 25 \% presentan mutación en los ojos, el 50 \% presentan mutación
 en las alas, y el 40 \% de las que presentan mutación en los ojos presentan mutación en las alas.
 
 \begin{enumerate}
+
 
 \item[a)] ¿Cuál es la probabilidad de que una mosca elegida al azar presente al menos una de las
 mutaciones?
