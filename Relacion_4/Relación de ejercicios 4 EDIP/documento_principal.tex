@@ -20,7 +20,7 @@
 \usepackage{subcaption}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{eurosym} %Euro, de nada misniños
-
+\usepackage{amsfonts}
 \theoremstyle{definition}
 \newtheorem{ej}{Ejercicio}
 
@@ -260,6 +260,25 @@ Por tanto:
 \end{ej}
 
 \begin{ej}
+Se dispone de tres urnas con la siguiente composici ́on de bolas blancas y negras:
+$$U_1: 5B \ \text{y} \ 5N \ \ U_2: 6B \ \text{y} \ 4N \ \ U_3: 7B \ \text{y} \ 3N$$
+Se elige una urna al azar y se sacan cuatro bolas sin reemplazamiento.
+\begin{enumerate}
+    \item[a) ] Calcular la probabilidad de que las cuatro sean blancas.\\
+    \textbf{B}:Sacar 4 bolas blancas. \\
+    \textbf{$A_1$}:Elegir la primera urna. \\
+    \textbf{$A_2$}:Elegir la segunda urna. \\
+    \textbf{$A_3$}:Elegir la tercera urna. \\
+    $P(A_i) = \dfrac{1}{3} \ \forall i=1,2,3. $
+    $P(B) = P(A_i)\cdot (P(B|A_1) + P(B|A_2) + P(B|A_3))$
+    $P(B) = \dfrac{1}{3}\cdot (\dfrac{5}{210} + \dfrac{15}{210} + \dfrac{35}{210}) = \dfrac{1}{3}\cdot (\dfrac{1}{42} + \dfrac{1}{14} + \dfrac{1}{6}) = 0.087.$
+    \item[b) ] Si en las bolas extraídas sólo hay una negra, ¿cuál es la probabilidad de que la urna elegida haya sido $U_2$.
+    \textbf{B}:Sacar 1 bola negra. \\
+    \textbf{$A_1$}:Elegir la primera urna. \\
+    \textbf{$A_2$}:Elegir la segunda urna. \\
+    \textbf{$A_3$}:Elegir la tercera urna. \\
+    $P(A_2|B) = \dfrac{\dfrac{{4 \choose 1} \cdot {6 \choose 3}}{{10 \choose 4}} \cdot \dfrac{1}{3}}{\dfrac{1}{3} \cdot ( \dfrac{{5 \choose 1} \cdot {5 \choose 3}}{{10 \choose 4}} + \dfrac{{4 \choose 1} \cdot {6 \choose 3}}{{10 \choose 4}} + \dfrac{{3 \choose 1} \cdot {7 \choose 3}}{{10 \choose 4}})} = \dfrac{\dfrac{8}{21}}{\dfrac{5}{21} + \dfrac{8}{21} + \dfrac{1}{2}} = 0.34$
+\end{enumerate}
 \end{ej}
 
 \begin{ej}
@@ -376,6 +395,14 @@ Ya podemos calcular la probabilidad que se nos pedía:
 \end{ej}
 
 \begin{ej}
+Se seleccionan $n$ dados con probabilidad $p_n = \dfrac{1}{2^n}$, $n \in \mathbb{N}$. Si se lanzan estos $n$ dados y se obtiene una suma de 4 puntos. ¿cuál es la probabilidad de haber seleccionado 4 dados?\\
+El número máximo de dados en este caso son $n=4$.
+\textbf{B}:Sumar 4 puntos. \\
+\textbf{$A_1$}: 1 dado. $P(A_1) = p_1 = \dfrac{1}{2}$\\
+\textbf{$A_2$}: 2 dados. $P(A_2) = p_2 = \dfrac{1}{4}$\\
+\textbf{$A_3$}: 3 dados. $P(A_3) = p_3 = \dfrac{1}{8}$\\
+\textbf{$A_4$}: 4 dados. $P(A_4) = p_4 = \dfrac{1}{16}$\\
+$P(A_4|B) = \dfrac{\dfrac{1}{6^4}\cdot\dfrac{1}{16}}{\dfrac{1}{2}\cdot\dfrac{1}{6} + \dfrac{1}{4}\cdot\dfrac{3}{6^2} + \dfrac{1}{8}\cdot\dfrac{3}{6^3} + \dfrac{1}{6^4}\cdot\dfrac{1}{16}} = \dfrac{1}{2197} = 0.000455$
 \end{ej}
 
 \begin{ej}
