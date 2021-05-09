@@ -263,7 +263,32 @@ Por tanto:
 \end{ej}
 
 \begin{ej}
+La probabilidad de que se olvide inyectar el suero a un enfermo durante la ausencia del doctor es
+2/3. Si se le inyecta el suero, el enfermo tiene igual probabilidad de mejorar que de empeorar, pero
+si no se le inyecta, la probabilidad de mejorar se reduce a 0.25. Al regreso, el doctor encuentra
+que el enfermo ha empeorado. ¿Cuál es la probabilidad de que no se le haya inyectado el suero?
+
+\medskip
+
+$A$: el enfermo mejora \\ $\bar{A}$: el enfermo empeora\\
+$B$: se le inyecta suero al enfermo
+
+\medskip
+
+Buscamos $P(\bar{B}|\bar{A})$: \\
+$P(\bar{B}) = \frac{2}{3} \quad\Longrightarrow\quad P(B)=\frac{1}{3}$ \\
+$P(A|B) = 0.5= P(\bar{A}|B)$ \\
+$P(A|\bar{B}) = 0.25 \quad\Longrightarrow\quad P(\bar{A}|\bar{B}) = 0.75$
+
+\[P(\bar{A}|\bar{B}) = 0.75 = \frac{P(\bar{A}\cap\bar{B})}{P(\bar{B})} = \frac{P(\bar{A}\cap\bar{B})}{\frac{2}{3}}\quad\Longrightarrow\quad P(\bar{A}\cap\bar{B}) = P(\bar{A}|\bar{B})\cdot P(\bar{B}) = \frac{3}{4}\cdot\frac{2}{3} = 0.5 \] \\
+Utilizamos $P(B) = \sum_{n=1}^\infty P(A_n) P(B|A_n)$;
+\[P(\bar{B}|\bar{A}) = \frac{P(\bar{B}\cap\bar{A})}{P(\bar{A})} = \frac{P(\bar{B}\cap\bar{A})}{P(B\cap\bar{A})+P(\bar{B}\cap\bar{A})} = \frac{0.5}{P(B-A) + P(\bar{B}-A)} =\]
+\[= \frac{0.5}{P(B)+P(\bar{B})-2\cdot P(A)} = \frac{0.5}{1-(P(B)\cdot P(A|B) + P(\bar{B})\cdot P(A|\bar{B})} = \]
+\[ = \frac{0.5}{1-(\frac{1}{3} \cdot 0.5 + \frac{2}{3}\cdot 0.25)} = \frac{\frac{1}{2}}{\frac{2}{3}} = \frac{3}{4} = 0.75\]
+
 \end{ej}
+
+\medskip
 
 \begin{ej}
 \(N\) urnas contienen cada una 4 bolas blancas y 6 negras, mientras otra urna contiene 5 bolas blancas y 5 negras. De las \(N+1\) urnas, se elige una al azar y se extraen dos bolas sucesivamente, sin reemplazamiento, resultando ser ambas negras. Sabiendo que la probabilidad de que queden 5 blancas y 3 negras en la urna elegida es 1/7, encontrar \(N\). \\
