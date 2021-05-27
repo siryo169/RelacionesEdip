@@ -1,0 +1,334 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{amsmath} %Todos los paquetes de matematicas
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{yhmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{wrapfig} %Figuras flotantes
+\usepackage{parselines}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{pgfplots}
+\graphicspath{{images/}}
+\usepackage{subcaption}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{eurosym} %Euro, de nada misniños
+
+\theoremstyle{definition}
+\newtheorem{ej}{Ejercicio}
+
+
+
+\title{\textbf{Relación de ejercicios 5 EDIP}}
+\author{Carlos García, Bora Goker, Javier Gómez,  \\ Ana Graciani, J.Alberto Hoces}
+\date{2020/2021}
+
+\setlength{\parindent}{0px}
+
+\begin{document}
+
+\maketitle
+
+\begin{ej}
+Sea $X$ una variable aleatoria con función masa de probabilidad $P(X=i)= ki; \hspace{0.1cm} i = 1, . . . , 20$.
+
+\begin{enumerate}
+    \item[a)] Determinar el valor de $k$, la función de distribución y las siguientes probabilidades:
+    
+    \[
+    P (X = 4), \hspace{0.1cm} P (X < 4), \hspace{0.1cm} P (3 \leq X \leq 10), \hspace{0.1cm} P (3 < X \leq 10), \hspace{0.1cm} P (3 < X < 10)
+    \]
+    
+    Para poder determinar el valor de $k$, hemos de tener en cuenta que estamos ante una variable aleatoria discreta $X$, y la función masa de probabilidad de una variable aleatoria debe cumplir que $\sum_{i} P(X=i)=1$. En nuestro caso concretamente es $\sum_{i=1}^{20} P(X=i)=1$, lo cual se traduce en la siguiente ecuación: 
+    
+    \[
+        \sum_{i=1}^{20} P(X=i)=1 \rightarrow 210k = 1 \rightarrow k = \frac{1}{210}
+    \]
+    
+    Para hallar la función de distribución tendremos en cuenta su definición: 
+    \[
+    F_{X}(i) = P(X \leq i) = \sum_{j=1}^{i} P(X=j) \hspace{0.3cm} \forall i \in \{1,...,20\}
+    \]
+    
+    Por lo que la función de distribución de la variable aleatoria X estará definida como:
+    
+    \[
+    F_{X}(i)= \left\{ \begin{array}{lcc}
+             0 &   si  & i \leq 1 \\
+             \\ \sum_{j=1}^{i} P(X=j) = \sum_{j=1}^{i} \frac{1}{210} \cdot j &  si & 1 \leq i \leq 20 \\
+             \\ 1 &  si  & x > 20
+             \end{array}
+   \right.
+    \]
+    
+    Y ahora podemos emplear esta función para hallar las probabilidades pedidas (cuando sea la probabilidad de que la variable aleatoria tome un valor concreto, usaremos la función masa de probabilidad):
+    
+    \[
+    P(X=4) = \frac{1}{210} \cdot 4 = \frac{2}{105} = 0.0190476
+    \]
+    
+    \[
+    P(X<4) = P(X\leq 3) = F_{X}(3) = \frac{1}{210} + \frac{2}{210} + \frac{3}{210} = \frac{1}{35} = 0.0285714
+    \]
+    
+    \[
+    P(3\leq X \leq 10) = P(X\leq10) - P(X<3) = P(X\leq10) - P(X\leq2) = F_{X}(10)-F_{X}(2)=
+    \]
+    
+    \[
+    = \sum_{j=3}^{10} \frac{1}{210} \cdot j = \frac{26}{105} = 0.247619
+    \]
+    
+    \[
+    P(3 < X \leq 10) = P(X\leq10) - P(X \leq 3) = F_{X}(10)-F_{X}(3)= \sum_{j=4}^{10} \frac{1}{210} \cdot j = \frac{7}{30} = 0.233333
+    \]
+    
+     \[
+    P(3 < X < 10) = P(X<10) - P(X\leq3) = P(X\leq9) - P(X\leq3) = F_{X}(9)-F_{X}(3)=
+    \]
+    
+    \[
+    = \sum_{j=4}^{9} \frac{1}{210} \cdot j = \frac{13}{70} = 0.1857142
+    \]
+    
+    \item[b)] Supongamos que un jugador gana 20 monedas si al observar esta variable obtiene un valor
+    menor que 4, gana 24 monedas si obtiene el valor 4 y, en caso contrario, pierde una moneda.
+    Calcular la ganancia esperada del jugador y decir si el juego le es favorable.
+    
+    Definimos una nueva variable aleatoria $Y$ que será el número de monedas obtenidas en función de los valores que toma la variable aleatoria $X$:
+    
+    \[
+    Y= h(X) = \left\{ \begin{array}{lcc}
+             20 &   si  & 1 < X < 4 \\
+             \\ 24 &  si & X = 4 \\
+             \\ -1 &  si  & 4 < X \leq 20
+             \end{array}
+   \right.
+    \]
+    
+    Y calculamos la probabilidad de que la variable $Y$ tome cada uno de sus valores posibles para que podamos hallar su esperanza:
+    \[
+    P(Y=20)=P(X<4)=P(X\leq3)=F_{X}(3) = \frac{1}{210} + \frac{2}{210} + \frac{3}{210} = \frac{1}{35} = 0.0285714
+    \]
+    
+    \[
+    P(Y=24)=P(X=4)= \frac{1}{210} \cdot 4 = \frac{2}{105} = 0.0190476
+    \]
+    
+    \[
+    P(Y=-1)=P(X>4)=1-P(X \leq 4) = 1-P(X<4)-P(X=4)= \frac{20}{21} = 0.95238
+    \]
+    
+    Ya podemos hallar la esperanza matemática de $Y (y_{1} = 20, y_{2} = 24, y_{3} = -1)$ :
+    
+    \[
+    E[Y]=\sum_{i}^3 y_{i}P(Y=y_{i})=\frac{20}{35}+\frac{48}{105}-\frac{20}{21} = \frac{8}{105} = 0.0761904
+    \]
+    
+    Como la esperanza de $Y$ es mayor que 0, el juego es favorable al jugador.
+\end{enumerate}
+\end{ej}
+
+\newpage
+
+\begin{ej}
+
+\end{ej}
+
+\begin{ej}
+El número de lanzamientos de una moneda hasta salir cara es una variable aleatoria con distribución \(P(X=x) = 2^{-x}\); \(x=1,2,\dotsc\).
+
+\begin{enumerate}[label=\textit{\alph*)}]
+	\item Probar que la función masa de probabilidad está bien definida.
+	
+Para que la función masa esté bien defindida, se tiene que cumplir que:
+\[
+	P(X=x_i) \geq 0 \quad \forall i \in \mathbb{N} \qquad \sum_{i=1}^{\infty} P(X=x_i) = \sum_{i=1}^{\infty} 2^{-x} = 1
+\]
+
+La primera condición se cumple siempre, puesto que que la función tiene la expresión \(2^{-x}\), la cual es positiva \(\forall x \in \mathbb{R}\).
+
+La segunda condición se demuestra observando que es una serie geométrica, las cuales convergen si y solo si su razón \(|r| < 1\). En este caso:
+\[
+	|r| = \frac{1}{2} < 1 \Rightarrow \text{La serie converge}
+\]
+
+Se cumplen las dos condiciones, así, afirmamos que la función masa de probabilidad está bien definida.
+
+	\item Calcular la probabilidad de que el número de lanzamientos necesarios para salir cara esté entre 4 y 10.
+	
+Esto es calcular
+\[
+	P(4 \leq x \leq 10) = \sum_{i=4}^{10}p_i = 2^{-4} \cdot 2^{-5} \cdot 2^{-6} \cdot 2^{-7} \cdot 2^{-8} \cdot 2^{-9} \cdot 2^{-10} = \frac{127}{1024}
+\]
+
+	\item Calcular los cuartiles y la moda de la distribución, interpretando los valores.
+	
+Como se ha visto en otros temas, sabemos que el percentil de orden \(n\) se calcula:
+\[
+	P(X \leq x_i) = \frac{n}{100} \Rightarrow P_n = x_i.
+\]
+
+Así, 
+\[
+	P(X \leq x_i) = 0.25 \Rightarrow x_i = 1 \Rightarrow Q_1 = 1 \qquad P(X \leq x_i) = 0.5 \Rightarrow x_i = 1 \Rightarrow Q_2 = 1
+\]
+\[
+	P(X \leq x_i) = 0.75 \Rightarrow P(X=1) + P(X=2) \geq \frac{3}{4} \Rightarrow Q_3 = 2
+\]
+
+En una variable aleatoria discreta, definimos la moda como:
+\[
+	Mo = x_i : P(X=x_i) = \text{máx} \{p_i\}
+\]
+Al ser la función masa de probabilidad decreciente, el máximo valor se encuentra en 1. Así:
+\[
+	x_1 = 1 \Rightarrow Mo = 1
+\]
+
+	\item Calcular función generatriz de momentos y, a partir de ella, el número medio de lanzamientos necesarios para salir cara y la desviación típica.
+	
+Definimos la función generatriz de momentos como
+\[
+M_x(t) = E[e^{tX}] \quad \forall t \in (t_0, t_1) \text{ centrado en el origen}
+\]
+
+\[
+	M_x(t) = \sum_{x=1}^{\infty} e^{tx} \frac{1}{2^x} = \sum_{x=1}^{\infty} \left( \frac{e^t}{2} \right)^x = \frac{\frac{e^t}{2}}{1- \frac{e^t}{2}}
+\]
+Observamos que esta serie es absolutamente convergente \(\forall t < \log (2)\), por lo que converge en un entorno de cero, y por tanto, existe la función generatriz de momentos.
+
+Ahora calculemos su esperanza:
+\[
+	E[X] = M'_X(t) = \frac{\frac{e^t}{2}(1-\frac{e^t}{2}) - \frac{e^t}{2} \cdot - \frac{e^t}{2}}{(1-\frac{e^t}{2})^2}
+\]
+\[
+	M'_X(0) = 2 = E[X]
+\]
+
+Por último calculamos su desviación típica:
+\[
+	E[X^2] = M''_X(t) = \frac{2e^t (e^t -2)^2 - 2e^t (e^t-2)e^t}{(e^t-2)^4}
+\]
+\[
+	M''_X(0) = 6 \Rightarrow Var|X| = E[X^2] - E[X]^2 = 2 \Rightarrow \sigma_x = \sqrt{2}
+\]
+
+\end{enumerate}
+
+\end{ej}
+
+\begin{ej}
+
+\end{ej}
+
+\begin{ej}
+
+\end{ej}
+
+\begin{ej}
+
+\end{ej}
+
+\begin{ej}
+Con objeto de establecer un plan de producción, una empresa ha estimado que la demanda de
+sus clientes, en miles de unidades del producto, se comporta semanalmente con arreglo a una
+ley de probabilidad dada por la función de densidad:
+
+\[
+f(x)=\frac{3}{4} (2x-x^2), \hspace{0.3cm} 0 \leq x \leq 2
+\]
+
+\begin{enumerate}
+    \item[a)] ¿Qué cantidad deberá tener dispuesta a la venta al comienzo de cada semana para poder satisfacer plenamente la demanda con probabilidad 0.5?
+    
+    Se nos está pidiendo calcular el valor $x$ que toma la variable aleatoria continua $X$ ``cantidad dispuesta a la venta'' tal que $P(X\leq x) = F_{X}(x) = 0.5$, por lo que nos hace falta conocer la función de distribución de $X$. Al tratarse de una variable aleatoria continua, podemos calcularla a partir de la función de densidad de la siguiente forma: $F_{X}(x) = \int_{-\infty}^{x}f(t)dt$.
+    
+    \[
+    F_{X}(x) = \left\{ \begin{array}{lcc}
+             \int_{-\infty}^{x}0dt &   si  & x < 0 \\
+             \\ \int_{-\infty}^{0}0dt + \int_{0}^{x}\frac{3}{4} (2t-t^2)dt &  si & 0 \leq x \leq 2 \\
+             \\ \int_{-\infty}^{0}0dt + \int_{0}^{2}\frac{3}{4} (2t-t^2)dt + \int_{2}^{x}0dt &  si  & x > 2
+             \end{array}
+   \right.
+    \]
+    
+    Desarrollamos las integrales:
+    
+    \[
+    \int_{0}^{x}\frac{3}{4} (2t-t^2)dt = \left[\frac{3t^2}{4}-\frac{t^3}{4}\right]^{x}_{0} = \frac{3x^2}{4}-\frac{x^3}{4}
+    \]
+    
+    \[
+    \int_{0}^{2}\frac{3}{4} (2t-t^2)dt = \left[\frac{3t^2}{4}-\frac{t^3}{4}\right]^{2}_{0} = \frac{12}{4}-\frac{8}{4}=1
+    \]
+    
+    Y la función de distribución queda así:
+    
+    \[
+    F_{X}(x) = \left\{ \begin{array}{lcc}
+             0 &   si  & x < 0 \\
+             \\ \frac{3x^2}{4}-\frac{x^3}{4} &  si & 0 \leq x \leq 2 \\
+             \\ 1 &  si  & x > 2
+             \end{array}
+   \right.
+    \]
+    
+    Como $F_{X}$ solo puede tomar el valor 0.5 en el intervalo $[0,2]$, tendremos que resolver la siguiente ecuación:
+    
+    \[
+    \frac{3x^2}{4}-\frac{x^3}{4} = \frac{1}{2} \rightarrow x^3-3x^2+2=0
+    \]
+    
+    Y dicha ecuación tiene como soluciones: $x_1 = 1, x_2 = 1-\sqrt{3}, x_3 = 1+ \sqrt{3}$. De entre esas soluciones, podemos descartar $x_2$ ya que es menor que 0 y nuestra variable aleatoria solo toma valores positivos. También podemos descartar $x_3$ ya que es mayor que 2 y por lo tanto $P(X\leq x_3) = 1 \neq 0.5$, por lo que el $x$ que buscamos es $x = 1$, y podemos concluir que será necesario tener 1000 unidades disponibles a la venta desde el principio de la semana si se quiere satisfacer plenamente la demanda con probabilidad 0.5.
+
+    \item[b)] Pasado cierto tiempo, se observa que la demanda ha crecido, estimándose que en ese momento se distribuye según la función de densidad:
+    
+    \[
+    f(y)=\frac{3}{4} (4y-y^2-3), \hspace{0.3cm} 1 \leq y \leq 3
+    \]
+    
+    Los empresarios sospechan que este crecimiento no ha afectado a la dispersión de la demanda, ¿es cierta esta sospecha?
+    
+    Para determinar si es cierta la sospecha, calcularemos los coeficientes de variación de las variables aleatorias $X$ e $Y$, para lo cual necesitaremos hallar $E[X], E[Y], Var(X)$ y $Var(Y)$:
+    
+    \begin{equation*}
+        E[X] = \int_{-\infty}^{+\infty}x \cdot f(x)dx = \int_{-\infty}^{0}0dx + \int_{0}^{2}\frac{3}{4} (2x^2-x^3)dx + \int_{2}^{+\infty}0dx = \left[\frac{x^3}{2}-\frac{3x^4}{16}\right]^{2}_{0} = 1
+    \end{equation*}
+    
+    \begin{equation*}
+        E[Y] = \int_{-\infty}^{+\infty}y \cdot f(y)dx = \int_{-\infty}^{1}0dy + \int_{1}^{3}\frac{3}{4} (4y^2-y^3-3y)dy + \int_{3}^{+\infty}0dy = \left[y^3-\frac{3y^4}{16}-\frac{9y^2}{8}\right]^{3}_{1} = 2
+    \end{equation*}
+    
+    \begin{equation*}
+        E[X^2] = \int_{-\infty}^{+\infty}x^2 \cdot f(x)dx = \int_{-\infty}^{0}0dx + \int_{0}^{2}\frac{3}{4} (2x^3-x^4)dx + \int_{2}^{+\infty}0dx = \left[\frac{3x^4}{8}-\frac{3x^5}{20}\right]^{2}_{0} = 1.2
+    \end{equation*}
+    
+    \begin{equation*}
+        E[Y^2] = \int_{-\infty}^{+\infty}y^2 \cdot f(y)dx = \int_{-\infty}^{1}0dy + \int_{1}^{3}\frac{3}{4} (4y^3-y^4-3y^2)dy + \int_{3}^{+\infty}0dy =
+    \end{equation*}
+    
+    \begin{equation*}
+        = \left[\frac{3y^4}{4}-\frac{3y^5}{20}-\frac{3y^3}{4}\right]^{3}_{1} = 4.2
+    \end{equation*}
+    
+    \begin{equation*}
+        C.V.(X)=\frac{\sqrt{Var(X)}}{E[X]} = \frac{\sqrt{E[X^2]-E[X]^2}}{E[X]} = \frac{\sqrt{0.2}}{1} = \frac{\sqrt{5}}{5}
+    \end{equation*}
+    
+    \begin{equation*}
+        C.V.(Y)=\frac{\sqrt{Var(Y)}}{E[Y]} = \frac{\sqrt{E[Y^2]-E[Y]^2}}{E[Y]} = \frac{\sqrt{0.2}}{2} = \frac{\sqrt{5}}{10}
+    \end{equation*}
+
+A la vista de los coeficientes de variación obtenidos, las sospechas eran ciertas ya que estos no coinciden.
+\end{enumerate}
+\end{ej}
+\end{document}
