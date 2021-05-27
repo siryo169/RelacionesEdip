@@ -151,7 +151,7 @@ El número de lanzamientos de una moneda hasta salir cara es una variable aleato
 	
 Para que la función masa esté bien defindida, se tiene que cumplir que:
 \[
-	P(X=x_i) \geq 0 \quad \forall i \in \mathbb{N} \qquad \sum_{i=1}^{\infty} P(X=x_i) = \sum_{i=1}^{\infty} 2^{-x} = 1
+	P(X=x_i) \geq 0 \quad \forall i \in \mathbb{N} \qquad \sum_{i=1}^{\infty} P(X=x_i) = \sum_{i=1}^{\infty} 2^{-x} \overset{\text{Serie Geométrica}}{\Rightarrow} \frac{\frac{1}{2}}{1-\frac{1}{2}} = 1
 \]
 
 La primera condición se cumple siempre, puesto que que la función tiene la expresión \(2^{-x}\), la cual es positiva \(\forall x \in \mathbb{R}\).
