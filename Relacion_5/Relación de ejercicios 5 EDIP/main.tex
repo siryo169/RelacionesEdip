@@ -235,6 +235,65 @@ Por último calculamos su desviación típica:
 \end{ej}
 
 \begin{ej}
+Sea \(X\) una variable aleatoria con función de densidad
+\[
+	f(x) = \left\{ \begin{array}{cc}
+	\frac{2x-1}{10} & 1 < x \leq 2 \\
+	& \\
+	0.4 & 4 < x \leq 6
+	\end{array} \right.
+\]
+
+\begin{enumerate}[label=\textit{\alph*)}]
+	\item Calcular \(P(1.5 < X \leq 2)\), \(P(2.5 < X \leq 3.5)\), \(P(4.5 \leq X \leq 5.5)\), \(P(1.2 < X \leq 5.2)\).
+	
+Primero calculamos:
+
+\[
+	\int_{a}^{t} \frac{2x-1}{10}dx = \left. \frac{x^2 - x}{10} \right|_{a}^{t} \quad t \in [1,2]
+\]
+\[
+	\int_{a}^{t} 0.4x = \left. 0.4x \right|_{a}^{t} \quad t \in [4,6]
+\]
+
+Así:
+\[
+	P(1.5 < X \leq 2) = \left. \frac{x^2 - x}{10} \right|_{1.5}^{2} = \frac{1}{8} \qquad P(2.5 < X \leq 3.5) = 0
+\]
+\[
+P(4.5 \leq X \leq 5.5) = \left. 0.4x \right|_{4.5}^{5.5} = \frac{2}{5} \qquad P(1.2 < X \leq 5.2) = \left. \frac{x^2 - x}{10} \right|_{1.2}^{2} + \left. 0.4x \right|_{4}^{5.2} = \frac{82}{125}
+\]
+
+	\item Dar la expresión general de los momentos no centrados y deducir el valor medio de \(X\).
+	
+Primero daremos la expresión del momento de orden \(k\) no centrado:
+\[
+	m_k = \int_{-\infty}^{+\infty} x^k f(x) dx = \int_{-\infty}^{1} 0 dx + \int_{1}^{2} x^k \frac{2x-1}{10}dx + \int_{2}^{4} 0 dx + \int_{4}^{6} 0.4x^kdx + \int_{6}^{+\infty} 0 dx =
+\]
+\[
+	= \int_{1}^{2} \frac{2x -1 }{10} dx + \int_{4}^{6} 0.4x^k dx
+\]
+
+Y por tanto podemos afirmar que la esperanza (valor medio) es:
+\[
+	E[X] = m_1 = \int_{1}^{2} x \frac{2x-1}{10} dx + \int_{4}^{6} 0.4 x dx = \left. \frac{2x^3}{30} - \frac{x^2}{20} \right|_{1}^{2} + \left. \frac{x^2}{5} \right|_{4}^{6} = \frac{259}{60} 
+\]
+
+	\item Calcular la función generatriz de momentos de \(X\).
+	
+Definimos la función generatriz de momentos como
+\[
+	M_X(t) = E[e^{tX}] \quad \forall t \in (t_0, t_1) \text{ que contenga al origen}
+\]
+
+Así
+\[
+	M_X(t) = \int_{-\infty}^{+\infty} e^{tx} f(x) dx = \int_{1}^{2} e^{tx} \frac{2x-1}{10} dx + \int_{4}^{6} 0.4e^{tx} dx = 
+\]
+\[
+	\frac{1}{10} \cdot \left. \left( 2 \left( x e^{tx} - \frac{e^{tx}}{t^2} \right) - \frac{e^{tx}}{t} \right) \right|_{1}^{2}  + 0.4 \left. \frac{e^{tx}}{t} \right|_{4}^{6} < + \infty \quad \forall t \in \mathbb{R} \Rightarrow \exists M_X(t)
+\]
+\end{enumerate}
 
 \end{ej}
 

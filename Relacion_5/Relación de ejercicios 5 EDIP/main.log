@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  27 MAY 2021 02:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.25)  27 MAY 2021 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,8 +821,8 @@ L/cmm/m/it/12 F[]\OT1/cmr/m/n/12 (10) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 F[]
 n/12 = [] = 0[]233333
  []
 
-[2] [3] [4]
-Overfull \hbox (25.02377pt too wide) detected at line 309
+[2] [3] [4] [5]
+Overfull \hbox (25.02377pt too wide) detected at line 368
 \OML/cmm/m/it/12 E\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 ] = [][] \
 OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/
 cmm/m/it/12 y\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = [][] 0\OML/
@@ -833,7 +833,7 @@ cmm/m/it/12 dy \OT1/cmr/m/n/12 + [][] [](4\OML/cmm/m/it/12 y[] \OMS/cmsy/m/n/12
  []
 
 
-Overfull \hbox (2.64151pt too wide) detected at line 313
+Overfull \hbox (2.64151pt too wide) detected at line 372
 \OML/cmm/m/it/12 E\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 X[]\OT1/cmr/m/n/12 ] = [][]
  \OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = [][] 0\
@@ -842,14 +842,14 @@ n/12 ^^@ \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/
 12 + [][] 0\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = [][] = 1[]2
  []
 
-[5] [6] (./main.aux
+[6] [7] (./main.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
  25773 strings out of 483007
  636907 string characters out of 5961757
- 1003956 words of memory out of 5000000
+ 1004957 words of memory out of 5000000
  40384 multiletter control sequences out of 15000+600000
  543621 words of font info for 64 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
@@ -866,10 +866,10 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on main.pdf (6 pages, 137817 bytes).
+Output written on main.pdf (7 pages, 142467 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
