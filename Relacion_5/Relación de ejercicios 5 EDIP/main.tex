@@ -140,6 +140,35 @@ Sea $X$ una variable aleatoria con función masa de probabilidad $P(X=i)= ki; \h
 \newpage
 
 \begin{ej}
+Sea X el número de bolas blancas obtenidas al sacar dos de una urna cpn 10 bolas de las que 8 son blancas. Calcular:
+\begin{enumerate}
+    \item[a) ] Función masa de probabilidad y función de distribución.\\
+    P(X = 0) = $\dfrac{{2 \choose 2}}{{10 \choose 2}} = \dfrac{1}{45} = 0.022$\\
+    P(X = 1) = $\dfrac{{2 \choose 1} \cdot {8 \choose 1}}{{10 \choose 2}} = \dfrac{16}{45} = 0.356$ \\ 
+    P(X = 2) = $\dfrac{{8 \choose 2}}{{10 \choose 2}} = \dfrac{28}{45} = 0.622 \\$
+    F(x) = $$\left\{
+     \begin{array}{lr}
+       0 & \mbox{si }  x < 0 \\
+       \\
+       \dfrac{1}{45} & \mbox{si }0 \leq x < 1 \\
+       \\
+       \dfrac{17}{45}& \mbox{si }  1 \leq x < 2 \\
+       \\
+       1 & \mbox{si } x \geq 2
+     \end{array}
+   \right.
+    $$
+\\
+\item[b) ] Media, mediana y moda, dando la interpretación de cada una de estas medidas. \\
+E[X] = $0 \cdot \dfrac{1}{45} + 1 \cdot \dfrac{16}{45} + 2 \cdot \dfrac{28}{45} = \dfrac{8}{5} = 1.6$ bolas blancas. La media es el centro de gravedad de la distribución, en este caso son 1.6 bolas blancas.
+\\
+Para calcular la mediana nos fijamos en la función masa y escogemos el valor inmediatamente mayor a 0.5, en este caso $\dfrac{28}{45}$, por lo que Me = 2. Es el valor que deja por encima y por debajo la misma probabilidad.
+\\
+En el caso de la moda, se escoge el mayor valor de la función maso, en este caso, al igual que la mediana es $\dfrac{28}{45}$, por lo que Mo = 2. El valor con mayor probabilidad.\\
+\item[c) ] Intervalo intercuartílico, especificando su interpretación. \\
+El primer cuartil es el valor cuya función de distribución es inmediatamente superior o igual a 0.25, en este caso sería 1, ya que su función de distribución es 0.378, por otro lado el tercer cuartil sería 2, ya que es 1 es el valor inmediatamente superior a 0.75. Por tanto el intervalo intercuartílico es 2 - 1 = 1, que es el intervalo en el que está contenido el $50\%$ de la probabilidad central.
+
+\end{enumerate}
 
 \end{ej}
 
@@ -260,6 +289,77 @@ Por último calculamos su desviación típica:
 \end{ej}
 
 \begin{ej}
+La dimensión en centímetros de los tornillos que salen de cierta fábrica es una variable aleatoria, \(X\), con función de densidad
+\[
+	f(x) = \frac{k}{x^2}, \quad 1 \leq x \leq 10.
+\]
+
+\begin{enumerate}[label=\alph*)]
+	\item Determinar el valor de \(k\), y obtener la función de distribución.
+	
+Comencemos encontrando el valor de \(k\):
+\[
+	\int_{1}^{10} \frac{k}{x^2} dx = 1 \Rightarrow k \int_{1}^{10} \frac{1}{x^2} dx = k \left. - \frac{1}{x} \right|_{1}^{10} = k \left(- \frac{1}{10} - \left( - \frac{1}{1} \right) \right) = k \left(1 - \frac{1}{10} \right) = k \frac{9}{10} = 1
+\]
+\[
+	k = \frac{10}{9}
+\]
+
+Y podemos afirmar que la función de distribución es:
+\[
+	F(x) = \left\{ \begin{array}{ccc}
+	\int_{1}^{x} \frac{10}{9x^2} & \text{si} & 1 \leq x \leq 10 \\
+	\\
+	0 & \text{si} & x < 1
+	\end{array} \right.
+\]
+
+	\item Hallar la probabilidad de que la dimensión de un tornillo esté entre 2 y 5 cm.
+	
+\[
+	\int_{2}^{5} \frac{10}{9x^2}dx = \frac{10}{9}	 \int_{2}^{5} \frac{1}{x^2}dx = \frac{10}{9} \left. \left( - \frac{1}{x} \right) \right|_{2}^{5} = \frac{10}{9} \left( - \frac{1}{5} - \left( - \frac{1}{2} \right) \right) = \frac{10}{9} \left( \frac{1}{2} - \frac{1}{5} \right) = \frac{10}{9} \cdot \frac{3}{10} = \frac{1}{3}
+\]
+
+Por lo tanto:
+\[
+	A = \text{Un tornillo tiene una dimensión entre 2 y 5 cm} \quad P(A) = \frac{1}{3}
+\]
+
+	\item Determinar la dimensión máxima del 50 \% de los tornillos con menor dimensión y la dimesión mínima del 5 \% con mayor dimensión.
+	
+Nos están pidiendo primero la mediana:
+\[
+	Me = \frac{10}{9} \int_{1}^{x} f(z)dz = \frac{10}{9} \left. \left( - \frac{1}{x} \right) \right|_{1}^{x} = 0.5
+\]
+\[
+	\left. - \frac{1}{x} \right|_{1}^{x} = \frac{9}{10} \cdot 0.5 \Rightarrow  - \frac{1}{x} +1 = 0.45 \Rightarrow \frac{1}{x} = 0.55 \Rightarrow x= 1.818 \text{ cm}
+\]
+
+Por otro lado nos están pidiendo el percentil 95:
+\[
+	\frac{10}{9} \int_{1}^{x} \frac{1}{x^2}dx = \frac{10}{9} \left. \left( - \frac{1}{x} \right) \right|_{1}^{x} = 0.95 \Rightarrow \left. - \frac{1}{x} \right|_{1}^{x} = 0.855
+\]
+\[
+	- \frac{1}{x} + 1 = 0.855 \Rightarrow \frac{1}{x} = 0.145 \Rightarrow x= 6.896 \text{ cm}
+\]
+
+	\item Si \(Y\) denota la dimensión de los tornillos producidos en otra fábrica, con la misma medida y desviación típica que \(X\), dar un intervalo en el que tome valores la variable \(Y\) con una probabilidad mínima de 0.99.
+	
+Puesto que ambas variables tienen la misma media y la misma desviación típica, podemos calcular dichos valores a través de la variable \(X\)
+\[
+	m_1 = E[X] = E[Y] = \int_{- \infty}^{+ \infty} xf(x)dx = \int_{-\infty}^{1} 0dx + \int_{1}^{10} \frac{10}{9x} dx + \int_{10}^{+ \infty} 0dx = \frac{10 \log (10)}{9} = 2.558 \text{ cm}
+\]
+\[
+	m_2 = E[X^2] = \int_{1}^{10} \frac{10}{9} dx = 10 \text{ cm}^2 \Rightarrow \sigma_x = \sqrt{m_2 - m_1^2} = 1.859 \text{ cm}
+\]
+
+Podemos afirmar que la variable \(X\) cumple la desigualdad de Chebyshev:
+\[
+	P(E[Y] - k \sigma_x \leq X \leq E[Y] + k \sigma_x) \geq 1 - \frac{1}{k^2}
+\]
+
+Tomando \(1 - \frac{1}{k^2} = 0.99 \Rightarrow k = 10\). Por lo que el intervalo que buscamos es [-16.02, 21.14]. pero al ser medidas de tornillos solo tomamos los valores positivos, así, el intervalo buscado es el [0, 21.14].
+\end{enumerate}
 
 \end{ej}
 
@@ -421,7 +521,53 @@ A la vista de los coeficientes de variación obtenidos, las sospechas eran ciert
 \end{ej}
 
 \begin{ej}
-	
+		Calcular las funciones de densidad de las variables $Y = 2X +3$ y $Z = |X|$, siendo $X$ una
+	variable continua con función de densidad
+	\[f_X(x) = \frac{1}{4}, -2 < x < 2.\]
+	\begin{itemize}
+		\item \(Y = 2X+3 = h(X) \qquad\forall x\in (-2, 2)\) \\
+		\\
+		\(h(]-2,2[) = ]-1,7[\quad \Longrightarrow \qquad h^{-1}(y) = \frac{y-3}{2}\qquad\forall y\in (-1,7)\) \\
+		\(\frac{dh^{-1}(y)}{dy} = \frac{1}{2}\) \\
+		\\
+		Por el teorema de cambio de variable de continua a continua: \\
+		\(
+		g(y) = f\left(\frac{1}{2}\right)\left|\frac{1}{2}\right| \quad \forall y \in (-1,7)\)
+		\[
+		g(y) = \left\{ \begin{array}{cc}
+		\frac{1}{8}  &  y \in (-1,7)\\
+		& \\
+		0   & y \notin (-1,7)
+		\end{array} \right.
+		\]
+		
+		\item \(Z = |X| = h(X) \qquad\forall x\in (-2,2)\) \\
+		\\
+		\[h(X) = \left\{ \begin{array}{cc}
+		h_1(X) = -X &\qquad X < 0 \\
+		& \\
+		h_2(X) = X &\qquad 0 \leq X
+		\end{array} \right. \qquad \forall X\in (-2,2)\]
+		\(h(]-2,2[) = [0,2[\)
+		\[\left\{\begin{array}{cc}
+		h_1^{-1}(z) = -z  & \forall z\in [0,2) \\
+		& \\
+		h_2^{-1}(z) = z  & \forall z\notin [0,2) 
+		\end{array}\right. \qquad
+		\left\{\begin{array}{cc}
+		\frac{dh_1^{-1}(z)}{dz} = -1 &  \forall z \in [0,2)\\
+		& \\
+		\frac{dh_2^{-1}(z)}{dz} = 1 & \forall z \notin [0,2)
+		
+		\end{array} \right.\]
+		Por el teorema de cambio de variable de continua a continua: \\ 
+		\(g(z) = f\left(h^{-1}(z)\right)\left|\left(h^{-1}\right)'(z)\right| \quad \forall z \in [0,2)\)
+		\[g(z) = \left\{\begin{array}{cc}
+		\frac{1}{4} & z \in [0,2) \\
+		& \\
+		0 & z \notin[0,2)
+		\end{array}\right.\]
+	\end{itemize}
 \end{ej}
 
 \begin{ej}
@@ -475,7 +621,61 @@ A la vista de los coeficientes de variación obtenidos, las sospechas eran ciert
 \end{ej}
 
 \begin{ej}
-	
+Si \(X\) es una variable aleatoria con función de densidad
+\[
+	f(x) = \frac{e^{-|x|}}{2}, \quad - \infty < x < \infty,
+\]
+hallar su funcíon de distribución y la probabilidad de cada uno de los siguientes sucesos: \\
+
+Primero hallamos su función de densidad:
+\[
+	f(x) = \left\{ \begin{array}{ccc}
+	\frac{e^{-x}}{2} & \text{si} & 0 < x \infty \\
+	\\
+	\frac{e^x}{2} & \text{si} & - \infty < x \leq 0
+	\end{array} \right.
+\]
+
+Así:
+\[
+	\int_{-\infty}^{0} \frac{e^2}{2} dx = \left. \frac{e^x}{2} \right|_{-\infty}^{0} \qquad \int_{0}^{\infty} \frac{e^{-x}}{2} dx = \left. - \frac{e^{-x}}{2} \right|_{0}^{\infty}
+\]
+
+Y la función de distribución será:
+\[
+	F(x) = \left\{ \begin{array}{ccc}
+	\left. \frac{e^x}{2} \right|_{-\infty}^{x} & \text{si} & - \infty < x < 0 \\
+	\\
+	\left. 1 - \frac{e^{-x}}{2} \right|_{0}^{x} & \text{si} & 0 \leq x < \infty
+	\end{array} \right.
+\]
+
+\begin{enumerate}[label=\alph*)]
+	\item \{\(|X| \leq 2\)\}.
+\[
+	P(|X| \leq 2) = P(-2 \leq X \leq 2) = F(2) - F(-2) = 1 - e^{-2}
+\]
+
+	\item \{\(|X| \leq 2\) ó \(X \geq 0\)\}.
+\[
+	P(|X| \leq 2 \text{ ó } X \geq 0) = P(X \geq -2) = F(\infty) - F(-2) = 1 - - \frac{1}{2e^2}
+\]
+
+	\item \{\(|X| \leq 2\) y \(X \leq -1\)\}.
+\[
+	P(-2 \leq X \leq -1) = F(-1) - F(-2) = \frac{e^{-1}-e^{-2}}{2}
+\]
+
+	\item \{\(X^3 - X^2 - X - 2 \leq 0\)\}.
+\[
+	P((X-2)(X^2 + X + 1) \leq 0) = P(X \geq 2) = 1 - \frac{1}{2e^2}
+\]
+
+	\item \{\(X|\) es irracional\}.
+\[
+	P(X \in (\mathbb{R} - \mathbb{Q})) = 0, \text{ al ser una variable continua, la probabilidad de un punto es nula}
+\]
+\end{enumerate}
 \end{ej}
 
 \begin{ej}
@@ -519,8 +719,18 @@ A la vista de los coeficientes de variación obtenidos, las sospechas eran ciert
 	\end{enumerate}
 \end{ej}
 
+\begin{ej}
+Sea X una variable aleatoria simétrica con respecto al punto 2, y con coeficiente de variación 1. ¿Qué puede decirse acerca de las siguientes probabilidades?:\\
 
-
+    Por ser simétrica respecto de 2, la esperanza de X es 2. Como el coeficiente de variación se calcula como la desviación típica entre la esperanza, la desviación típica de X debe ser 2 tambióen, por lo que la varianza de X debe ser 4. El hecho de que exista varianza implica que el momento de orden 2 de la variable es finito, así que se puede usar la desigualdad de Chebyshev.
+    \\
+    $P(|X-E[X]|<k) \geq 1- \dfrac{Var(X)}{k^2}$\\
+    $P(|X-2| < k) \geq 1-\dfrac{4}{k^2} \longrightarrow  P(-k < X - 2 < k) \geq 1 - \dfrac{4}{k^2} \longrightarrow P(2-k < X < k+2) \geq 1-\dfrac{4}{k^2}$ \\
+    Si tomamos $k = 10$ y $k = 8$ tenemos las probabilidades pedidas:
+    \\
+    $P(-8 < X < 12) \geq 1 - \dfrac{4}{100} = 0.96$\\
+    $P(-6 < X < 10) \geq 1- \dfrac{4}{64} = 0.938$
+\end{ej}
 
 
 \end{document}
